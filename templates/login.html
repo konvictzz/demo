@@ -1,0 +1,59 @@
+{%load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+    <meta name="author" content="">
+	<link rel="icon" href="http://v3.bootcss.com/favicon.ico">
+	<title>Demo_Page</title>
+	<!-- <link rel="stylesheet" href="./bootstrap-3.3.7/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="{% static "bootstrap-3.3.7/css/bootstrap.min.css" %}">
+	<!-- <link rel="stylesheet" href="https://cdn.bootcss.com/foundation/5.5.3/css/foundation.min.css"> -->
+	<link rel="stylesheet" href="{% static "bootstrap-3.3.7/css/ie10-viewport-bug-workaround.css" %}">
+	<link rel="stylesheet" href="{% static "bootstrap-3.3.7/css/signin.css" %}">
+	<script src="{% static "bootstrap-3.3.7/js/ie-emulation-modes-warning.js" %}"></script>
+	<script src="{% static "bootstrap-3.3.7/js/bootstrap.min.js" %}"></script>
+	<!-- <script src="https://cdn.bootcss.com/foundation/5.5.3/js/foundation.min.js"></script> 
+	<script src="https://cdn.bootcss.com/foundation/5.5.3/js/vendor/modernizr.js"></script> -->
+	<style>
+	.tail{
+		position:absolute;
+		bottom:1cm;
+		width:100%;
+		text-align: center;
+	}
+	.top{
+		position:absolute;
+		top:1cm;
+		width:100%;
+		text-align: center;
+	}
+	</style>
+</head>
+<body>
+	<div class="container">
+	<!-- <div class="row"> -->
+		<!-- <div class="small-5 columns"> -->
+			<form class="form-signin" >
+				<center><h3 class="form-signin-heading">System Login</h3></center>
+				<label for="inputLoginID" class="sr-only">User ID</label>
+				<input type="text" id="inputLoginID" class="form-control" placeholder="User ID" required autofocus>
+				<label for="inputPassword" class="sr-only">Password</label>
+				<input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" value="remember-me">Remember Me
+					</label>
+				</div>
+				<button class="btn btn-lg btn-primary btn-block" type="submit">Log In</button>	
+			</form>
+		<!-- </div> -->
+	<!-- </div> -->
+	</div>
+	<div class="tail">copyright@ Citsamex 2017-07-18</div>
+	<!-- <script src="http://v3.bootcss.com/assets/js/ie10-viewport-bug-workaround.js"></script> -->
+</body>
+</html>

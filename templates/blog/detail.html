@@ -1,0 +1,105 @@
+{% extends "base.html" %}
+
+{% block style %}
+<style type="text/css">
+	/* body {color: #EE0000;} */
+	a {
+    	color: #464547;
+	}
+
+	a:hover, a:focus {
+		text-decoration: none;
+		color: #000;
+}
+</style>
+{% endblock %}
+
+{% block nav %}
+<!-- <li class="active"><a href="{% url 'myapp:home' %}">Home</a></li>
+<li><a href="#">URL</a></li>
+<li><a href="#">Login</a></li> -->
+<li><a href="{% url 'myapp:blogindex' %}">TEST</a></li>
+{% endblock %}
+
+{% block body %}
+<div class="container" style="margin-top: -35px">
+	<main class="col-md-8">
+<!-- 从数据库中读取对应的内容，应用到每个地方 -->
+		<article class="post-{{ post.pk }}">
+			<header>
+				<div class="entry-title">
+					{{ post.title }}
+				</div>
+				<div class="entry-meta">
+					<span class="post-category"><a href="#">{{ post.category.name }}</a></span>
+					<span class="post-date"><a href="#"><time datetime="{{ post.created_time }}">{{ post.created_time }}</time></a></span>
+					<span class="post-author"><a href="#">{{ post.author }}</a></span>
+					<!-- <span class="comments-link"><a href="#">分类显示demo</a></span> -->
+				</div>
+			</header>
+			<div class="entry-content clearfix">
+				<p>{{ post.content }}</p>
+				<!-- <div class="read-more cl-effect-14">
+					<a href="{{ post.get_absolute_url }}" class="more-link">继续阅读</a>
+				</div> -->
+			</div>
+		</article>
+		<!-- 如果空则显示empty下定义的内容 -->
+		<!-- empty %}
+		<div class="no-post">暂时还没有发布的文章!</div> -->
+<!-- 一个页面显示多段，复制多分即可 -->
+<!--		<article class="post-1">
+			<header>
+				<div class="entry-title">
+					<a href="#">ARTICLE 1 (Demo)</a>
+				</div>
+				<div class="entry-meta">
+					<span class="post-category"><a href="#">分类显示1</a></span>
+					<span class="post-date"><a href="#"><time datetime="2017-01-01T00:00:00+00:00">2017年1月1日</time></a></span>
+					<span class="post-author"><a href="#">作者</a></span>
+					<span class="comments-link"><a href="#">分类显示2</a></span>
+				</div>
+			</header>
+			<div class="entry-content clearfix">
+				<p>一篇好的内容摘要往往能反映一本书或者一篇文章的内涵和精神实质，是本书或文章的灵魂。读者通过阅读内容摘要可以窥一斑而知全貌，了解该内容是否适合自己的需要以及反映的问题。</p>
+				<div class="read-more cl-effect-14">
+					<a href="#" class="more-link">动作1</a>
+				</div>
+			</div>
+		</article> -->
+	</main>
+	<aside class="col-md-4">
+		<!-- 页面右边分类 -->
+		<div class="widget widget-recent-posts">
+			<div class="widget-title">显示标题1</div>
+			<ul>
+				<li><a href="#">标题1：test</a></li>
+				<li><a href="#">标题2：test</a></li>
+				<li><a href="#">标题3：test</a></li>
+			</ul>
+		</div>
+		<div class="widget widget-recent-posts">
+			<div class="widget-title">显示标题2</div>
+			<ul>
+				<li><a href="#">标题1：test<span class="post-count">(10)</span></a></li>
+				<li><a href="#">标题2：test<span class="post-count">(10)</span></a></li>
+				<li><a href="#">标题3：test<span class="post-count">(10)</span></a></li>
+			</ul>
+		</div>
+		<!-- 页面右边标签 -->
+		<div class="widget widget-tag-cloud">
+			<div class="widget-title">标签标题</div>
+			<ul>
+				<li class=" btn btn-primary"><a href="#">标签1</a></li>
+				<li class=" btn btn-primary"><a href="#">标签2</a></li>
+				<li class=" btn btn-primary"><a href="#">标签3</a></li>
+				<li class=" btn btn-primary"><a href="#">标签4</a></li>
+				<li class=" btn btn-primary"><a href="#">标签5</a></li>
+			</ul>
+		</div>
+		<div class="rss">
+			<a href="#"><span class="ion-social-rss-outline"></span> RSS 订阅</a>
+		</div>
+	</aside>
+</div>
+{% endblock %}

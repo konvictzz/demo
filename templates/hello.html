@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block nav %}
+<li class="active"><a href="{% url 'myapp:home' %}">Home</a></li>
+<li><a href="{% url 'myapp:home2' %}">URL</a></li>
+<li><a href="#">Login</a></li>
+{% endblock %}
+
+{% block body %}
+<div class="container" style="margin-top: -80px;">
+	<div class="page-header" style="text-align: center;font-size: 20px">{{ hello }}</div>
+	<!-- <hr style="background-color: #000000; height: 1px; width: 100%"> -->
+	<form class="form-signin" style="text-align: center;" action="/hello" method="post">
+		<div style="font-size: 20px;text-align: center;">AAA</div>
+		<label for="inputusername" class="sr-only">username</label>
+		<input class="form-control" style="height: 30px;" type="text" name="username" id="inputusername" placeholder="username">
+		<label for="inputpassword" class="sr-only">password</label>
+		<input class="form-control" style="height: 30px;" type="password" name="password" id="inputpassword" placeholder="password">
+		<input type="submit" name="add" value="AAA">
+	</form>
+	<hr style="background-color: #000000; height: 1px; width: 100%">
+	<table border="1px" width="50%" style="margin: auto;">
+		<thead>
+			<th>table1</th>
+			<th>table2</th>
+			<th width="1%">action</th>
+		</thead>
+		<tbody>
+			{% for line in hellodata %}
+			<tr>
+				<td>{{ line.user }}</td>
+				<td>{{ line.pwd }}</td>
+				<td><form action="{% url 'ddd' line.user line.pwd %}" method="post">
+						<input class="btn btn-primary" style="padding: 2px 3px;border-radius: 6px;margin: 3px 5px; font-size: 10px" name="delete" type="submit" name="delete" value="BBB">
+					</form>
+				</td>
+			</tr>
+			{% endfor %}
+			<!-- <tr>
+				<td>test1</td>
+				<td>test2</td>
+				<td><button class="btn btn-primary" style="padding: 2px 3px;border-radius: 6px;margin: 3px 5px; font-size: 10px">AAA</button></td>
+			</tr> -->
+		</tbody>
+	</table>	
+</div>
+{% endblock %}
