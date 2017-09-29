@@ -11,4 +11,8 @@ first upload at 20170928_1712
 > config field: DATABASES
 
 ## startup
-> use the `startup.bat` under the root path  
++ windows  
+	> click the `startup.bat`
++ linux(centos7)  
+	> no shell script(will be created later)  
+	> please use `manage.py` to startup
