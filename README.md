@@ -16,3 +16,4 @@ first upload at 20170928_1712
 + linux(centos7)  
 	> no shell script(will be created later)  
 	> please use `manage.py` to startup
+	> bash: cd path;python manage.py runserver 0.0.0.0:8000
