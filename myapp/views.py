@@ -79,7 +79,7 @@ def access_error(request):
 ############################## myapp_blog ##############################
 def mytest(request):
 	context_mytest = {}
-	context_mytest['welcome'] = '欢迎访问'
+	context_mytest['welcome'] = '欢迎访问（修改字段）'
 	context_mytest['article_list'] = models.Article_Blog.objects.all().order_by('-created_time')
 	return render(request, 'blog/mytest.html', context_mytest)
 
