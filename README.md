@@ -2,8 +2,8 @@
 first upload at 20170928_1712
 
 ## software version:
-+ python3.5.2
-+ django1.11.3
++ python 3.5.2
++ django 1.11.3
 
 ## settings
 > path: ./demo/settings.py  
