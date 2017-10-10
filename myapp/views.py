@@ -69,7 +69,7 @@ def test(request):
 		#user_list.append(temp)
 		#create data in the database
 		models.UserInfo.objects.create(user=username, pwd=password)
-	#load data from the database
+	# load data from the database
 	user_list = models.UserInfo.objects.all()
 	return render(request, 'login2.html', {"userdata": user_list})
 

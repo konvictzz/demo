@@ -15,10 +15,9 @@
 {% endblock %}
 
 {% block nav %}
-<!-- <li class="active"><a href="{% url 'myapp:home' %}">Home</a></li>
-<li><a href="#">URL</a></li>
-<li><a href="#">Login</a></li> -->
-<li><a href="{% url 'myapp:blogindex' %}">TEST</a></li>
+<li><a href="{% url 'myapp:home' %}">Home</a></li>
+<li><a href="{% url 'myapp:home2' %}">URL</a></li>
+<li  class="active"><a href="{% url 'myapp:blogindex' %}">Blog</a></li>
 {% endblock %}
 
 {% block body %}

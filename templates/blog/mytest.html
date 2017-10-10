@@ -15,10 +15,9 @@
 {% endblock %}
 
 {% block nav %}
-<!-- <li class="active"><a href="{% url 'myapp:home' %}">Home</a></li>
-<li><a href="#">URL</a></li>
-<li><a href="#">Login</a></li> -->
-<li><a href="#">TEST</a></li>
+<li><a href="{% url 'myapp:home' %}">Home</a></li>
+<li><a href="{% url 'myapp:home2' %}">URL</a></li>
+<li  class="active"><a href="{% url 'myapp:blogindex' %}">Blog</a></li>
 {% endblock %}
 
 {% block body %}
@@ -66,6 +65,7 @@
 					<a href="{{ post.get_absolute_url }}" class="more-link">继续阅读</a>
 				</div>
 			</div>
+			<hr>
 		</article>
 		<!-- 如果空则显示empty下定义的内容 -->
 		{% empty %}
