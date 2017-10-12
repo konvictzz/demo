@@ -37,10 +37,10 @@
 				</div>
 			</header>
 			<div class="entry-content clearfix">
-				<p>{{ post.content }}</p>
-				<!-- <div class="read-more cl-effect-14">
-					<a href="{{ post.get_absolute_url }}" class="more-link">继续阅读</a>
-				</div> -->
+				<p>{{ post.content|safe }}</p>
+				<div class="read-more cl-effect-14">
+					<a href="{% url 'myapp:blogindex' %}" class="more-link">返回</a>
+				</div>
 			</div>
 		</article>
 		<!-- 如果空则显示empty下定义的内容 -->

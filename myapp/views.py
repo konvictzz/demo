@@ -1,3 +1,4 @@
+import markdown
 from django.shortcuts import render,get_object_or_404
 from django.shortcuts import HttpResponse
 from myapp import models
@@ -87,6 +88,18 @@ def detail(request, pk):
 	context_detail = {}
 	# 其作用就是当传入的 pk 对应的 Post 在数据库存在时，就返回对应的 post，如果不存在，就给用户返回一个 404 错误，表明用户请求的文章不存在。
 	context_detail['post'] = get_object_or_404(models.Article_Blog, pk=pk)
+	# 增加markdown语法，这里使用了三个拓展，分别是 extra、codehilite、toc
+	# extra 本身包含很多拓展，而 codehilite 是语法高亮拓展，这为后面的实现代码高亮功能提供基础
+	# 而 toc 则允许我们自动生成目录
+	# 需要将html中的 {{ post.content }} 改成 {{ post.content|safe }}，告诉 django 这段文本使安全的
+	# 需要安装 Pygments 才能做到插入的代码高亮，安装方法： pip install Pygments
+	context_detail['post'].content =  markdown.markdown(context_detail['post'].content,
+														extensions = [
+															'markdown.extensions.extra',
+															'markdown.extensions.codehilite',
+															'markdown.extensions.toc',
+															]
+														)
 	return render(request, 'blog/detail.html', context_detail)
 
 
