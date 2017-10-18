@@ -4,11 +4,21 @@ first upload at 20170928_1712
 ## software version:
 + python 3.5.2
 + django 1.11.3
++ Markdown 2.6.9
++ Pygments 2.2.0
 
 ## settings
-> path: ./demo/settings.py  
-> need to change the DB path  
-> config field: DATABASES
+> path: `./demo/settings.py`  
+> config field: `DATABASES`
+```python
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        #'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': os.path.join("D:\\DBdata", 'demo.sqlite3'),
+    }
+}
+```
 
 ## startup
 + windows  

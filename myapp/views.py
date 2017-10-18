@@ -5,7 +5,7 @@ from myapp import models
 
 # Create your views here.
 
-#basic return when URL:http://ipaddress:port/login
+# basic return when URL:http://ipaddress:port/login
 def login(request):
 	return render(request, 'login.html')
 

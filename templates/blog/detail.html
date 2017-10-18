@@ -67,22 +67,50 @@
 			</div>
 		</article> -->
 	</main>
+	{% load blog_tags %}
 	<aside class="col-md-4">
 		<!-- 页面右边分类 -->
 		<div class="widget widget-recent-posts">
-			<div class="widget-title">显示标题1</div>
+			<div class="widget-title">最近发布</div>
+			{% get_recent_posts as recent_post_list %}
 			<ul>
-				<li><a href="#">标题1：test</a></li>
+				{% for post in recent_post_list %}
+				<!-- <li><a href="#">标题1：test</a></li>
 				<li><a href="#">标题2：test</a></li>
-				<li><a href="#">标题3：test</a></li>
+				<li><a href="#">标题3：test</a></li> -->
+				<li><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></li>
+				{% empty%}
+				<li>暂无文章!</li>
+				{% endfor %}
 			</ul>
 		</div>
 		<div class="widget widget-recent-posts">
-			<div class="widget-title">显示标题2</div>
+			<div class="widget-title">时间归档</div>
+			{% archives as date_list %}
 			<ul>
-				<li><a href="#">标题1：test<span class="post-count">(10)</span></a></li>
+				<!-- <li><a href="#">标题1：test<span class="post-count">(10)</span></a></li>
 				<li><a href="#">标题2：test<span class="post-count">(10)</span></a></li>
-				<li><a href="#">标题3：test<span class="post-count">(10)</span></a></li>
+				<li><a href="#">标题3：test<span class="post-count">(10)</span></a></li> -->
+				{% for date in date_list %}
+				<li><a href="#">{{ date.year }} - {{ date.month }}</a></li>
+				<!-- <li><a href="#">{{ date.year }} - {{ date.month }} - {{ date.day }}</a></li> -->
+				{% empty %}
+				<li>暂无归档!</li>
+				{% endfor %}
+			</ul>
+		</div>
+		<div class="widget widget-recent-posts">
+			<div class="widget-title">文章分类</div>
+			{% get_categories as category_list %}
+			<ul>
+				{% for category in category_list %}
+				<li><a href="#">{{ category.name }} <span class="post-count">(10)</span></a></li>
+				<!-- <li><a href="#">标题1：test</a></li>
+				<li><a href="#">标题2：test</a></li>
+				<li><a href="#">标题3：test</a></li> -->
+				{% empty %}
+				<li>暂无分类!</li>
+				{% endfor %}
 			</ul>
 		</div>
 		<!-- 页面右边标签 -->
