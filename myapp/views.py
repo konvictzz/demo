@@ -102,5 +102,24 @@ def detail(request, pk):
 														)
 	return render(request, 'blog/detail.html', context_detail)
 
+# 操作页面侧边栏的 时间归档
+def archives(request,year,month):
+	context_archives = {}
+	# Python 中类实例调用属性的方法通常是 created_time.year
+	# 由于这里作为函数的参数列表，所以 Django 要求我们把点替换成了两个下划线
+	# 经过测试，字段支持 year / month / hour / minute
+	context_archives['article_list'] = models.Article_Blog.objects.filter(created_time__year = year,
+																	   created_time__month = month
+																	   ).order_by('-created_time')
+	return render(request, 'blog/mytest.html', context_archives)
+
+# 操作页面侧边栏的 文章分类
+def category(request, pk):
+	context_category = {}
+	# 获取 category， 传入对应的pk值，如存在则返回，不存在返回 404
+	cate = get_object_or_404(models.Category, pk=pk)
+	context_category['article_list'] = models.Article_Blog.objects.filter(category=cate).order_by('-created_time')
+	return render(request, 'blog/mytest.html', context_category)
+
 
 ############################## myapp_blog end ##############################

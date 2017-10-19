@@ -117,7 +117,7 @@
 				<li><a href="#">标题2：test<span class="post-count">(10)</span></a></li>
 				<li><a href="#">标题3：test<span class="post-count">(10)</span></a></li> -->
 				{% for date in date_list %}
-				<li><a href="#">{{ date.year }} - {{ date.month }}</a></li>
+				<li><a href="{% url 'myapp:datearchives' date.year date.month %}">{{ date.year }} - {{ date.month }}</a></li>
 				<!-- <li><a href="#">{{ date.year }} - {{ date.month }} - {{ date.day }}</a></li> -->
 				{% empty %}
 				<li>暂无归档!</li>
@@ -129,7 +129,7 @@
 			{% get_categories as category_list %}
 			<ul>
 				{% for category in category_list %}
-				<li><a href="#">{{ category.name }} <span class="post-count">(10)</span></a></li>
+				<li><a href="{% url 'myapp:category_archives' category.pk %}">{{ category.name }} <span class="post-count">(10)</span></a></li>
 				<!-- <li><a href="#">标题1：test</a></li>
 				<li><a href="#">标题2：test</a></li>
 				<li><a href="#">标题3：test</a></li> -->
