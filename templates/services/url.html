@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block nav %}
+<li><a href="{% url 'myapp:home' %}">Home</a></li>
+<li class="active"><a href="{% url 'services:url' %}">URL</a></li>
+<li><a href="{% url 'myapp:blogindex' %}">Blog</a></li>
+{% endblock %}
+
+{% block body %}
+<div class="container" style="margin-top: -30px">
+	<main class="col-md-8">
+		<div class="widget widget-recent-posts">
+			{% for url in app_url %}
+			<ul>
+				<li>{{ url.servertype }} {{url.app_name}} <a href="#">{{ url.url }}</a></li>
+			</ul>
+			{% endfor %}
+		</div>
+	</main>
+	{% load environment %}
+	<aside class="col-md-4">	
+		<div class="widget widget-recent-posts">
+			<div class="widget-title">应用环境</div>
+			{% get_environment_type as environment_list %}
+			<ul>
+				{% for type in environment_list %}
+				<li><a href="#">{{ type.name }}</a></li>
+				{% endfor %}
+			</ul>
+		</div>
+	</aside>
+</div>
+{% endblock %}

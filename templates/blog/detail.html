@@ -16,7 +16,7 @@
 
 {% block nav %}
 <li><a href="{% url 'myapp:home' %}">Home</a></li>
-<li><a href="{% url 'myapp:home2' %}">URL</a></li>
+<li><a href="{% url 'services:url' %}">URL</a></li>
 <li  class="active"><a href="{% url 'myapp:blogindex' %}">Blog</a></li>
 {% endblock %}
 
@@ -66,6 +66,27 @@
 				</div>
 			</div>
 		</article> -->
+		<!-- <section>
+			<hr>
+			<h3>发表评论</h3>
+			<form action="#" method="post" class="comment-form">
+				<div class="row">
+					<div class="col-md-4">
+						<label for="id_name">名字：</label>
+						<input type="text" name="name" id="id_name" placeholder="name" required="required">
+					</div>
+					<div class="col-md-4">
+						<label for="id_email">邮箱：</label>
+						<input type="eamil" name="email" id="id_email" placeholder="email" required="required">
+					</div>
+					<div class="col-md-12">
+						<label for="id_comment">评论：</label>
+						<textarea name="comment" id="id_comment" required="required"></textarea>
+						<button type="submit" class="btn btn-primary">发表</button>
+					</div>
+				</div>
+			</form>
+		</section> -->
 	</main>
 	{% load blog_tags %}
 	<aside class="col-md-4">

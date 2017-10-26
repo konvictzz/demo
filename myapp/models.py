@@ -105,3 +105,9 @@ class Article_Blog(models.Model):
 		return reverse('myapp:detail', kwargs={'pk': self.pk})
 
 ########################### Blog Part end ###########################
+
+########################### Blog comments ###########################
+
+
+
+######################## Blog comments end ##########################
