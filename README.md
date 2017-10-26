@@ -20,6 +20,11 @@ DATABASES = {
 }
 ```
 
+## sync db
+> cd path  
+> python manage.py makemigrations  
+> python manage.py migrate  
+
 ## startup
 + windows  
 	> click the `startup.bat`
