@@ -20,4 +20,5 @@ from . import views
 app_name = 'services'
 urlpatterns = [
     url(r'^url/$',views.url, name='url'),
+    url(r'^url/environment/(?P<pk>[0-9]+)/$',views.environment_type, name='environment'),
 ]
