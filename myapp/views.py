@@ -74,6 +74,11 @@ def test(request):
 	user_list = models.UserInfo.objects.all()
 	return render(request, 'login2.html', {"userdata": user_list})
 
+def homepage(request):
+	context_homepage = {}
+	context_homepage['welcome'] = "welcome"
+	return render(request, 'homepage.html', context_homepage)
+
 def access_error(request):
 	return HttpResponse("Page error!")
 

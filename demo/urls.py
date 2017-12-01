@@ -19,11 +19,12 @@ from myapp import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', views.test,name='test'),
+    url(r'^$', views.homepage),
     #url(r'^add/$', views.add, name='add'),
     url(r'^new_add/(\d+)/(\d+)/$', views.add2, name='add2'),
     url(r'^delete/$', views.access_error,),
     url(r'^delete/(\w+)/(\w+)/$', views.hello_delete, name='ddd'),
     url(r'', include('myapp.urls')),
     url(r'', include('services.urls')),
+    url(r'^userauth/', include('userauth.urls')),
 ]
