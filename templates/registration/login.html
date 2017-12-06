@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block nav %}
+<li><a href="{% url 'myapp:home' %}">Home</a></li>
+<li><a href="{% url 'services:url' %}">URL</a></li>
+<li><a href="{% url 'myapp:blogindex' %}">Blog</a></li>
+{% endblock %}
+
+{% block body %}
+<div class="container">
+	<!-- <div class="page-header">
+		<h2>Login Page</h2>
+	</div>
+	<p class="lead">Please use the following form to login</p> -->
+	<!-- 先使用{{ form.as_p }}确定表单id-->
+	<!-- 这里使用的表单id为 id_username 和 id_password -->
+	<!-- 再重新尝试后发现，只要符合表单的POST方法，id可以任意定义-->
+	<form class="form-signin" action="." method="post">
+		<!-- 用于防止跨站请求伪造攻击 -->
+		{% csrf_token %}
+		<div class="form-signin-heading" style="font-size: 24px;text-align: center;">System Login</div>
+		<label for="inputusername" class="sr-only">username</label>
+		<input class="form-control" style="height: 40px;margin-bottom: 5px;border-radius: 6px;" type="text" name="username" id="inputusername" placeholder="username" required="required" autofocus>
+		<label for="inputpassword" class="sr-only">password</label>
+		<input class="form-control" style="height: 40px;border-radius: 6px;" type="password" name="password" id="inputpassword" placeholder="password" required="required">
+		<input type="hidden" name="next" value="{{ next }}">
+		<input class="btn btn-lg btn-primary btn-block" type="submit" name="submit" value="Log In">
+	</form>
+	{% if form.errors %}
+		<div style="text-align: center;color: red;">
+			<p>Username or password error.Please try agin.</p>
+		</div>
+	{% else %}
+		<div style="text-align: center;"><p>Please enter your username and password to log-in</p></div>
+	{% endif %}
+	<!-- <div><p style="text-align: center;">Please enter your username and password to log-in</p></div> -->
+	<!-- <form class="form-signin" action="." method="post">
+		{% csrf_token %}
+		{{ form.as_p }}
+		<p><input class="btn btn-lg btn-primary btn-block" type="submit" value="Log-in"></p>
+	</form> -->
+
+	<!--<hr style="background-color: #000000; height: 1px" />
+	<div style="text-align: center;font-size: 20px; padding-bottom: 10px">BBB</div>
+	<table border="1px" width="50%" style="margin: auto;">
+		<thead>
+			<th>username</th>
+			<th>password</th>
+		</thead>
+		<tbody>
+			{% for line in userdata %}
+			<tr>
+				<td>{{ line.user }}</td>
+				<td>{{ line.pwd }}</td>
+			</tr>
+			{% endfor %}
+		</tbody>
+	</table> -->
+	<!-- <script type="text/javascript" src="/static/jquery-3.2.1/jquery-3.2.1.js"></script> -->
+</div>
+{% endblock %}

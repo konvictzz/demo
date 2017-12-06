@@ -1,8 +1,8 @@
 from django.shortcuts import render, HttpResponse, get_object_or_404
 from django.contrib.auth import authenticate, login
 from userauth.forms import LoginForm
+from django.contrib.auth.decorators import login_required
 
-# Create your views here.
 def user_login(request):
 	context_user_login = {}
 	if request.method == "POST":
@@ -31,3 +31,15 @@ def user_login(request):
 		form = LoginForm()
 	context_user_login['form'] = form
 	return render(request, 'userauth/login.html',context_user_login)
+
+# login_required 装饰器（decorator）会检查当前用户是否通过认证
+# 如果用户通过认证，它会执行装饰的视图（view）
+# 如果用户没有通过认证，它会把用户重定向到带有一个名为 next 的 GET 参数的登录 URL，该 GET 参数保存的变量为用户当前尝试访问的页面URL
+# 通过这些动作，登录视图（view）会将登录成功的用户重定向到用户登录之前尝试访问过的URL
+# 请记住我们在登录模板（template）中的登录表单（form）中添加的隐藏<input>就是为了这个目的。
+
+# 定义了一个section变量。我们会使用该变量来跟踪用户在站点中正在查看的页面
+# 多个视图（views）可能会对应相同的section。这是一个简单的方法用来定义每个视图（view）对应的section
+@login_required
+def dashboard(request):
+	return render(request, 'userauth/dashboard.html', {'section': 'dashboard'})
