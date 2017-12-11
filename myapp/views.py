@@ -13,6 +13,7 @@ def login(request):
 def hello_add(request):
 	context = {}
 	context['hello'] = 'Hello World!'
+	context['section'] = 'home'
 	if request.method == "POST":
 		#if request.POST.has_key('add'):
 		if 'add' in request.POST:
@@ -28,6 +29,7 @@ def hello_add(request):
 
 def hello_delete(request, a=None, b=None):
 	context2 = {}
+	context2['section'] = 'home'
 	#if a not in context2:
 	#	return HttpResponse("error!")
 	models.TestInfo.objects.filter(user=a,pwd=b).delete()
@@ -86,11 +88,14 @@ def access_error(request):
 def mytest(request):
 	context_mytest = {}
 	context_mytest['welcome'] = '欢迎访问（修改字段）'
+	# 加入 section 做 nav 判断
+	context_mytest['section'] = 'blog'
 	context_mytest['article_list'] = models.Article_Blog.objects.all().order_by('-created_time')
 	return render(request, 'blog/mytest.html', context_mytest)
 
 def detail(request, pk):
 	context_detail = {}
+	context_detail['section'] = 'blog'
 	# 其作用就是当传入的 pk 对应的 Post 在数据库存在时，就返回对应的 post，如果不存在，就给用户返回一个 404 错误，表明用户请求的文章不存在。
 	context_detail['post'] = get_object_or_404(models.Article_Blog, pk=pk)
 	# 增加markdown语法，这里使用了三个拓展，分别是 extra、codehilite、toc
@@ -110,6 +115,7 @@ def detail(request, pk):
 # 操作页面侧边栏的 时间归档
 def archives(request,year,month):
 	context_archives = {}
+	context_archives['section'] = 'blog'
 	# Python 中类实例调用属性的方法通常是 created_time.year
 	# 由于这里作为函数的参数列表，所以 Django 要求我们把点替换成了两个下划线
 	# 经过测试，字段支持 year / month / hour / minute
@@ -121,6 +127,7 @@ def archives(request,year,month):
 # 操作页面侧边栏的 文章分类
 def category(request, pk):
 	context_category = {}
+	context_category['section'] = 'blog'
 	# 获取 category， 传入对应的pk值，如存在则返回，不存在返回 404
 	cate = get_object_or_404(models.Category, pk=pk)
 	context_category['article_list'] = models.Article_Blog.objects.filter(category=cate).order_by('-created_time')

@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 """
 
 import os
+from django.core.urlresolvers import reverse_lazy
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -127,3 +128,12 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
+
+# Login Model
+# 添加函数 from django.core.urlresolvers import reverse_lazy
+# 告诉 Django 用户登录成功后如果 contrib.auth.views.login 视图 view 没有获取到 next 参数将会默认重定向到哪个 URL
+LOGIN_REDIRECT_URL = reverse_lazy('userauth:dashboard')
+# 重定向用户登录的URL（例如：使用 login_required 装饰器（decorator））
+LOGIN_URL = reverse_lazy('userauth:login')
+# 重定向用户登出的URL
+LOGOUT_URL = reverse_lazy('userauth:logout')

@@ -26,4 +26,6 @@ urlpatterns = [
     # login & logout
     url(r'^login/$',login, name='login'),
     url(r'^logout/$',logout, name='logout'),
+    # dashboard
+    url(r'^$',views.dashboard, name='dashboard'),
 ]

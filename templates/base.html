@@ -58,12 +58,15 @@
 				<a class="navbar-brand" href="{% url 'userauth:login' %}">Demo</a>
 			</div>
 			<div id="navbar" class="collapse navbar-collapse">
+				{% if request.user.is_authenticated %}
 				<ul class="nav navbar-nav">
+					<li {% if section == "home" %} class="active" {% endif %}><a href="{% url 'myapp:home' %}">Home</a></li>
+					<li {% if section == "url" %} class="active" {% endif %}><a href="{% url 'services:url' %}">URL</a></li>
+					<li {% if section == "blog" %} class="active" {% endif %}><a href="{% url 'myapp:blogindex' %}">Blog</a></li>
 					{% block nav %}
 					{% endblock %}
-					<!-- <li  class="active"><a href="#">Home</a></li>
-					<li><a href="#">URL</a></li> -->
 				</ul>
+				{% endif %}
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="#">Logout<span class="sr-only">(current)</span></a></li>
 				</ul>
