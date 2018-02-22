@@ -1,9 +1,11 @@
 from django.shortcuts import render,get_object_or_404
 from django.shortcuts import HttpResponse
 from services import models
+from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 
+@login_required
 def url(request):
 	context_url = {}
 	context_url['section'] = 'url' 
@@ -12,6 +14,7 @@ def url(request):
 	context_url["url_list"] = models.Server_URLs.objects.all()
 	return render(request, 'services/url.html', context_url)
 
+@login_required
 def environment_type(request, pk):
 	context_environment = {}
 	context_environment['section'] = 'url' 

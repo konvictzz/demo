@@ -19,7 +19,7 @@ from myapp import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', views.homepage),
+    url(r'^$', views.homepage, name='homepage'),
     #url(r'^add/$', views.add, name='add'),
     url(r'^new_add/(\d+)/(\d+)/$', views.add2, name='add2'),
     url(r'^delete/$', views.access_error,),
