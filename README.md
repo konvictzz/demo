@@ -32,3 +32,17 @@ DATABASES = {
 	> no shell script(will be created later)  
 	> please use `manage.py` to startup  
 	> bash: cd path;python manage.py runserver 0.0.0.0:8000
+
+## version
++ 1.3.7  
+增加`密码重置`功能  
+需要和用户信息的邮箱地址匹配  
+修改新增部分settings字段，邮件功能默认在控制台输出
++ 1.3.6  
+增加`demo`页来记录一些`request`变量
++ 1.3.5  
+增加`修改密码`功能
++ 1.3.4  
+增加`login`和`logout`功能  
+部分功能需要登录才能使用  
+加入`blog`功能

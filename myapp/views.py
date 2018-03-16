@@ -2,12 +2,21 @@ import markdown
 from django.shortcuts import render,get_object_or_404
 from django.shortcuts import HttpResponse
 from myapp import models
+from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 
 # basic return when URL:http://ipaddress:port/login
 def login(request):
 	return render(request, 'login.html')
+
+@login_required
+def demo(request):
+	return render(request, 'infopage.html')
+
+@login_required
+def demoshow(request):
+	return render(request, 'temp.html')
 
 # set var in html
 def hello_add(request):
@@ -51,7 +60,7 @@ def add(request):
  	return HttpResponse(str(c))
 
 # url: http://10.181.3.91:8000/add/4/5/
-def add2(request, a, b):
+def add2(request, a=0, b=0):
 	c = int(a) + int(b)
 	return HttpResponse(str(c))
 ##############################add test end#########################################

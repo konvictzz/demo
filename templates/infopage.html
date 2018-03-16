@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block nav %}
+{% endblock %}
+
+{% block body %}
+<div class="container">
+	<div class="page-header">
+		<h1>Demo Page</h1>
+	</div>
+	<p class="lead">This ia Demo Page.</p>
+	<p class="lead">request:{{ request }}</p>
+	<p class="lead">resolver_match:{{ request.resolver_match }}</p>
+	<table border="2px" width="80%" style="table-layout: fixed; word-wrap: break-word;">
+		<thead>
+			<th>Attributes</th>
+			<th>return value</th>
+		</thead>
+		<tr>
+			<td>request.get_host</td>
+			<td>{{ request.get_host }}</td>		
+		</tr>
+		<tr>
+			<td>request.path</td>
+			<td>{{ request.path }}</td>		
+		</tr>
+		<tr>
+			<td>request.method</td>
+			<td>{{ request.method }}</td>
+		</tr>
+		<tr>
+			<td>request.GET</td>
+			<td>{{ request.GET }}</td>
+		</tr>
+		<tr>
+			<td>request.POST</td>
+			<td>{{ request.POST }}</td>
+		</tr>
+		<tr>
+			<td>request.content_type</td>
+			<td>{{ request.content_type }}</td>
+		</tr>
+		<tr>
+			<td>request.COOKIES</td>
+			<td>{{ request.COOKIES }}</td>
+		</tr>
+		<tr>
+			<td>request.is_secure(SSL)</td>
+			<td>{{ request.is_secure }}</td>
+		</tr>
+	</table>
+	<p class="lead">{{ request.resolver_match }}</p>
+</div>
+{% endblock %}

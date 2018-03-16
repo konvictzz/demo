@@ -26,7 +26,7 @@ SECRET_KEY = '0chi6#=0=0#a9y+5*3arq49l6+7u62u!mk1@pcd25@wwb^=3s3'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["10.181.3.91", "group1"]
+ALLOWED_HOSTS = ["10.181.3.91", "group1", "localhost"]
 
 
 # Application definition
@@ -129,6 +129,7 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
 
+# userauth
 # Login Model
 # 添加函数 from django.core.urlresolvers import reverse_lazy
 # 告诉 Django 用户登录成功后如果 contrib.auth.views.login 视图 view 没有获取到 next 参数将会默认重定向到哪个 URL
@@ -137,3 +138,22 @@ LOGIN_REDIRECT_URL = reverse_lazy('userauth:dashboard')
 LOGIN_URL = reverse_lazy('userauth:login')
 # 重定向用户登出的URL
 LOGOUT_URL = reverse_lazy('userauth:logout')
+
+# SMTP config
+# 默认选项
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
+# 配置Django在标准输出中输出e-mail内容来代替通过SMTP服务发送邮件
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+# Default email address to use for various automated correspondence from the site manager(s).
+DEFAULT_FROM_EMAIL = 'Notification@test.com'
+
+EMAIL_HOST = 'smtp.sina.com'
+EMAIL_PORT = 25
+EMAIL_HOST_USER = 'konvictzz@sina.com'
+EMAIL_HOST_PASSWORD = '***'
+EMAIL_USE_LOCALTIME = True
+# 为邮件设置别名
+# EMAIL_SUBJECT_PREFIX = '[Django-notification] '
+# 与SMTP服务器通信时，是否启动TLS链接(安全链接)。默认是false
+EMAIL_USE_TLS = True

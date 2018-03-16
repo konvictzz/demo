@@ -30,6 +30,16 @@
 	{% else %}
 		<div style="text-align: center;"><p>Please enter your username and password to log-in</p></div>
 	{% endif %}
+
+	{% if next %}
+		{% if request.user.is_authenticated %}
+		<div style="text-align: center;"><p>Please enter your username and password to log-in</p></div>
+		{% else %}
+		<div style="text-align: center;color: red;">
+			<p>Your account doesn't have access to this page. </br>To proceed,please login with an account that has access.</p>
+		</div>
+		{% endif %}
+	{% endif %}
 	<!-- <div><p style="text-align: center;">Please enter your username and password to log-in</p></div> -->
 	<!-- <form class="form-signin" action="." method="post">
 		{% csrf_token %}
