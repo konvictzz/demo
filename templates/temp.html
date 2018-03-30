@@ -6,10 +6,11 @@
 {% block body %}
 <div class="container">
 	<div class="page-header">
-		<h1>Password reset successfully</h1>
+		<h1>{{ title }}</h1>
 	</div>
-	<p class="lead">Your password has been set successfully. You can <a href="{% url 'userauth:login' %}">re-login</a> now.</p>
-	<form class="form-signin" style="max-width: 490px; margin-left: 0; padding: 0px;" action="." method="post">
+	<p class="lead">{{ now }}</p>
+	<p class="lead">{{ section }} - {{ viewname }}</p>
+	<!-- <form class="form-signin" style="max-width: 490px; margin-left: 0; padding: 0px;" action="." method="post">
 		<label class="sr-only" for="id_new_password1">New password:</label>
 		<input class="form-control" style="height: 40px;margin-bottom: 5px;border-radius: 6px;" type="password" name="new_password1" id="id_new_password1" required="required" placeholder="New Password" autofocus="autofocus">
 		<div>
@@ -24,6 +25,6 @@
 		<input class="form-control" style="height: 40px;margin-bottom: 5px;border-radius: 6px;" type="password" name="new_password2" id="id_new_password2" required="required" placeholder="New Password confirmation">
 		{% csrf_token %}
 		<p><input class="btn btn-lg btn-primary btn-block" type="submit" name="reset_password" value="Confirm"></p>
-	</form>
+	</form> -->
 </div>
 {% endblock %}

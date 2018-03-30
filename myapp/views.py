@@ -1,8 +1,18 @@
 import markdown
+import logging
 from django.shortcuts import render,get_object_or_404
 from django.shortcuts import HttpResponse
 from myapp import models
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth.mixins import LoginRequiredMixin
+from django.views.generic import TemplateView
+from django.utils import timezone
+
+# login required
+# If the user isn’t logged in, redirect to 'settings.LOGIN_URL'
+
+# logging
+logger = logging.getLogger(__name__)
 
 # Create your views here.
 
@@ -12,11 +22,27 @@ def login(request):
 
 @login_required
 def demo(request):
-	return render(request, 'infopage.html')
+	context_demo = {}
+	context_demo['section'] = 'infopage'
+	return render(request, 'infopage.html', context_demo)
 
-@login_required
-def demoshow(request):
-	return render(request, 'temp.html')
+#def demoshow(request):
+#	logger.info("custom logging")
+#	logger.info("temppage successfully")
+#	return render(request, 'temp.html', {'section': 'temp'})
+
+class DemoShowView(LoginRequiredMixin, TemplateView):
+	template_name = "temp.html"
+
+	def get_context_data(self, **kwargs):
+		context_demoshow = super(DemoShowView, self).get_context_data(**kwargs)
+		logger.info("custom logging")
+		context_demoshow['title'] = 'Demo Page'
+		context_demoshow['section'] = 'demoshow'
+		context_demoshow['now'] = timezone.now()
+		context_demoshow['viewname'] = __name__
+		logger.info("load context successfully")
+		return context_demoshow
 
 # set var in html
 def hello_add(request):
@@ -94,7 +120,7 @@ def access_error(request):
 	return HttpResponse("Page error!")
 
 ############################## myapp_blog ##############################
-def mytest(request):
+def blogindex(request):
 	context_mytest = {}
 	context_mytest['welcome'] = '欢迎访问（修改字段）'
 	# 加入 section 做 nav 判断

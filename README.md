@@ -34,6 +34,8 @@ DATABASES = {
 	> bash: cd path;python manage.py runserver 0.0.0.0:8000
 
 ## version
++ 1.3.8  
+完善`日志记录`部分
 + 1.3.7  
 增加`密码重置`功能  
 需要和用户信息的邮箱地址匹配  

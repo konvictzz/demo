@@ -1,0 +1,12 @@
+[INFO] [2018-03-19 17:18:28 +0800] basehttp 7492 6496 "GET /demo/ HTTP/1.1" 200 5918
+[INFO] [2018-03-19 17:18:29 +0800] basehttp 7492 7984 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-03-19 17:18:30 +0800] basehttp 7492 4648 "GET /userauth/ HTTP/1.1" 200 4558
+[INFO] [2018-03-19 17:21:52 +0800] basehttp 6648 3328 "GET /demo/ HTTP/1.1" 200 5965
+[INFO] [2018-03-19 17:22:02 +0800] basehttp 6648 3620 "GET /demo/ HTTP/1.1" 200 5954
+[INFO] [2018-03-19 17:22:02 +0800] basehttp 6648 7816 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-03-19 17:22:09 +0800] basehttp 6648 3144 "GET /demo/ HTTP/1.1" 200 5949
+[INFO] [2018-03-19 17:22:09 +0800] basehttp 6648 8108 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-03-19 17:22:16 +0800] basehttp 6648 4864 "GET /demo/ HTTP/1.1" 200 5965
+[INFO] [2018-03-19 17:22:16 +0800] basehttp 6648 6944 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-03-19 17:22:32 +0800] basehttp 6648 7560 "GET /demo/ HTTP/1.1" 200 5965
+[INFO] [2018-03-19 17:22:33 +0800] basehttp 6648 3248 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430

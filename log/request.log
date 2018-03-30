@@ -1,0 +1,40 @@
+[INFO] [2018-03-19 15:36:10 +0800] basehttp 3256 6400 "GET /demo/ HTTP/1.1" 200 5888
+[INFO] [2018-03-19 15:36:11 +0800] basehttp 3256 168 "GET /userauth/ HTTP/1.1" 200 4558
+[INFO] [2018-03-19 15:36:12 +0800] basehttp 3256 3960 "GET /demo/ HTTP/1.1" 200 5888
+[INFO] [2018-03-19 16:00:57 +0800] basehttp 7320 7748 "GET /demo/ HTTP/1.1" 200 5888
+[INFO] [2018-03-19 16:01:01 +0800] basehttp 7320 2900 "GET /hello HTTP/1.1" 200 7813
+[INFO] [2018-03-19 16:01:05 +0800] basehttp 7320 7128 "GET /demo/ HTTP/1.1" 200 5888
+[INFO] [2018-03-19 16:03:11 +0800] basehttp 7320 6160 "GET /demo/ HTTP/1.1" 200 5918
+[INFO] [2018-03-19 16:03:12 +0800] basehttp 7320 8028 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-03-19 16:22:05 +0800] basehttp 7320 7592 "GET /userauth/logout/ HTTP/1.1" 200 3731
+[INFO] [2018-03-19 16:22:10 +0800] basehttp 7320 8016 "GET /demo/ HTTP/1.1" 200 5025
+[ERROR] [2018-03-19 16:28:23 +0800] exception 8144 7620 Internal Server Error: /demo/
+Traceback (most recent call last):
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\views\generic\base.py", line 155, in get
+    context = self.get_context_data(**kwargs)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\contrib\auth\decorators.py", line 22, in _wrapped_view
+    if test_func(request.user):
+AttributeError: 'DemoShowView' object has no attribute 'user'
+[ERROR] [2018-03-19 16:28:23 +0800] basehttp 8144 7620 "GET /demo/ HTTP/1.1" 500 84250
+[INFO] [2018-03-19 16:33:10 +0800] basehttp 4744 6748 "GET /demo/ HTTP/1.1" 200 5025
+[INFO] [2018-03-19 16:33:11 +0800] basehttp 4744 7672 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-03-19 16:36:02 +0800] basehttp 4744 4064 "GET /userauth/login/ HTTP/1.1" 200 6336
+[INFO] [2018-03-19 16:36:03 +0800] basehttp 4744 7496 "POST /userauth/login/ HTTP/1.1" 302 0
+[INFO] [2018-03-19 16:36:03 +0800] basehttp 4744 7740 "GET /userauth/ HTTP/1.1" 200 4558
+[INFO] [2018-03-19 16:36:06 +0800] basehttp 4744 7744 "GET /demo/ HTTP/1.1" 200 5918
+[INFO] [2018-03-19 16:37:54 +0800] basehttp 3496 7456 "GET /demo/ HTTP/1.1" 200 5918
+[INFO] [2018-03-19 16:49:41 +0800] basehttp 7796 3120 "GET /userauth/logout/ HTTP/1.1" 200 3731
+[INFO] [2018-03-19 16:49:47 +0800] basehttp 7796 8092 "GET /demo/ HTTP/1.1" 302 0
+[INFO] [2018-03-19 16:49:47 +0800] basehttp 7796 6468 "GET /userauth/login/?next=/demo/ HTTP/1.1" 200 6525
+[INFO] [2018-03-19 16:49:49 +0800] basehttp 7796 7760 "POST /userauth/login/ HTTP/1.1" 302 0
+[INFO] [2018-03-19 16:49:49 +0800] basehttp 7796 7688 "GET /demo/ HTTP/1.1" 200 5918

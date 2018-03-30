@@ -26,4 +26,5 @@ class Server_URLs(models.Model):
 
 	class Meta:
 		ordering = ['servertype']
-			
+		verbose_name = 'URL'
+		verbose_name_plural = 'URL'

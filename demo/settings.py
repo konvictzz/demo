@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 """
 
 import os
+import time
 from django.core.urlresolvers import reverse_lazy
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -27,6 +28,9 @@ SECRET_KEY = '0chi6#=0=0#a9y+5*3arq49l6+7u62u!mk1@pcd25@wwb^=3s3'
 DEBUG = True
 
 ALLOWED_HOSTS = ["10.181.3.91", "group1", "localhost"]
+
+# User Model
+#AUTH_USER_MODEL = 'userauth.CustomUser'
 
 
 # Application definition
@@ -109,6 +113,8 @@ AUTH_PASSWORD_VALIDATORS = [
 # https://docs.djangoproject.com/en/1.11/topics/i18n/
 
 LANGUAGE_CODE = 'en-us'
+#LANGUAGE_CODE = 'zh-hans'
+
 
 #TIME_ZONE = 'UTC'
 TIME_ZONE = 'Asia/Shanghai'
@@ -157,3 +163,68 @@ EMAIL_USE_LOCALTIME = True
 # EMAIL_SUBJECT_PREFIX = '[Django-notification] '
 # 与SMTP服务器通信时，是否启动TLS链接(安全链接)。默认是false
 EMAIL_USE_TLS = True
+
+# Logging
+# https://docs.djangoproject.com/en/1.11/topics/logging/
+# '''
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'verbose': {
+            'format': '[%(levelname)s] [%(asctime)s] %(module)s %(process)d %(thread)d %(message)s',
+            'datefmt': '%Y-%m-%d %H:%M:%S %z'
+        },
+        'simple': {
+            'format': '[%(levelname)s] %(asctime)s %(message)s'
+        },
+    },
+    'filters': {
+        #'special': {
+        #    '()': 'project.logging.SpecialFilter',
+        #    'foo': 'bar',
+        #},
+        #'require_debug_true': {
+        #    '()': 'django.utils.log.RequireDebugTrue',
+        #},
+    },
+    'handlers': {
+        'request_file': {
+            'level': 'DEBUG',
+            'class': 'logging.FileHandler',
+            #'filename': '/path/to/django/debug.log',
+            'filename': 'log/request-' + time.strftime('%Y-%m-%d',time.localtime(time.time())) + '.log',
+            'formatter': 'verbose',
+        },
+        'custom_file': {
+            'level': 'INFO',
+            'class': 'logging.FileHandler',
+            #'filename': '/path/to/django/debug.log',
+            'filename': 'log/custom.log',
+            'formatter': 'verbose',
+        },
+        'console': {
+            'level': 'DEBUG',
+            'class': 'logging.StreamHandler',
+            'formatter': 'simple',
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['request_file','console'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+        #'django.request': {
+        #    'handlers': ['console'],
+        #    'level': 'DEBUG',
+        #    'propagate': True,
+        #},
+        'myapp.views': {
+            'handlers': ['custom_file','console'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+    },
+}
+# '''
