@@ -1,0 +1,284 @@
+[INFO] [2018-07-13 15:49:28 +0800] basehttp 4800 3176 "GET / HTTP/1.1" 200 4703
+[INFO] [2018-07-13 15:49:33 +0800] basehttp 4800 7384 "GET /url/ HTTP/1.1" 200 6419
+[INFO] [2018-07-13 15:59:47 +0800] basehttp 4800 8112 "GET /url/ HTTP/1.1" 200 6420
+[INFO] [2018-07-13 15:59:47 +0800] basehttp 4800 2736 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-13 16:00:31 +0800] basehttp 4800 7612 "GET /demo/ HTTP/1.1" 200 6574
+[INFO] [2018-07-13 16:10:33 +0800] basehttp 4800 6988 "GET /demo/ HTTP/1.1" 200 6577
+[INFO] [2018-07-13 16:13:22 +0800] basehttp 4800 7564 "GET /url/ HTTP/1.1" 200 6420
+[INFO] [2018-07-13 16:13:25 +0800] basehttp 4800 7900 "GET /demo/ HTTP/1.1" 200 6577
+[INFO] [2018-07-13 16:14:53 +0800] basehttp 4800 796 "GET /demo/ HTTP/1.1" 200 4637
+[INFO] [2018-07-13 16:14:53 +0800] basehttp 4800 5392 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-13 16:17:25 +0800] basehttp 4800 7388 "GET /url/ HTTP/1.1" 200 6441
+[INFO] [2018-07-13 16:17:48 +0800] basehttp 4800 7696 "GET /url/ HTTP/1.1" 200 6452
+[INFO] [2018-07-13 16:17:48 +0800] basehttp 4800 7048 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-13 16:18:34 +0800] basehttp 4800 5576 "GET /url/ HTTP/1.1" 200 6455
+[INFO] [2018-07-13 16:18:34 +0800] basehttp 4800 2444 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-13 16:18:48 +0800] basehttp 4800 7244 "GET /url/ HTTP/1.1" 200 6420
+[INFO] [2018-07-13 16:18:49 +0800] basehttp 4800 7640 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[ERROR] [2018-07-13 16:21:51 +0800] exception 4800 5888 Internal Server Error: /demo/
+Traceback (most recent call last):
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\base.py", line 507, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\core\handlers\base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\core\handlers\base.py", line 215, in _get_response
+    response = response.render()
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\response.py", line 107, in render
+    self.content = self.rendered_content
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\response.py", line 82, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\response.py", line 64, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\loader.py", line 48, in select_template
+    return engine.get_template(template_name)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\backends\django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\loaders\base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\base.py", line 515, in parse
+    raise self.error(token, e)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\loader_tags.py", line 312, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\base.py", line 515, in parse
+    raise self.error(token, e)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\loader_tags.py", line 255, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\base.py", line 509, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\base.py", line 565, in invalid_block_tag
+    get_text_list(["'%s'" % p for p in parse_until], 'or'),
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 4: 'static', expected 'endblock'. Did you forget to register or load this tag?
+[ERROR] [2018-07-13 16:21:51 +0800] basehttp 4800 5888 "GET /demo/ HTTP/1.1" 500 153725
+[WARNING] [2018-07-13 16:21:51 +0800] base 4800 7356 Not Found: /favicon.ico
+[WARNING] [2018-07-13 16:21:51 +0800] basehttp 4800 7356 "GET /favicon.ico HTTP/1.1" 404 4411
+[INFO] [2018-07-13 16:23:08 +0800] basehttp 4800 7396 "GET /demo/ HTTP/1.1" 200 4711
+[INFO] [2018-07-13 16:23:08 +0800] basehttp 4800 2384 "GET /static/bootstrap-3.3.7/css/dashboard.css HTTP/1.1" 200 1557
+[INFO] [2018-07-13 16:23:08 +0800] basehttp 4800 6556 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-13 16:24:14 +0800] basehttp 4800 3244 "GET /url/ HTTP/1.1" 200 6494
+[INFO] [2018-07-13 16:24:14 +0800] basehttp 4800 7452 "GET /static/bootstrap-3.3.7/css/dashboard.css HTTP/1.1" 304 0
+[INFO] [2018-07-13 16:24:16 +0800] basehttp 4800 2328 "GET /blogindex/ HTTP/1.1" 200 11712
+[INFO] [2018-07-13 16:24:18 +0800] basehttp 4800 7972 "GET /url/ HTTP/1.1" 200 6494
+[INFO] [2018-07-13 16:24:21 +0800] basehttp 4800 7356 "GET /demo/ HTTP/1.1" 200 4711
+[INFO] [2018-07-13 16:24:25 +0800] basehttp 4800 3916 "GET /url/ HTTP/1.1" 200 6494
+[INFO] [2018-07-13 16:24:26 +0800] basehttp 4800 1500 "GET /blogindex/ HTTP/1.1" 200 11712
+[INFO] [2018-07-13 16:24:27 +0800] basehttp 4800 5136 "GET /url/ HTTP/1.1" 200 6494
+[INFO] [2018-07-13 16:24:29 +0800] basehttp 4800 4108 "GET /blogindex/ HTTP/1.1" 200 11712
+[INFO] [2018-07-13 16:24:29 +0800] basehttp 4800 6644 "GET /hello HTTP/1.1" 200 7887
+[INFO] [2018-07-13 16:24:31 +0800] basehttp 4800 8124 "GET /blogindex/ HTTP/1.1" 200 11712
+[INFO] [2018-07-13 16:24:48 +0800] basehttp 4800 4764 "GET /url/ HTTP/1.1" 200 6503
+[INFO] [2018-07-13 16:24:49 +0800] basehttp 4800 7340 "GET /blogindex/ HTTP/1.1" 200 11721
+[INFO] [2018-07-13 16:24:49 +0800] basehttp 4800 7352 "GET /url/ HTTP/1.1" 200 6503
+[INFO] [2018-07-13 16:24:50 +0800] basehttp 4800 5368 "GET /hello HTTP/1.1" 200 7896
+[INFO] [2018-07-13 16:24:51 +0800] basehttp 4800 3940 "GET /url/ HTTP/1.1" 200 6503
+[INFO] [2018-07-13 16:24:51 +0800] basehttp 4800 1372 "GET /blogindex/ HTTP/1.1" 200 11721
+[INFO] [2018-07-13 16:28:29 +0800] basehttp 4800 7444 "GET /url/ HTTP/1.1" 200 6577
+[INFO] [2018-07-13 16:28:31 +0800] basehttp 4800 2944 "GET /blogindex/ HTTP/1.1" 200 11721
+[INFO] [2018-07-13 16:28:32 +0800] basehttp 4800 3244 "GET /url/ HTTP/1.1" 200 6577
+[INFO] [2018-07-13 16:28:41 +0800] basehttp 4800 1500 "GET /url/ HTTP/1.1" 200 6568
+[INFO] [2018-07-13 16:28:41 +0800] basehttp 4800 5136 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-13 16:28:41 +0800] basehttp 4800 7592 "GET /url/ HTTP/1.1" 200 6568
+[INFO] [2018-07-13 16:28:42 +0800] basehttp 4800 5248 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-13 16:28:56 +0800] basehttp 4800 876 "GET /url/ HTTP/1.1" 200 6585
+[INFO] [2018-07-13 16:28:56 +0800] basehttp 4800 5888 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-13 16:29:44 +0800] basehttp 4800 7580 "GET /url/ HTTP/1.1" 200 6599
+[INFO] [2018-07-13 16:29:45 +0800] basehttp 4800 7480 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-13 16:29:46 +0800] basehttp 4800 7348 "GET /url/ HTTP/1.1" 200 6599
+[INFO] [2018-07-13 16:29:46 +0800] basehttp 4800 7648 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-13 16:29:46 +0800] basehttp 4800 1076 "GET /url/ HTTP/1.1" 200 6599
+[INFO] [2018-07-13 16:29:46 +0800] basehttp 4800 4836 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-13 16:30:01 +0800] basehttp 4800 3652 "GET /url/ HTTP/1.1" 200 6614
+[INFO] [2018-07-13 16:30:01 +0800] basehttp 4800 2656 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-13 16:30:02 +0800] basehttp 4800 2876 "GET /url/ HTTP/1.1" 200 6614
+[INFO] [2018-07-13 16:30:02 +0800] basehttp 4800 2612 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-13 16:30:33 +0800] basehttp 4800 7612 "GET /url/ HTTP/1.1" 200 6568
+[INFO] [2018-07-13 16:30:34 +0800] basehttp 4800 4704 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-13 16:30:34 +0800] basehttp 4800 2780 "GET /url/ HTTP/1.1" 200 6568
+[INFO] [2018-07-13 16:30:34 +0800] basehttp 4800 7644 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-13 16:30:42 +0800] basehttp 4800 7244 "GET /url/ HTTP/1.1" 200 6569
+[INFO] [2018-07-13 16:30:42 +0800] basehttp 4800 7444 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-13 16:30:43 +0800] basehttp 4800 6556 "GET /url/ HTTP/1.1" 200 6569
+[INFO] [2018-07-13 16:30:43 +0800] basehttp 4800 2944 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-13 16:31:49 +0800] basehttp 4800 4008 "GET /demo/ HTTP/1.1" 200 4720
+[INFO] [2018-07-13 16:32:17 +0800] basehttp 4800 4696 "GET /url/ HTTP/1.1" 200 6585
+[INFO] [2018-07-13 16:32:30 +0800] basehttp 4800 2208 "GET /url/ HTTP/1.1" 200 6600
+[INFO] [2018-07-13 16:32:30 +0800] basehttp 4800 2788 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-13 16:32:31 +0800] basehttp 4800 2728 "GET /url/ HTTP/1.1" 200 6600
+[INFO] [2018-07-13 16:32:31 +0800] basehttp 4800 5576 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-13 16:33:06 +0800] basehttp 4800 7928 "GET /url/ HTTP/1.1" 200 6623
+[INFO] [2018-07-13 16:33:06 +0800] basehttp 4800 3336 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-13 16:33:07 +0800] basehttp 4800 960 "GET /url/ HTTP/1.1" 200 6623
+[INFO] [2018-07-13 16:33:07 +0800] basehttp 4800 3884 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-13 16:33:07 +0800] basehttp 4800 7364 "GET /url/ HTTP/1.1" 200 6623
+[INFO] [2018-07-13 16:33:07 +0800] basehttp 4800 3796 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-13 16:33:08 +0800] basehttp 4800 6472 "GET /url/ HTTP/1.1" 200 6623
+[INFO] [2018-07-13 16:33:08 +0800] basehttp 4800 2780 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-13 16:33:08 +0800] basehttp 4800 7644 "GET /url/ HTTP/1.1" 200 6623
+[INFO] [2018-07-13 16:33:08 +0800] basehttp 4800 6784 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-13 16:33:09 +0800] basehttp 4800 4224 "GET /url/ HTTP/1.1" 200 6623
+[INFO] [2018-07-13 16:33:09 +0800] basehttp 4800 1916 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-13 16:33:10 +0800] basehttp 4800 1552 "GET /url/ HTTP/1.1" 200 6623
+[INFO] [2018-07-13 16:33:10 +0800] basehttp 4800 6924 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-13 16:33:11 +0800] basehttp 4800 3460 "GET /url/ HTTP/1.1" 200 6623
+[INFO] [2018-07-13 16:33:11 +0800] basehttp 4800 7332 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-13 16:34:05 +0800] basehttp 4800 8016 "GET /url/ HTTP/1.1" 200 6629
+[INFO] [2018-07-13 16:34:05 +0800] basehttp 4800 8048 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-13 16:34:07 +0800] basehttp 4800 3416 "GET /url/ HTTP/1.1" 200 6629
+[INFO] [2018-07-13 16:34:07 +0800] basehttp 4800 6716 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-13 16:34:21 +0800] basehttp 4800 7776 "GET /url/ HTTP/1.1" 200 6623
+[INFO] [2018-07-13 16:34:21 +0800] basehttp 4800 7584 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-13 16:34:22 +0800] basehttp 4800 6832 "GET /url/ HTTP/1.1" 200 6623
+[INFO] [2018-07-13 16:34:22 +0800] basehttp 4800 5452 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-13 16:34:44 +0800] basehttp 4800 6652 "GET /url/ HTTP/1.1" 200 6644
+[INFO] [2018-07-13 16:34:44 +0800] basehttp 4800 7560 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-13 16:34:53 +0800] basehttp 4800 8128 "GET /url/ HTTP/1.1" 200 6644
+[INFO] [2018-07-13 16:34:54 +0800] basehttp 4800 7384 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-13 16:34:54 +0800] basehttp 4800 7356 "GET /url/ HTTP/1.1" 200 6644
+[INFO] [2018-07-13 16:34:55 +0800] basehttp 4800 2528 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-13 16:34:56 +0800] basehttp 4800 2992 "GET /blogindex/ HTTP/1.1" 200 11721
+[INFO] [2018-07-13 16:34:56 +0800] basehttp 4800 7908 "GET /url/ HTTP/1.1" 200 6644
+[INFO] [2018-07-13 16:34:57 +0800] basehttp 4800 7212 "GET /hello HTTP/1.1" 200 7896
+[INFO] [2018-07-13 16:34:57 +0800] basehttp 4800 4072 "GET /url/ HTTP/1.1" 200 6644
+[INFO] [2018-07-13 16:35:41 +0800] basehttp 4800 4872 "GET /url/ HTTP/1.1" 200 6645
+[INFO] [2018-07-13 16:35:42 +0800] basehttp 4800 3556 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-13 16:37:05 +0800] basehttp 4800 4696 "GET /url/ HTTP/1.1" 200 6591
+[INFO] [2018-07-13 16:37:05 +0800] basehttp 4800 2328 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-13 16:37:06 +0800] basehttp 4800 6740 "GET /url/ HTTP/1.1" 200 6591
+[INFO] [2018-07-13 16:37:06 +0800] basehttp 4800 5888 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-13 16:37:32 +0800] basehttp 4800 6648 "GET /url/ HTTP/1.1" 200 6606
+[INFO] [2018-07-13 16:37:32 +0800] basehttp 4800 1428 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-13 16:37:33 +0800] basehttp 4800 2788 "GET /url/ HTTP/1.1" 200 6606
+[INFO] [2018-07-13 16:37:33 +0800] basehttp 4800 876 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-13 16:37:34 +0800] basehttp 4800 6472 "GET /url/ HTTP/1.1" 200 6606
+[INFO] [2018-07-13 16:37:34 +0800] basehttp 4800 7364 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-13 16:39:01 +0800] basehttp 4800 7568 "GET /demo/ HTTP/1.1" 200 4711
+[INFO] [2018-07-13 16:39:01 +0800] basehttp 4800 4108 "GET /static/bootstrap-3.3.7/css/dashboard.css HTTP/1.1" 304 0
+[INFO] [2018-07-13 16:39:11 +0800] basehttp 4800 4792 "GET /demo/ HTTP/1.1" 200 4687
+[INFO] [2018-07-13 16:39:12 +0800] basehttp 4800 7516 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-13 16:39:12 +0800] basehttp 4800 2116 "GET /demo/ HTTP/1.1" 200 4687
+[INFO] [2018-07-13 16:39:13 +0800] basehttp 4800 4896 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-13 16:39:21 +0800] basehttp 4800 7312 "GET /demo/ HTTP/1.1" 200 4679
+[INFO] [2018-07-13 16:39:21 +0800] basehttp 4800 288 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-13 16:39:28 +0800] basehttp 4800 2772 "GET /blogindex/ HTTP/1.1" 200 11712
+[INFO] [2018-07-13 16:39:29 +0800] basehttp 4800 7788 "GET /url/ HTTP/1.1" 200 6582
+[INFO] [2018-07-13 16:39:30 +0800] basehttp 4800 5924 "GET /blogindex/ HTTP/1.1" 200 11712
+[INFO] [2018-07-13 16:39:31 +0800] basehttp 4800 6192 "GET /url/ HTTP/1.1" 200 6582
+[INFO] [2018-07-13 16:39:32 +0800] basehttp 4800 6624 "GET /blogindex/ HTTP/1.1" 200 11712
+[INFO] [2018-07-13 16:39:33 +0800] basehttp 4800 1916 "GET /url/ HTTP/1.1" 200 6582
+[INFO] [2018-07-13 16:44:16 +0800] basehttp 4800 7692 "GET /demo/ HTTP/1.1" 200 5024
+[INFO] [2018-07-13 16:44:16 +0800] basehttp 4800 7068 "GET /static/bootstrap-3.3.7/css/dashboard.css HTTP/1.1" 304 0
+[INFO] [2018-07-13 16:44:49 +0800] basehttp 4800 2616 "GET /demo/ HTTP/1.1" 200 5041
+[INFO] [2018-07-13 16:44:49 +0800] basehttp 4800 7052 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-13 16:44:54 +0800] basehttp 4800 7808 "GET /blogindex/ HTTP/1.1" 200 11721
+[INFO] [2018-07-13 16:44:55 +0800] basehttp 4800 6472 "GET /url/ HTTP/1.1" 200 6591
+[INFO] [2018-07-13 16:44:56 +0800] basehttp 4800 7356 "GET /blogindex/ HTTP/1.1" 200 11721
+[INFO] [2018-07-13 16:44:57 +0800] basehttp 4800 3652 "GET /url/ HTTP/1.1" 200 6591
+[INFO] [2018-07-13 16:44:58 +0800] basehttp 4800 876 "GET /blogindex/ HTTP/1.1" 200 11721
+[INFO] [2018-07-13 16:45:00 +0800] basehttp 4800 2612 "GET /demo/ HTTP/1.1" 200 5041
+[INFO] [2018-07-13 16:46:50 +0800] basehttp 4800 6524 "GET /url/ HTTP/1.1" 200 6723
+[INFO] [2018-07-13 16:47:38 +0800] basehttp 4800 7692 "GET /url/ HTTP/1.1" 200 6724
+[INFO] [2018-07-13 16:47:39 +0800] basehttp 4800 7068 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-13 16:47:57 +0800] basehttp 4800 7628 "GET /url/ HTTP/1.1" 200 6724
+[INFO] [2018-07-13 16:47:57 +0800] basehttp 4800 8052 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-13 17:00:20 +0800] basehttp 4800 4112 "GET /url/ HTTP/1.1" 200 6525
+[INFO] [2018-07-13 17:00:20 +0800] basehttp 4800 5888 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-13 17:00:43 +0800] basehttp 4800 7900 "GET /url/ HTTP/1.1" 200 6525
+[INFO] [2018-07-13 17:00:44 +0800] basehttp 4800 8056 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-13 17:05:33 +0800] basehttp 4800 7904 "GET /url/ HTTP/1.1" 200 6878
+[INFO] [2018-07-13 17:05:33 +0800] basehttp 4800 4120 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-13 17:05:56 +0800] basehttp 4800 7732 "GET /url/ HTTP/1.1" 200 6878
+[INFO] [2018-07-13 17:05:57 +0800] basehttp 4800 7444 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-13 17:06:12 +0800] basehttp 4800 8032 "GET /demo/ HTTP/1.1" 200 5041
+[INFO] [2018-07-13 17:06:43 +0800] basehttp 4800 7448 "GET /demo/ HTTP/1.1" 200 5425
+[INFO] [2018-07-13 17:06:43 +0800] basehttp 4800 7696 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-13 17:07:38 +0800] basehttp 4800 2728 "GET /demo/ HTTP/1.1" 200 6660
+[INFO] [2018-07-13 17:07:38 +0800] basehttp 4800 2788 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-13 17:08:23 +0800] basehttp 4800 6232 "GET /url/ HTTP/1.1" 200 6878
+[INFO] [2018-07-13 17:17:59 +0800] basehttp 4800 3556 "GET /blogindex/ HTTP/1.1" 200 11721
+[INFO] [2018-07-13 17:18:00 +0800] basehttp 4800 7348 "GET /url/ HTTP/1.1" 200 6878
+[INFO] [2018-07-13 17:18:02 +0800] basehttp 4800 7356 "GET /blogindex/ HTTP/1.1" 200 11721
+[INFO] [2018-07-13 17:18:02 +0800] basehttp 4800 7312 "GET /url/ HTTP/1.1" 200 6878
+[INFO] [2018-07-13 17:48:40 +0800] basehttp 4800 6904 "GET / HTTP/1.1" 200 4786
+[INFO] [2018-07-13 17:48:50 +0800] basehttp 4800 1100 "GET /admin/ HTTP/1.1" 200 8703
+[INFO] [2018-07-13 17:48:55 +0800] basehttp 4800 4072 "GET /admin/myapp/userinfo/ HTTP/1.1" 200 4865
+[INFO] [2018-07-13 17:48:55 +0800] basehttp 4800 7568 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-07-13 17:48:57 +0800] basehttp 4800 4068 "GET /admin/ HTTP/1.1" 200 8703
+[INFO] [2018-07-13 17:48:59 +0800] basehttp 4800 7464 "GET /admin/myapp/tag/ HTTP/1.1" 200 4150
+[INFO] [2018-07-13 17:48:59 +0800] basehttp 4800 8168 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-07-13 17:49:01 +0800] basehttp 4800 7528 "GET /admin/ HTTP/1.1" 200 8703
+[INFO] [2018-07-13 17:49:02 +0800] basehttp 4800 1008 "GET /admin/myapp/category/ HTTP/1.1" 200 4429
+[INFO] [2018-07-13 17:49:02 +0800] basehttp 4800 7756 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-07-13 17:49:03 +0800] basehttp 4800 6804 "GET /admin/ HTTP/1.1" 200 8703
+[INFO] [2018-07-13 17:49:04 +0800] basehttp 4800 8164 "GET /admin/myapp/article_blog/ HTTP/1.1" 200 6047
+[INFO] [2018-07-13 17:49:04 +0800] basehttp 4800 8064 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-07-13 17:49:07 +0800] basehttp 4800 3724 "GET /admin/myapp/article_blog/1/change/ HTTP/1.1" 200 10158
+[INFO] [2018-07-13 17:49:07 +0800] basehttp 4800 4696 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-07-13 17:49:07 +0800] basehttp 4800 7348 "GET /static/admin/img/tooltag-arrowright.svg HTTP/1.1" 200 280
+[INFO] [2018-07-13 17:49:15 +0800] basehttp 4800 7684 "GET /admin/myapp/article_blog/ HTTP/1.1" 200 6047
+[INFO] [2018-07-13 17:49:17 +0800] basehttp 4800 6036 "GET /blogindex/ HTTP/1.1" 200 11721
+[INFO] [2018-07-13 17:49:27 +0800] basehttp 4800 8032 "GET /post/3/ HTTP/1.1" 200 10670
+[INFO] [2018-07-13 17:49:52 +0800] basehttp 4800 7660 "GET /admin/myapp/article_blog/1/change/ HTTP/1.1" 200 10158
+[INFO] [2018-07-13 17:49:52 +0800] basehttp 4800 5456 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-07-13 17:50:02 +0800] basehttp 4800 7924 "GET /admin/myapp/article_blog/ HTTP/1.1" 200 6047
+[INFO] [2018-07-13 17:50:04 +0800] basehttp 4800 7732 "GET /admin/myapp/article_blog/3/change/ HTTP/1.1" 200 10174
+[INFO] [2018-07-13 17:50:04 +0800] basehttp 4800 4120 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-07-13 17:50:24 +0800] basehttp 4800 8016 "GET /admin/myapp/article_blog/ HTTP/1.1" 200 6047
+[INFO] [2018-07-13 17:51:18 +0800] basehttp 4800 7644 "GET /admin/myapp/ HTTP/1.1" 200 3433
+[INFO] [2018-07-13 17:51:19 +0800] basehttp 4800 7848 "GET /admin/ HTTP/1.1" 200 8703
+[INFO] [2018-07-13 17:51:20 +0800] basehttp 4800 6752 "GET /admin/services/server_type/ HTTP/1.1" 200 4489
+[INFO] [2018-07-13 17:51:20 +0800] basehttp 4800 3336 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-07-13 17:51:22 +0800] basehttp 4800 5576 "GET /admin/ HTTP/1.1" 200 8703
+[INFO] [2018-07-13 17:51:23 +0800] basehttp 4800 4672 "GET /admin/services/server_urls/ HTTP/1.1" 200 6289
+[INFO] [2018-07-13 17:51:23 +0800] basehttp 4800 3088 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-07-13 17:51:26 +0800] basehttp 4800 6984 "GET /admin/services/server_urls/4/change/ HTTP/1.1" 200 6488
+[INFO] [2018-07-13 17:51:26 +0800] basehttp 4800 6828 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-07-13 17:51:28 +0800] basehttp 4800 4704 "GET /admin/services/server_urls/ HTTP/1.1" 200 6289
+[INFO] [2018-07-13 17:52:12 +0800] basehttp 7568 7444 "GET /admin/services/server_urls/ HTTP/1.1" 200 6290
+[INFO] [2018-07-13 17:52:12 +0800] basehttp 7568 3596 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-07-13 17:52:14 +0800] basehttp 7568 6404 "GET /admin/services/server_urls/4/change/ HTTP/1.1" 200 6489
+[INFO] [2018-07-13 17:52:14 +0800] basehttp 7568 2876 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-07-13 17:52:22 +0800] basehttp 7568 3388 "GET /admin/services/server_urls/ HTTP/1.1" 200 6290
+[INFO] [2018-07-13 17:58:47 +0800] basehttp 1480 3572 "GET /admin/services/server_urls/3/change/ HTTP/1.1" 200 6455
+[INFO] [2018-07-13 17:58:47 +0800] basehttp 1480 7384 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-07-13 17:58:52 +0800] basehttp 1480 4872 "GET /admin/services/server_urls/ HTTP/1.1" 200 6290
+[INFO] [2018-07-13 17:59:14 +0800] basehttp 1480 1072 "GET /url/ HTTP/1.1" 200 6878
+[INFO] [2018-07-13 18:00:08 +0800] basehttp 1480 7756 "GET /url/ HTTP/1.1" 200 7062
+[INFO] [2018-07-13 18:00:08 +0800] basehttp 1480 4792 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-13 18:01:29 +0800] basehttp 1480 3276 "GET /url/ HTTP/1.1" 200 6950
+[INFO] [2018-07-13 18:01:29 +0800] basehttp 1480 3508 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-13 18:01:40 +0800] basehttp 1480 6500 "GET /url/ HTTP/1.1" 200 6950
+[INFO] [2018-07-13 18:01:41 +0800] basehttp 1480 3228 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-13 18:02:07 +0800] basehttp 1480 4764 "GET /admin/ HTTP/1.1" 200 8703
+[INFO] [2018-07-13 18:02:11 +0800] basehttp 1480 6724 "GET /admin/services/server_type/ HTTP/1.1" 200 4489
+[INFO] [2018-07-13 18:02:11 +0800] basehttp 1480 7904 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-07-13 18:02:13 +0800] basehttp 1480 7532 "GET /admin/ HTTP/1.1" 200 8703
+[INFO] [2018-07-13 18:02:14 +0800] basehttp 1480 4704 "GET /admin/services/server_urls/ HTTP/1.1" 200 6290
+[INFO] [2018-07-13 18:02:14 +0800] basehttp 1480 4652 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-07-13 18:02:18 +0800] basehttp 1480 2444 "GET /admin/services/server_urls/1/change/ HTTP/1.1" 200 6475
+[INFO] [2018-07-13 18:02:18 +0800] basehttp 1480 7448 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-07-13 18:02:40 +0800] basehttp 1480 7996 "GET /url/ HTTP/1.1" 200 7062
+[INFO] [2018-07-13 18:02:41 +0800] basehttp 1480 7232 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-13 18:02:52 +0800] basehttp 1480 3404 "GET /url/environment/2/ HTTP/1.1" 200 6241
+[INFO] [2018-07-13 18:02:54 +0800] basehttp 1480 6488 "GET /url/environment/1/ HTTP/1.1" 200 6763
+[INFO] [2018-07-13 18:03:24 +0800] basehttp 1480 7532 "GET /url/ HTTP/1.1" 200 7062
+[INFO] [2018-07-13 18:03:24 +0800] basehttp 1480 4704 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-13 18:03:56 +0800] basehttp 1480 984 "GET / HTTP/1.1" 200 4786
+[INFO] [2018-07-13 18:03:59 +0800] basehttp 1480 7996 "GET /url/ HTTP/1.1" 200 7062

@@ -1,0 +1,143 @@
+[INFO] [2018-08-17 10:08:56 +0800] [django.server] [basehttp.py] basehttp 3432 3964 "GET / HTTP/1.1" 200 5133
+[INFO] [2018-08-17 10:09:01 +0800] [django.server] [basehttp.py] basehttp 3432 4084 "GET /url/ HTTP/1.1" 200 12599
+[INFO] [2018-08-17 10:09:05 +0800] [django.server] [basehttp.py] basehttp 3432 3924 "GET /elasticsearchinfo/ HTTP/1.1" 200 21323
+[INFO] [2018-08-17 14:45:12 +0800] [django.server] [basehttp.py] basehttp 760 7260 "GET /elasticsearchinfo/ HTTP/1.1" 200 23719
+[INFO] [2018-08-17 14:45:12 +0800] [django.server] [basehttp.py] basehttp 760 7784 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-17 14:47:32 +0800] [django.server] [basehttp.py] basehttp 760 3964 "GET /elasticsearchinfo/ HTTP/1.1" 200 23722
+[INFO] [2018-08-17 14:47:33 +0800] [django.server] [basehttp.py] basehttp 760 6976 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-17 14:48:53 +0800] [django.server] [basehttp.py] basehttp 760 792 "GET /elasticsearchinfo/ HTTP/1.1" 200 23903
+[INFO] [2018-08-17 14:48:53 +0800] [django.server] [basehttp.py] basehttp 760 7768 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-17 14:49:50 +0800] [django.server] [basehttp.py] basehttp 760 7956 "GET /elasticsearchinfo/ HTTP/1.1" 200 23905
+[INFO] [2018-08-17 14:49:50 +0800] [django.server] [basehttp.py] basehttp 760 2100 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-17 14:49:53 +0800] [django.server] [basehttp.py] basehttp 760 8176 "GET /elasticsearchinfo/ HTTP/1.1" 200 23905
+[INFO] [2018-08-17 14:49:53 +0800] [django.server] [basehttp.py] basehttp 760 1148 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-17 14:49:55 +0800] [django.server] [basehttp.py] basehttp 760 7692 "GET /elasticsearchinfo/ HTTP/1.1" 200 23901
+[INFO] [2018-08-17 14:49:55 +0800] [django.server] [basehttp.py] basehttp 760 7772 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-17 14:49:57 +0800] [django.server] [basehttp.py] basehttp 760 2692 "GET /elasticsearchinfo/ HTTP/1.1" 200 23903
+[INFO] [2018-08-17 14:49:57 +0800] [django.server] [basehttp.py] basehttp 760 740 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-17 14:49:58 +0800] [django.server] [basehttp.py] basehttp 760 7636 "GET /elasticsearchinfo/ HTTP/1.1" 200 23903
+[INFO] [2018-08-17 14:49:58 +0800] [django.server] [basehttp.py] basehttp 760 3636 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-17 14:50:45 +0800] [django.server] [basehttp.py] basehttp 760 7996 "GET /elasticsearchinfo/ HTTP/1.1" 200 15772
+[INFO] [2018-08-17 14:50:45 +0800] [django.server] [basehttp.py] basehttp 760 8160 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-17 14:55:02 +0800] [django.server] [basehttp.py] basehttp 7120 276 "GET /elasticsearchinfo/ HTTP/1.1" 200 22063
+[INFO] [2018-08-17 14:55:02 +0800] [django.server] [basehttp.py] basehttp 7120 7004 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-17 14:55:08 +0800] [django.server] [basehttp.py] basehttp 7120 668 "GET /elasticsearchinfo/ HTTP/1.1" 200 22064
+[INFO] [2018-08-17 14:55:08 +0800] [django.server] [basehttp.py] basehttp 7120 6712 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-17 14:55:10 +0800] [django.server] [basehttp.py] basehttp 7120 8020 "GET /elasticsearchinfo/ HTTP/1.1" 200 22062
+[INFO] [2018-08-17 14:55:11 +0800] [django.server] [basehttp.py] basehttp 7120 7784 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-17 14:55:14 +0800] [django.server] [basehttp.py] basehttp 7120 3904 "GET /elasticsearchinfo/ HTTP/1.1" 200 22054
+[INFO] [2018-08-17 14:55:14 +0800] [django.server] [basehttp.py] basehttp 7120 7280 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-17 15:30:54 +0800] [django.server] [basehttp.py] basehttp 4344 2712 "GET /demo/ HTTP/1.1" 200 7440
+[INFO] [2018-08-17 15:31:01 +0800] [django.server] [basehttp.py] basehttp 4344 8168 "GET /demo/ HTTP/1.1" 200 7437
+[INFO] [2018-08-17 15:31:01 +0800] [django.server] [basehttp.py] basehttp 4344 7052 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-17 15:34:05 +0800] [django.server] [basehttp.py] basehttp 4344 2588 "GET /demo/ HTTP/1.1" 200 7434
+[INFO] [2018-08-17 15:34:06 +0800] [django.server] [basehttp.py] basehttp 4344 3640 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-17 15:34:24 +0800] [django.server] [basehttp.py] basehttp 4344 3440 "GET /url/ HTTP/1.1" 200 12599
+[INFO] [2018-08-17 15:34:27 +0800] [django.server] [basehttp.py] basehttp 4344 6484 "GET /elasticsearchinfo/ HTTP/1.1" 200 22063
+[INFO] [2018-08-17 15:36:51 +0800] [django.server] [basehttp.py] basehttp 4344 1820 "GET /elasticsearchinfo/ HTTP/1.1" 200 22189
+[INFO] [2018-08-17 15:36:51 +0800] [django.server] [basehttp.py] basehttp 4344 1320 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-17 15:36:53 +0800] [django.server] [basehttp.py] basehttp 4344 7852 "GET /elasticsearchinfo/ HTTP/1.1" 200 22197
+[INFO] [2018-08-17 15:36:53 +0800] [django.server] [basehttp.py] basehttp 4344 3272 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-17 15:36:55 +0800] [django.server] [basehttp.py] basehttp 4344 1464 "GET /elasticsearchinfo/ HTTP/1.1" 200 22199
+[INFO] [2018-08-17 15:36:55 +0800] [django.server] [basehttp.py] basehttp 4344 3052 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-17 15:36:57 +0800] [django.server] [basehttp.py] basehttp 4344 7016 "GET /elasticsearchinfo/ HTTP/1.1" 200 22198
+[INFO] [2018-08-17 15:36:57 +0800] [django.server] [basehttp.py] basehttp 4344 7512 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-17 15:36:59 +0800] [django.server] [basehttp.py] basehttp 4344 4292 "GET /elasticsearchinfo/ HTTP/1.1" 200 22198
+[INFO] [2018-08-17 15:36:59 +0800] [django.server] [basehttp.py] basehttp 4344 4064 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-17 15:38:20 +0800] [django.server] [basehttp.py] basehttp 4344 7756 "GET /elasticsearchinfo/ HTTP/1.1" 200 22199
+[INFO] [2018-08-17 15:38:20 +0800] [django.server] [basehttp.py] basehttp 4344 3516 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-17 15:38:22 +0800] [django.server] [basehttp.py] basehttp 4344 7796 "GET /elasticsearchinfo/ HTTP/1.1" 200 22200
+[INFO] [2018-08-17 15:38:22 +0800] [django.server] [basehttp.py] basehttp 4344 7376 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-17 16:23:16 +0800] [django.server] [basehttp.py] basehttp 4344 7740 "GET /elasticsearchinfo/ HTTP/1.1" 200 22197
+[INFO] [2018-08-17 16:23:16 +0800] [django.server] [basehttp.py] basehttp 4344 3304 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-17 16:24:51 +0800] [django.server] [basehttp.py] basehttp 4344 1464 "GET /elasticsearchinfo/ HTTP/1.1" 200 22190
+[INFO] [2018-08-17 16:24:51 +0800] [django.server] [basehttp.py] basehttp 4344 1076 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-17 16:24:54 +0800] [django.server] [basehttp.py] basehttp 4344 1148 "GET /elasticsearchinfo/ HTTP/1.1" 200 22190
+[INFO] [2018-08-17 16:24:54 +0800] [django.server] [basehttp.py] basehttp 4344 7348 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-17 16:24:56 +0800] [django.server] [basehttp.py] basehttp 4344 7192 "GET /elasticsearchinfo/ HTTP/1.1" 200 22190
+[INFO] [2018-08-17 16:24:56 +0800] [django.server] [basehttp.py] basehttp 4344 7988 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-17 16:24:57 +0800] [django.server] [basehttp.py] basehttp 4344 1640 "GET /elasticsearchinfo/ HTTP/1.1" 200 22188
+[INFO] [2018-08-17 16:24:57 +0800] [django.server] [basehttp.py] basehttp 4344 308 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-17 16:24:59 +0800] [django.server] [basehttp.py] basehttp 4344 7508 "GET /elasticsearchinfo/ HTTP/1.1" 200 22190
+[INFO] [2018-08-17 16:24:59 +0800] [django.server] [basehttp.py] basehttp 4344 7332 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[ERROR] [2018-08-17 16:26:29 +0800] [django.request] [exception.py] exception 4344 8144 Internal Server Error: /elasticsearchinfo/
+Traceback (most recent call last):
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\core\handlers\base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\core\handlers\base.py", line 215, in _get_response
+    response = response.render()
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\response.py", line 107, in render
+    self.content = self.rendered_content
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\response.py", line 82, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\response.py", line 64, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\loader.py", line 48, in select_template
+    return engine.get_template(template_name)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\backends\django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\loaders\base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\base.py", line 515, in parse
+    raise self.error(token, e)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\loader_tags.py", line 312, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\base.py", line 515, in parse
+    raise self.error(token, e)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\loader_tags.py", line 255, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\base.py", line 515, in parse
+    raise self.error(token, e)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\defaulttags.py", line 827, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\base.py", line 515, in parse
+    raise self.error(token, e)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\defaulttags.py", line 1450, in widthratio
+    raise TemplateSyntaxError("Invalid syntax in widthratio tag. Expecting 'as' keyword")
+django.template.exceptions.TemplateSyntaxError: Invalid syntax in widthratio tag. Expecting 'as' keyword
+[ERROR] [2018-08-17 16:26:29 +0800] [django.server] [basehttp.py] basehttp 4344 8144 "GET /elasticsearchinfo/ HTTP/1.1" 500 189854
+[WARNING] [2018-08-17 16:26:30 +0800] [django.request] [base.py] base 4344 7768 Not Found: /favicon.ico
+[WARNING] [2018-08-17 16:26:30 +0800] [django.server] [basehttp.py] basehttp 4344 7768 "GET /favicon.ico HTTP/1.1" 404 4968
+[INFO] [2018-08-17 16:27:30 +0800] [django.server] [basehttp.py] basehttp 4344 7064 "GET /elasticsearchinfo/ HTTP/1.1" 200 22187
+[INFO] [2018-08-17 16:27:30 +0800] [django.server] [basehttp.py] basehttp 4344 7388 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-17 16:31:05 +0800] [django.server] [basehttp.py] basehttp 4344 7188 "GET /elasticsearchinfo/ HTTP/1.1" 200 22261
+[INFO] [2018-08-17 16:31:05 +0800] [django.server] [basehttp.py] basehttp 4344 3304 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-17 16:34:37 +0800] [django.server] [basehttp.py] basehttp 4344 7956 "GET /elasticsearchinfo/ HTTP/1.1" 200 22252
+[INFO] [2018-08-17 16:34:37 +0800] [django.server] [basehttp.py] basehttp 4344 5620 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-17 16:48:27 +0800] [django.server] [basehttp.py] basehttp 4344 2732 "GET /demo/ HTTP/1.1" 200 7435
+[INFO] [2018-08-17 17:15:23 +0800] [django.server] [basehttp.py] basehttp 4344 3440 "GET /url/ HTTP/1.1" 200 12599
+[INFO] [2018-08-17 17:15:25 +0800] [django.server] [basehttp.py] basehttp 4344 7292 "GET /elasticsearchinfo/ HTTP/1.1" 200 22263
+[INFO] [2018-08-17 17:15:34 +0800] [django.server] [basehttp.py] basehttp 4344 7336 "GET /elasticsearchinfo/ HTTP/1.1" 200 22265
+[INFO] [2018-08-17 17:15:34 +0800] [django.server] [basehttp.py] basehttp 4344 7264 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-17 17:15:36 +0800] [django.server] [basehttp.py] basehttp 4344 3076 "GET /elasticsearchinfo/ HTTP/1.1" 200 22264
+[INFO] [2018-08-17 17:15:37 +0800] [django.server] [basehttp.py] basehttp 4344 2600 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-17 17:15:39 +0800] [django.server] [basehttp.py] basehttp 4344 3904 "GET /elasticsearchinfo/ HTTP/1.1" 200 22264
+[INFO] [2018-08-17 17:15:39 +0800] [django.server] [basehttp.py] basehttp 4344 7412 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-17 17:17:40 +0800] [django.server] [basehttp.py] basehttp 4344 7400 "GET /elasticsearchinfo/ HTTP/1.1" 200 22264
+[INFO] [2018-08-17 17:17:40 +0800] [django.server] [basehttp.py] basehttp 4344 4280 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-17 17:24:32 +0800] [django.server] [basehttp.py] basehttp 4344 2688 "GET /elasticsearchinfo/ HTTP/1.1" 200 22247
+[INFO] [2018-08-17 17:24:32 +0800] [django.server] [basehttp.py] basehttp 4344 7008 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-17 17:24:53 +0800] [django.server] [basehttp.py] basehttp 4344 1496 "GET /elasticsearchinfo/ HTTP/1.1" 200 22261
+[INFO] [2018-08-17 17:24:54 +0800] [django.server] [basehttp.py] basehttp 4344 2444 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-17 17:25:02 +0800] [django.server] [basehttp.py] basehttp 4344 4056 "GET /elasticsearchinfo/ HTTP/1.1" 200 22259
+[INFO] [2018-08-17 17:25:02 +0800] [django.server] [basehttp.py] basehttp 4344 7440 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-17 17:29:39 +0800] [django.server] [basehttp.py] basehttp 4344 7532 "GET /elasticsearchinfo/ HTTP/1.1" 200 22251
+[INFO] [2018-08-17 17:29:40 +0800] [django.server] [basehttp.py] basehttp 4344 7424 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430

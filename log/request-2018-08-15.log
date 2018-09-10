@@ -1,0 +1,33 @@
+[INFO] [2018-08-15 14:19:19 +0800] [django.server] [basehttp.py] basehttp 7224 8052 "GET / HTTP/1.1" 200 5133
+[INFO] [2018-08-15 14:19:21 +0800] [django.server] [basehttp.py] basehttp 7224 4520 "GET /url/ HTTP/1.1" 200 12599
+[INFO] [2018-08-15 14:19:22 +0800] [django.server] [basehttp.py] basehttp 7224 6768 "GET /elasticsearchinfo/ HTTP/1.1" 200 7179
+[INFO] [2018-08-15 14:20:17 +0800] [django.server] [basehttp.py] basehttp 7748 3032 "GET /elasticsearchinfo/ HTTP/1.1" 200 7179
+[ERROR] [2018-08-15 14:23:59 +0800] [django.request] [exception.py] exception 7800 7936 Internal Server Error: /elasticsearchinfo/
+Traceback (most recent call last):
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\contrib\auth\mixins.py", line 56, in dispatch
+    return super(LoginRequiredMixin, self).dispatch(request, *args, **kwargs)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\views\generic\list.py", line 175, in get
+    context = self.get_context_data()
+  File "D:\project-github\demo\services\views.py", line 291, in get_context_data
+    context_elasticsearch['temp'] = self.Elasticsearchinfo_Collect("10.181.57.57", "10.181.57.57")
+  File "D:\project-github\demo\services\views.py", line 300, in Elasticsearchinfo_Collect
+    ela_host = Elasticsearch([{'host': elasticsearch_host, 'port': elasticsearch_port}])
+NameError: name 'Elasticsearch' is not defined
+[ERROR] [2018-08-15 14:23:59 +0800] [django.server] [basehttp.py] basehttp 7800 7936 "GET /elasticsearchinfo/ HTTP/1.1" 500 94956
+[WARNING] [2018-08-15 14:23:59 +0800] [django.request] [base.py] base 7800 7156 Not Found: /favicon.ico
+[WARNING] [2018-08-15 14:23:59 +0800] [django.server] [basehttp.py] basehttp 7800 7156 "GET /favicon.ico HTTP/1.1" 404 4968
+[INFO] [2018-08-15 14:24:31 +0800] [django.server] [basehttp.py] basehttp 3848 7572 "GET /elasticsearchinfo/ HTTP/1.1" 200 7179
+[INFO] [2018-08-15 14:24:32 +0800] [django.server] [basehttp.py] basehttp 3848 7476 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-15 14:29:44 +0800] [django.server] [basehttp.py] basehttp 6364 8148 "GET /elasticsearchinfo/ HTTP/1.1" 200 7179
+[INFO] [2018-08-15 14:37:31 +0800] [django.server] [basehttp.py] basehttp 1244 8052 "GET /elasticsearchinfo/ HTTP/1.1" 200 7179
+[INFO] [2018-08-15 14:37:31 +0800] [django.server] [basehttp.py] basehttp 1244 3952 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430

@@ -19,6 +19,9 @@ from . import views
 
 app_name = 'services'
 urlpatterns = [
-    url(r'^url/$',views.url, name='url'),
-    url(r'^url/environment/(?P<pk>[0-9]+)/$',views.environment_type, name='environment'),
+    url(r'^url/$',views.UrlView.as_view(), name='url'),
+    url(r'^url/(?P<pk>[0-9]+)/$', views.UrlDetailView.as_view(), name='url_detail'),
+    url(r'^url/environment/(?P<pk>[0-9]+)/$',views.Environment_typeView.as_view(), name='environment'),
+    url(r'^elasticsearchinfo/$', views.ElasticsearchView.as_view(), name='elasticsearchinfo'),
+    url(r'^search/$', views.search, name='search'),
 ]

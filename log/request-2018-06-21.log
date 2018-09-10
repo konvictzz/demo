@@ -1,0 +1,72 @@
+[DEBUG] [2018-06-21 10:08:46 +0800] utils 5212 6344 (0.005) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[DEBUG] [2018-06-21 10:08:46 +0800] utils 5212 6344 (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[INFO] [2018-06-21 10:09:04 +0800] basehttp 5212 6952 "GET / HTTP/1.1" 200 3810
+[INFO] [2018-06-21 10:09:04 +0800] basehttp 5212 5172 "GET /static/bootstrap-3.3.7/css/starter-template.css HTTP/1.1" 200 96
+[INFO] [2018-06-21 10:09:04 +0800] basehttp 5212 6168 "GET /static/bootstrap-3.3.7/css/ie10-viewport-bug-workaround.css HTTP/1.1" 200 433
+[INFO] [2018-06-21 10:09:04 +0800] basehttp 5212 7140 "GET /static/bootstrap-3.3.7/css/bootstrap.min.css HTTP/1.1" 200 121200
+[INFO] [2018-06-21 10:09:04 +0800] basehttp 5212 6428 "GET /static/bootstrap-3.3.7/css/sticky-footer-navbar.css HTTP/1.1" 200 678
+[INFO] [2018-06-21 10:09:04 +0800] basehttp 5212 6840 "GET /static/bootstrap-3.3.7/css/signin.css HTTP/1.1" 200 793
+[INFO] [2018-06-21 10:09:04 +0800] basehttp 5212 1540 "GET /static/bootstrap-3.3.7/css/blog.css HTTP/1.1" 200 5864
+[INFO] [2018-06-21 10:09:04 +0800] basehttp 5212 1408 "GET /static/bootstrap-3.3.7/css/highlights/github.css HTTP/1.1" 200 4016
+[INFO] [2018-06-21 10:09:04 +0800] basehttp 5212 4688 "GET /static/jquery-3.2.1/jquery-3.2.1.min.js HTTP/1.1" 200 86659
+[INFO] [2018-06-21 10:09:04 +0800] basehttp 5212 2728 "GET /static/bootstrap-3.3.7/js/bootstrap.min.js HTTP/1.1" 200 37045
+[INFO] [2018-06-21 10:09:04 +0800] basehttp 5212 2860 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[DEBUG] [2018-06-21 10:09:10 +0800] base 5212 4772 Exception while resolving variable 'userdata' in template 'userauth/login.html'.
+Traceback (most recent call last):
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\context.py", line 87, in __getitem__
+    raise KeyError(key)
+KeyError: 'userdata'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\base.py", line 888, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'userdata'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'userdata'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [userdata] in '[{\'True\': True, \'False\': False, \'None\': None}, {\'user\': <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x0000000004C3AC50>>, \'request\': <WSGIRequest: GET \'/userauth/login/\'>, \'DEFAULT_MESSAGE_LEVELS\': {\'WARNING\': 30, \'INFO\': 20, \'SUCCESS\': 25, \'DEBUG\': 10, \'ERROR\': 40}, \'csrf_token\': <SimpleLazyObject: \'2YzIC6MfHhAG9Yg89WDQHDlVBdiNcze61beFubVjV3n5vNCZouz13OzfPqLjP4re\'>, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x0000000004BDCE80>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x0000000004C25438>}, {}, {\'form\': <AuthenticationForm bound=False, valid=False, fields=(username;password)>, \'view\': <django.contrib.auth.views.LoginView object at 0x0000000004C25B38>, \'next\': \'\', \'site_name\': \'10.181.3.91:8000\', \'site\': <django.contrib.sites.requests.RequestSite object at 0x0000000004C25EF0>}, {\'block\': <Block Node: body. Contents: [<TextNode: \'\\n<div class="container">\\n\'>, <Variable Node: form.as_p>, <TextNode: \'确定表单id-->\\n\\t<!-- 这里使用的表单id\'>, <django.template.defaulttags.CsrfTokenNode object at 0x0000000004C10748>, <TextNode: \'\\n\\t\\t<div class="form-signi\'>, <Variable Node: next>, <TextNode: \'">\\n\\t\\t<input class="btn bt\'>, <IfNode>, <TextNode: \'\\n\\n\\t\'>, <IfNode>, <TextNode: \'\\n\\t<div style="text-align:\'>, <django.template.defaulttags.URLNode object at 0x0000000004BE0438>, <TextNode: \'">Forgotten password?</a>\'>, <django.template.defaulttags.CsrfTokenNode object at 0x0000000004BE00B8>, <TextNode: \'\\n\\t\\t\'>, <Variable Node: form.as_p>, <TextNode: \'\\n\\t\\t<p><input class="btn b\'>, <For Node: for line in userdata, tail_len: 5>, <TextNode: \'\\n\\t\\t</tbody>\\n\\t</table> -->\'>]>}, {}]'
+[INFO] [2018-06-21 10:09:10 +0800] basehttp 5212 4772 "GET /userauth/login/ HTTP/1.1" 200 6336
+[DEBUG] [2018-06-21 10:09:14 +0800] utils 5212 4168 (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."username" = 'admin'; args=('admin',)
+[DEBUG] [2018-06-21 10:09:14 +0800] utils 5212 4168 (0.000) SELECT (1) AS "a" FROM "django_session" WHERE "django_session"."session_key" = 'rssrfnh7fucu8ghs8bo0r2vhctnlrf83' LIMIT 1; args=('rssrfnh7fucu8ghs8bo0r2vhctnlrf83',)
+[DEBUG] [2018-06-21 10:09:14 +0800] utils 5212 4168 (0.000) BEGIN; args=None
+[DEBUG] [2018-06-21 10:09:14 +0800] utils 5212 4168 (0.001) INSERT INTO "django_session" ("session_key", "session_data", "expire_date") SELECT 'rssrfnh7fucu8ghs8bo0r2vhctnlrf83', 'N2M1YjZiOGIwYjhmNWRjODY2MzYwOTliMGI2NGEyMzUwZjc0MjAyYzp7fQ==', '2018-07-05 02:09:14.799187'; args=('rssrfnh7fucu8ghs8bo0r2vhctnlrf83', 'N2M1YjZiOGIwYjhmNWRjODY2MzYwOTliMGI2NGEyMzUwZjc0MjAyYzp7fQ==', '2018-07-05 02:09:14.799187')
+[DEBUG] [2018-06-21 10:09:14 +0800] utils 5212 4168 (0.000) BEGIN; args=None
+[DEBUG] [2018-06-21 10:09:14 +0800] utils 5212 4168 (0.000) UPDATE "auth_user" SET "last_login" = '2018-06-21 02:09:14.814188' WHERE "auth_user"."id" = 1; args=('2018-06-21 02:09:14.814188', 1)
+[DEBUG] [2018-06-21 10:09:14 +0800] utils 5212 4168 (0.000) BEGIN; args=None
+[DEBUG] [2018-06-21 10:09:14 +0800] utils 5212 4168 (0.000) UPDATE "django_session" SET "session_data" = 'ZDYyM2ViMGY2ZGM4Y2VjNzRhYjI2MGM0ODBiMDgwMTMyYjlkY2Q1Mjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI4YzM1ZDBkY2ZiMjQxZjU4Mzc4ZGQyYTkyYjIzYmE0NDFkMzVkOGI0In0=', "expire_date" = '2018-07-05 02:09:14.827189' WHERE "django_session"."session_key" = 'rssrfnh7fucu8ghs8bo0r2vhctnlrf83'; args=('ZDYyM2ViMGY2ZGM4Y2VjNzRhYjI2MGM0ODBiMDgwMTMyYjlkY2Q1Mjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI4YzM1ZDBkY2ZiMjQxZjU4Mzc4ZGQyYTkyYjIzYmE0NDFkMzVkOGI0In0=', '2018-07-05 02:09:14.827189', 'rssrfnh7fucu8ghs8bo0r2vhctnlrf83')
+[INFO] [2018-06-21 10:09:14 +0800] basehttp 5212 4168 "POST /userauth/login/ HTTP/1.1" 302 0
+[DEBUG] [2018-06-21 10:09:14 +0800] utils 5212 3872 (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'rssrfnh7fucu8ghs8bo0r2vhctnlrf83' AND "django_session"."expire_date" > '2018-06-21 02:09:14.847191'); args=('rssrfnh7fucu8ghs8bo0r2vhctnlrf83', '2018-06-21 02:09:14.847191')
+[DEBUG] [2018-06-21 10:09:14 +0800] utils 5212 3872 (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+[INFO] [2018-06-21 10:09:14 +0800] basehttp 5212 3872 "GET /userauth/ HTTP/1.1" 200 4558
+[INFO] [2018-06-21 10:10:44 +0800] basehttp 6460 6964 "GET /demo/ HTTP/1.1" 200 5846
+[INFO] [2018-06-21 10:11:21 +0800] basehttp 6460 7140 "GET /info/ HTTP/1.1" 200 5803
+[INFO] [2018-06-21 10:11:24 +0800] basehttp 6460 2728 "GET /demo/ HTTP/1.1" 200 5846
+[INFO] [2018-06-21 10:12:54 +0800] basehttp 4736 6548 "GET /info/ HTTP/1.1" 200 5803
+[INFO] [2018-06-21 10:12:56 +0800] basehttp 4736 4228 "GET /demo/ HTTP/1.1" 200 5846
+[INFO] [2018-06-21 10:18:29 +0800] basehttp 4736 7028 "GET /demo/ HTTP/1.1" 200 5846
+[INFO] [2018-06-21 10:18:33 +0800] basehttp 4736 7140 "GET /info/ HTTP/1.1" 200 5803
+[INFO] [2018-06-21 10:18:36 +0800] basehttp 4736 4224 "GET /userauth/ HTTP/1.1" 200 4558
+[INFO] [2018-06-21 10:19:01 +0800] basehttp 4736 6488 "GET /info/ HTTP/1.1" 200 5803
+[INFO] [2018-06-21 10:19:27 +0800] basehttp 4736 3616 "GET /userauth/logout/ HTTP/1.1" 200 3731
+[INFO] [2018-06-21 10:19:30 +0800] basehttp 4736 6520 "GET /userauth/login/ HTTP/1.1" 200 6336
+[INFO] [2018-06-21 10:19:42 +0800] basehttp 4736 6592 "GET /userauth/login/ HTTP/1.1" 200 6336
+[INFO] [2018-06-21 10:20:56 +0800] basehttp 4736 7084 "GET /userauth/login/ HTTP/1.1" 200 6336
+[INFO] [2018-06-21 10:21:01 +0800] basehttp 4736 7132 "POST /userauth/login/ HTTP/1.1" 302 0
+[INFO] [2018-06-21 10:21:01 +0800] basehttp 4736 7064 "GET /userauth/ HTTP/1.1" 200 4558

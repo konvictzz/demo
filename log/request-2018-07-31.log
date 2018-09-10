@@ -1,0 +1,50 @@
+[INFO] [2018-07-31 10:59:42 +0800] basehttp 2344 4684 "GET /url/ HTTP/1.1" 200 11844
+[INFO] [2018-07-31 11:04:14 +0800] basehttp 7176 4916 "GET /url/ HTTP/1.1" 200 11736
+[INFO] [2018-07-31 11:05:56 +0800] basehttp 6512 7496 "GET /url/ HTTP/1.1" 200 11736
+[INFO] [2018-07-31 11:07:22 +0800] basehttp 6512 7524 "GET /url/ HTTP/1.1" 200 12532
+[INFO] [2018-07-31 11:07:39 +0800] basehttp 6512 7192 "GET /url/ HTTP/1.1" 200 11881
+[INFO] [2018-07-31 11:07:41 +0800] basehttp 6512 6388 "GET /url/ HTTP/1.1" 200 11881
+[INFO] [2018-07-31 11:10:57 +0800] basehttp 6512 7668 "GET /demo/ HTTP/1.1" 200 6661
+[INFO] [2018-07-31 11:11:05 +0800] basehttp 6512 4556 "GET /url/ HTTP/1.1" 200 11881
+[INFO] [2018-07-31 11:11:09 +0800] basehttp 6512 6476 "GET /demo/ HTTP/1.1" 200 6661
+[INFO] [2018-07-31 11:11:13 +0800] basehttp 6512 1916 "GET /info/ HTTP/1.1" 200 5886
+[INFO] [2018-07-31 11:11:15 +0800] basehttp 6512 7504 "GET /userauth/ HTTP/1.1" 200 4641
+[INFO] [2018-07-31 11:11:19 +0800] basehttp 6512 7516 "GET /demo/ HTTP/1.1" 200 6661
+[INFO] [2018-07-31 11:11:20 +0800] basehttp 6512 3008 "GET /url/ HTTP/1.1" 200 11881
+[INFO] [2018-07-31 11:13:04 +0800] basehttp 5612 7336 "GET /url/ HTTP/1.1" 200 11881
+[INFO] [2018-07-31 15:55:11 +0800] basehttp 8760 7656 "GET /url/ HTTP/1.1" 200 11881
+[INFO] [2018-07-31 15:55:11 +0800] basehttp 8760 8940 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-31 15:55:12 +0800] basehttp 8760 8908 "GET /url/ HTTP/1.1" 200 11881
+[INFO] [2018-07-31 15:55:12 +0800] basehttp 8760 7472 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-31 15:55:40 +0800] basehttp 5804 1496 "GET /url/ HTTP/1.1" 200 16918
+[INFO] [2018-07-31 15:55:40 +0800] basehttp 5804 8872 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-31 16:42:03 +0800] basehttp 304 9156 "GET /url/ HTTP/1.1" 200 11824
+[INFO] [2018-07-31 16:42:03 +0800] basehttp 304 8564 "GET /static/bootstrap-3.3.7/css/highlights/github.css HTTP/1.1" 304 0
+[INFO] [2018-07-31 16:42:03 +0800] basehttp 304 8344 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-31 16:42:37 +0800] basehttp 304 8652 "GET /url/?page=2 HTTP/1.1" 200 11657
+[INFO] [2018-07-31 16:42:39 +0800] basehttp 304 8768 "GET /url/?page=1 HTTP/1.1" 200 11824
+[INFO] [2018-07-31 16:48:02 +0800] basehttp 6748 9184 "GET /url/ HTTP/1.1" 200 11824
+[INFO] [2018-07-31 17:07:08 +0800] basehttp 7240 8384 "GET /url/?page=2 HTTP/1.1" 200 11657
+[INFO] [2018-07-31 17:07:09 +0800] basehttp 7240 8256 "GET /url/?page=1 HTTP/1.1" 200 11824
+[ERROR] [2018-07-31 17:56:51 +0800] exception 7212 8628 Internal Server Error: /url/
+Traceback (most recent call last):
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\contrib\auth\mixins.py", line 56, in dispatch
+    return super(LoginRequiredMixin, self).dispatch(request, *args, **kwargs)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\views\generic\list.py", line 175, in get
+    context = self.get_context_data()
+  File "D:\project-github\demo\services\views.py", line 46, in get_context_data
+    context_url.update(pagination_data)
+TypeError: 'NoneType' object is not iterable
+[ERROR] [2018-07-31 17:56:52 +0800] basehttp 7212 8628 "GET /url/ HTTP/1.1" 500 89654
+[WARNING] [2018-07-31 17:56:52 +0800] base 7212 4404 Not Found: /favicon.ico
+[WARNING] [2018-07-31 17:56:52 +0800] basehttp 7212 4404 "GET /favicon.ico HTTP/1.1" 404 4604

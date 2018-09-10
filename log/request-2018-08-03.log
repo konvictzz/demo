@@ -1,0 +1,364 @@
+[INFO] [2018-08-03 09:22:25 +0800] basehttp 2316 5408 "GET / HTTP/1.1" 200 5056
+[INFO] [2018-08-03 09:22:25 +0800] basehttp 2316 660 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-03 09:22:27 +0800] basehttp 2316 1228 "GET /url/ HTTP/1.1" 200 12365
+[INFO] [2018-08-03 09:22:31 +0800] basehttp 2316 5860 "GET /url/?page=2 HTTP/1.1" 200 12195
+[INFO] [2018-08-03 09:22:33 +0800] basehttp 2316 4184 "GET /url/?page=1 HTTP/1.1" 200 12365
+[ERROR] [2018-08-03 09:24:51 +0800] exception 6136 6280 Internal Server Error: /url/environment/3/
+Traceback (most recent call last):
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\contrib\auth\mixins.py", line 56, in dispatch
+    return super(LoginRequiredMixin, self).dispatch(request, *args, **kwargs)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\views\generic\list.py", line 175, in get
+    context = self.get_context_data()
+  File "D:\project-github\demo\services\views.py", line 179, in get_context_data
+    paginator = context_url.get('paginator')
+NameError: name 'context_url' is not defined
+[ERROR] [2018-08-03 09:24:51 +0800] basehttp 6136 6280 "GET /url/environment/3/ HTTP/1.1" 500 90840
+[WARNING] [2018-08-03 09:24:51 +0800] base 6136 1516 Not Found: /favicon.ico
+[WARNING] [2018-08-03 09:24:51 +0800] basehttp 6136 1516 "GET /favicon.ico HTTP/1.1" 404 4604
+[ERROR] [2018-08-03 09:25:04 +0800] exception 4396 3632 Internal Server Error: /url/environment/3/
+Traceback (most recent call last):
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\contrib\auth\mixins.py", line 56, in dispatch
+    return super(LoginRequiredMixin, self).dispatch(request, *args, **kwargs)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\views\generic\list.py", line 175, in get
+    context = self.get_context_data()
+  File "D:\project-github\demo\services\views.py", line 183, in get_context_data
+    pagination_data = UrlView.pagination_data(paginator, page, is_paginated)
+TypeError: pagination_data() missing 1 required positional argument: 'is_paginated'
+[ERROR] [2018-08-03 09:25:04 +0800] basehttp 4396 3632 "GET /url/environment/3/ HTTP/1.1" 500 91529
+[INFO] [2018-08-03 09:27:57 +0800] basehttp 4496 3424 "GET /url/environment/3/ HTTP/1.1" 200 15593
+[INFO] [2018-08-03 09:27:57 +0800] basehttp 4496 7052 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-03 09:28:05 +0800] basehttp 4496 2196 "GET /url/ HTTP/1.1" 200 12365
+[INFO] [2018-08-03 09:28:06 +0800] basehttp 4496 6164 "GET /url/?page=2 HTTP/1.1" 200 12195
+[INFO] [2018-08-03 09:28:08 +0800] basehttp 4496 3700 "GET /url/?page=1 HTTP/1.1" 200 12365
+[ERROR] [2018-08-03 09:41:34 +0800] exception 6376 2744 Internal Server Error: /url/environment/3/
+Traceback (most recent call last):
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\contrib\auth\mixins.py", line 56, in dispatch
+    return super(LoginRequiredMixin, self).dispatch(request, *args, **kwargs)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\views\generic\list.py", line 175, in get
+    context = self.get_context_data()
+  File "D:\project-github\demo\services\views.py", line 179, in get_context_data
+    paginator = context_url.get('paginator')
+NameError: name 'context_url' is not defined
+[ERROR] [2018-08-03 09:41:34 +0800] basehttp 6376 2744 "GET /url/environment/3/ HTTP/1.1" 500 90830
+[INFO] [2018-08-03 09:41:55 +0800] basehttp 5736 2792 "GET /url/environment/3/ HTTP/1.1" 200 15593
+[INFO] [2018-08-03 09:41:56 +0800] basehttp 5736 6352 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-03 09:42:03 +0800] basehttp 4512 1012 "GET /url/environment/3/ HTTP/1.1" 200 12446
+[INFO] [2018-08-03 09:42:03 +0800] basehttp 4512 436 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-03 09:42:04 +0800] basehttp 4512 6768 "GET /url/environment/3/?page=2 HTTP/1.1" 200 10463
+[INFO] [2018-08-03 09:42:06 +0800] basehttp 4512 7024 "GET /url/environment/3/?page=1 HTTP/1.1" 200 12446
+[INFO] [2018-08-03 09:42:07 +0800] basehttp 4512 3168 "GET /url/ HTTP/1.1" 200 12365
+[INFO] [2018-08-03 09:42:09 +0800] basehttp 4512 3016 "GET /url/environment/3/ HTTP/1.1" 200 12446
+[INFO] [2018-08-03 09:42:10 +0800] basehttp 4512 4816 "GET /url/environment/3/?page=2 HTTP/1.1" 200 10463
+[INFO] [2018-08-03 09:42:12 +0800] basehttp 4512 2940 "GET /url/environment/3/?page=1 HTTP/1.1" 200 12446
+[INFO] [2018-08-03 09:42:13 +0800] basehttp 4512 5904 "GET /url/environment/3/?page=2 HTTP/1.1" 200 10463
+[INFO] [2018-08-03 09:42:14 +0800] basehttp 4512 2944 "GET /url/environment/3/?page=1 HTTP/1.1" 200 12446
+[INFO] [2018-08-03 10:01:07 +0800] basehttp 1888 6420 "GET /url/ HTTP/1.1" 200 12367
+[INFO] [2018-08-03 10:01:09 +0800] basehttp 1888 4892 "GET /url/?page=2 HTTP/1.1" 200 12197
+[INFO] [2018-08-03 10:01:10 +0800] basehttp 1888 6228 "GET /url/?page=1 HTTP/1.1" 200 12367
+[INFO] [2018-08-03 10:01:47 +0800] basehttp 1888 6324 "GET /url/?page=2 HTTP/1.1" 200 12197
+[INFO] [2018-08-03 10:02:17 +0800] basehttp 2904 5936 "GET /url/?page=1 HTTP/1.1" 200 12367
+[INFO] [2018-08-03 10:02:50 +0800] basehttp 3312 6156 "GET /url/?page=2 HTTP/1.1" 200 12197
+[INFO] [2018-08-03 10:03:20 +0800] basehttp 7128 2708 "GET /url/?page=1 HTTP/1.1" 200 12394
+[INFO] [2018-08-03 10:03:53 +0800] basehttp 2908 6472 "GET /url/?page=2 HTTP/1.1" 200 12197
+[INFO] [2018-08-03 10:08:11 +0800] basehttp 3160 6328 "GET /url/ HTTP/1.1" 200 12385
+[ERROR] [2018-08-03 10:08:57 +0800] exception 3160 4512 Internal Server Error: /search/
+Traceback (most recent call last):
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\project-github\demo\services\views.py", line 345, in search
+    context_search[error_msg] = ''
+NameError: name 'error_msg' is not defined
+[ERROR] [2018-08-03 10:08:57 +0800] basehttp 3160 4512 "GET /search/?q=100.171 HTTP/1.1" 500 70673
+[ERROR] [2018-08-03 10:09:23 +0800] exception 4496 7004 Internal Server Error: /search/
+Traceback (most recent call last):
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\project-github\demo\services\views.py", line 351, in search
+    context_search['url_list'] = models.Server_URLs.filter(Q(url__icontains=q) | Q(required_api__icontains=q))
+AttributeError: type object 'Server_URLs' has no attribute 'filter'
+[ERROR] [2018-08-03 10:09:23 +0800] basehttp 4496 7004 "GET /search/?q=100.171 HTTP/1.1" 500 70452
+[INFO] [2018-08-03 10:11:05 +0800] basehttp 3668 3676 "GET /search/?q=100.171 HTTP/1.1" 200 6904
+[INFO] [2018-08-03 10:11:40 +0800] basehttp 3668 6276 "GET /search/?q=100.171 HTTP/1.1" 200 6932
+[INFO] [2018-08-03 10:11:40 +0800] basehttp 3668 5728 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-03 10:11:42 +0800] basehttp 3668 3700 "GET /search/?q=100.171 HTTP/1.1" 200 6932
+[INFO] [2018-08-03 10:11:42 +0800] basehttp 3668 6376 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-03 10:12:03 +0800] basehttp 3668 5420 "GET /search/?q=100.171 HTTP/1.1" 200 6899
+[INFO] [2018-08-03 10:12:03 +0800] basehttp 3668 6088 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-03 10:12:56 +0800] basehttp 3668 1468 "GET /search/?q=100.171 HTTP/1.1" 200 6910
+[INFO] [2018-08-03 10:12:57 +0800] basehttp 3668 2816 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-03 10:13:49 +0800] basehttp 3668 4940 "GET /search/?q=100.171 HTTP/1.1" 200 6912
+[INFO] [2018-08-03 10:13:49 +0800] basehttp 3668 5420 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-03 10:14:01 +0800] basehttp 3668 6420 "GET /search/?q=100.157 HTTP/1.1" 200 10108
+[INFO] [2018-08-03 10:14:50 +0800] basehttp 3668 524 "GET /search/?q=10.181.100 HTTP/1.1" 200 15311
+[INFO] [2018-08-03 10:16:17 +0800] basehttp 3668 4896 "GET /url/environment/3/ HTTP/1.1" 200 12466
+[INFO] [2018-08-03 10:16:19 +0800] basehttp 3668 4688 "GET /url/ HTTP/1.1" 200 12385
+[INFO] [2018-08-03 10:16:22 +0800] basehttp 3668 2984 "GET /url/?page=2 HTTP/1.1" 200 12215
+[INFO] [2018-08-03 10:16:23 +0800] basehttp 3668 4940 "GET /url/?page=1 HTTP/1.1" 200 12385
+[INFO] [2018-08-03 10:16:25 +0800] basehttp 3668 5420 "GET /url/environment/3/ HTTP/1.1" 200 12466
+[INFO] [2018-08-03 10:16:26 +0800] basehttp 3668 1560 "GET /url/environment/3/?page=2 HTTP/1.1" 200 10483
+[INFO] [2018-08-03 10:16:28 +0800] basehttp 3668 2128 "GET /url/environment/3/?page=1 HTTP/1.1" 200 12466
+[INFO] [2018-08-03 10:16:32 +0800] basehttp 3668 2640 "GET /url/environment/3/?page=2 HTTP/1.1" 200 10483
+[INFO] [2018-08-03 10:16:34 +0800] basehttp 3668 6136 "GET /url/environment/3/?page=1 HTTP/1.1" 200 12466
+[INFO] [2018-08-03 10:43:03 +0800] basehttp 3668 3904 "GET /url/environment/3/?page=2 HTTP/1.1" 200 10483
+[INFO] [2018-08-03 10:43:04 +0800] basehttp 3668 5216 "GET /url/environment/3/?page=1 HTTP/1.1" 200 12466
+[INFO] [2018-08-03 10:43:25 +0800] basehttp 3668 3688 "GET /url/17/ HTTP/1.1" 200 9055
+[INFO] [2018-08-03 10:43:30 +0800] basehttp 3668 4592 "GET /url/ HTTP/1.1" 200 12385
+[INFO] [2018-08-03 10:43:38 +0800] basehttp 3668 5012 "GET /url/26/ HTTP/1.1" 200 6875
+[INFO] [2018-08-03 10:43:40 +0800] basehttp 3668 4072 "GET /url/ HTTP/1.1" 200 12385
+[INFO] [2018-08-03 10:43:44 +0800] basehttp 3668 1132 "GET /url/environment/3/ HTTP/1.1" 200 12466
+[INFO] [2018-08-03 10:49:28 +0800] basehttp 3668 1472 "GET /search/?q=100.130 HTTP/1.1" 200 6556
+[INFO] [2018-08-03 10:50:23 +0800] basehttp 3668 4904 "GET /search/?q=100.130 HTTP/1.1" 200 6556
+[INFO] [2018-08-03 10:54:13 +0800] basehttp 3668 6420 "GET /url/ HTTP/1.1" 200 12385
+[INFO] [2018-08-03 10:54:25 +0800] basehttp 3668 5312 "GET /url/?page=2 HTTP/1.1" 200 12215
+[INFO] [2018-08-03 10:54:43 +0800] basehttp 3668 5416 "GET /url/30/ HTTP/1.1" 200 6238
+[INFO] [2018-08-03 13:52:07 +0800] basehttp 3668 5408 "GET /url/?page=2 HTTP/1.1" 200 12250
+[INFO] [2018-08-03 13:52:07 +0800] basehttp 3668 1012 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-03 13:57:21 +0800] basehttp 3668 7232 "GET /url/?page=2 HTTP/1.1" 200 12670
+[INFO] [2018-08-03 13:57:22 +0800] basehttp 3668 7852 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-03 13:58:41 +0800] basehttp 3668 7532 "GET /url/?page=1 HTTP/1.1" 200 12840
+[INFO] [2018-08-03 13:58:56 +0800] basehttp 3668 3344 "GET /url/?page=1 HTTP/1.1" 200 12385
+[INFO] [2018-08-03 13:58:56 +0800] basehttp 3668 6844 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-03 13:59:40 +0800] basehttp 3668 7152 "GET /url/?page=2 HTTP/1.1" 200 12215
+[INFO] [2018-08-03 13:59:43 +0800] basehttp 3668 7624 "GET /url/?page=1 HTTP/1.1" 200 12385
+[INFO] [2018-08-03 13:59:44 +0800] basehttp 3668 436 "GET /url/?page=2 HTTP/1.1" 200 12215
+[INFO] [2018-08-03 13:59:46 +0800] basehttp 3668 5216 "GET /url/?page=1 HTTP/1.1" 200 12385
+[INFO] [2018-08-03 13:59:48 +0800] basehttp 3668 7692 "GET /url/?page=2 HTTP/1.1" 200 12215
+[INFO] [2018-08-03 13:59:49 +0800] basehttp 3668 6356 "GET /url/?page=1 HTTP/1.1" 200 12385
+[INFO] [2018-08-03 15:34:48 +0800] basehttp 3668 6036 "GET /admin/ HTTP/1.1" 200 8808
+[INFO] [2018-08-03 15:34:50 +0800] basehttp 3668 7484 "GET /admin/services/server_urls/ HTTP/1.1" 200 18125
+[INFO] [2018-08-03 15:34:50 +0800] basehttp 3668 7392 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-08-03 15:34:53 +0800] basehttp 3668 7632 "GET /admin/ HTTP/1.1" 200 8808
+[INFO] [2018-08-03 15:34:55 +0800] basehttp 3668 3972 "GET /admin/services/server_type/ HTTP/1.1" 200 4723
+[INFO] [2018-08-03 15:34:55 +0800] basehttp 3668 6096 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-08-03 15:34:57 +0800] basehttp 3668 7664 "GET /admin/ HTTP/1.1" 200 8808
+[INFO] [2018-08-03 15:35:08 +0800] basehttp 3668 7004 "GET /admin/services/server_urls/ HTTP/1.1" 200 18125
+[INFO] [2018-08-03 15:35:08 +0800] basehttp 3668 6872 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-08-03 15:35:23 +0800] basehttp 3668 364 "GET /admin/services/server_urls/19/change/ HTTP/1.1" 200 8987
+[INFO] [2018-08-03 15:35:23 +0800] basehttp 3668 7616 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-08-03 15:36:52 +0800] basehttp 3668 7184 "GET /admin/services/server_urls/ HTTP/1.1" 200 18125
+[INFO] [2018-08-03 15:36:54 +0800] basehttp 3668 7672 "GET /admin/services/server_urls/add/ HTTP/1.1" 200 7372
+[INFO] [2018-08-03 15:36:54 +0800] basehttp 3668 2816 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-08-03 15:39:31 +0800] basehttp 3668 3644 "GET /url/19/ HTTP/1.1" 200 7626
+[INFO] [2018-08-03 15:41:57 +0800] basehttp 3668 7324 "POST /admin/services/server_urls/add/ HTTP/1.1" 302 0
+[INFO] [2018-08-03 15:41:57 +0800] basehttp 3668 3700 "GET /admin/services/server_urls/ HTTP/1.1" 200 18769
+[INFO] [2018-08-03 15:41:57 +0800] basehttp 3668 7808 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-08-03 15:42:01 +0800] basehttp 3668 8124 "GET /admin/services/server_urls/19/change/ HTTP/1.1" 200 8987
+[INFO] [2018-08-03 15:42:01 +0800] basehttp 3668 7932 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-08-03 15:44:00 +0800] basehttp 3668 6776 "GET /admin/services/server_urls/ HTTP/1.1" 200 18570
+[INFO] [2018-08-03 15:44:02 +0800] basehttp 3668 7312 "GET /admin/services/server_urls/31/change/ HTTP/1.1" 200 8177
+[INFO] [2018-08-03 15:44:02 +0800] basehttp 3668 6096 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-08-03 15:44:17 +0800] basehttp 3668 5928 "POST /admin/services/server_urls/31/change/ HTTP/1.1" 302 0
+[INFO] [2018-08-03 15:44:17 +0800] basehttp 3668 7744 "GET /admin/services/server_urls/ HTTP/1.1" 200 18771
+[INFO] [2018-08-03 15:44:17 +0800] basehttp 3668 7732 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-08-03 15:44:20 +0800] basehttp 3668 7608 "GET /url/ HTTP/1.1" 200 12427
+[INFO] [2018-08-03 15:44:23 +0800] basehttp 3668 7888 "GET /url/31/ HTTP/1.1" 200 7523
+[INFO] [2018-08-03 15:44:28 +0800] basehttp 3668 7660 "GET /url/ HTTP/1.1" 200 12427
+[INFO] [2018-08-03 15:45:31 +0800] basehttp 3668 8076 "GET /url/?page=2 HTTP/1.1" 200 12399
+[INFO] [2018-08-03 15:45:33 +0800] basehttp 3668 7368 "GET /url/?page=3 HTTP/1.1" 200 7320
+[INFO] [2018-08-03 15:45:34 +0800] basehttp 3668 8088 "GET /url/?page=2 HTTP/1.1" 200 12399
+[INFO] [2018-08-03 15:45:37 +0800] basehttp 3668 7436 "GET /url/?page=1 HTTP/1.1" 200 12427
+[INFO] [2018-08-03 15:45:37 +0800] basehttp 3668 5216 "GET /url/?page=3 HTTP/1.1" 200 7320
+[INFO] [2018-08-03 15:45:39 +0800] basehttp 3668 4184 "GET /url/?page=1 HTTP/1.1" 200 12427
+[INFO] [2018-08-03 15:45:40 +0800] basehttp 3668 7152 "GET /url/?page=2 HTTP/1.1" 200 12399
+[INFO] [2018-08-03 15:45:41 +0800] basehttp 3668 6104 "GET /url/?page=1 HTTP/1.1" 200 12427
+[INFO] [2018-08-03 15:45:42 +0800] basehttp 3668 6812 "GET /url/?page=2 HTTP/1.1" 200 12399
+[INFO] [2018-08-03 15:45:43 +0800] basehttp 3668 7624 "GET /url/?page=3 HTTP/1.1" 200 7320
+[INFO] [2018-08-03 15:45:44 +0800] basehttp 3668 7728 "GET /url/?page=2 HTTP/1.1" 200 12399
+[INFO] [2018-08-03 15:45:46 +0800] basehttp 3668 7456 "GET /url/?page=1 HTTP/1.1" 200 12427
+[INFO] [2018-08-03 15:45:47 +0800] basehttp 3668 7772 "GET /url/?page=2 HTTP/1.1" 200 12399
+[INFO] [2018-08-03 15:45:48 +0800] basehttp 3668 7180 "GET /url/?page=3 HTTP/1.1" 200 7320
+[INFO] [2018-08-03 15:45:50 +0800] basehttp 3668 7244 "GET /url/?page=2 HTTP/1.1" 200 12399
+[INFO] [2018-08-03 15:45:52 +0800] basehttp 3668 6436 "GET /url/?page=1 HTTP/1.1" 200 12427
+[INFO] [2018-08-03 15:47:05 +0800] basehttp 3668 7836 "GET /demo/ HTTP/1.1" 200 6942
+[INFO] [2018-08-03 15:47:24 +0800] basehttp 3668 4496 "GET /search/?q=100.161 HTTP/1.1" 200 7968
+[INFO] [2018-08-03 15:47:46 +0800] basehttp 3668 7960 "GET /search/?q=Hotel HTTP/1.1" 200 9784
+[INFO] [2018-08-03 15:48:10 +0800] basehttp 3668 7844 "GET /url/16/ HTTP/1.1" 200 6934
+[INFO] [2018-08-03 15:48:22 +0800] basehttp 3668 7240 "GET /search/?q=100.157 HTTP/1.1" 200 10108
+[INFO] [2018-08-03 15:48:30 +0800] basehttp 3668 8080 "GET /url/7/ HTTP/1.1" 200 7635
+[INFO] [2018-08-03 15:48:43 +0800] basehttp 3668 5576 "GET /url/ HTTP/1.1" 200 12427
+[INFO] [2018-08-03 15:49:34 +0800] basehttp 3668 5804 "GET /demo/ HTTP/1.1" 200 6942
+[INFO] [2018-08-03 16:17:05 +0800] basehttp 3668 8012 "GET /demo/ HTTP/1.1" 200 6942
+[INFO] [2018-08-03 16:55:27 +0800] basehttp 7488 4856 "GET /demo/ HTTP/1.1" 200 6970
+[INFO] [2018-08-03 16:55:28 +0800] basehttp 7488 4184 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-03 17:16:02 +0800] basehttp 7488 7952 "GET /url/ HTTP/1.1" 200 12427
+[INFO] [2018-08-03 17:16:36 +0800] basehttp 7488 3204 "GET /url/ HTTP/1.1" 302 0
+[INFO] [2018-08-03 17:16:36 +0800] basehttp 7488 6540 "GET /userauth/login/?next=/url/ HTTP/1.1" 200 6890
+[INFO] [2018-08-03 17:16:36 +0800] basehttp 7488 7728 "GET /static/bootstrap-3.3.7/css/ie10-viewport-bug-workaround.css HTTP/1.1" 200 433
+[INFO] [2018-08-03 17:16:36 +0800] basehttp 7488 3644 "GET /static/bootstrap-3.3.7/css/starter-template.css HTTP/1.1" 200 96
+[INFO] [2018-08-03 17:16:36 +0800] basehttp 7488 524 "GET /static/bootstrap-3.3.7/css/sticky-footer-navbar.css HTTP/1.1" 200 678
+[INFO] [2018-08-03 17:16:36 +0800] basehttp 7488 6292 "GET /static/bootstrap-3.3.7/css/signin.css HTTP/1.1" 200 793
+[INFO] [2018-08-03 17:16:36 +0800] basehttp 7488 8172 "GET /static/bootstrap-3.3.7/css/blog.css HTTP/1.1" 200 5864
+[INFO] [2018-08-03 17:16:36 +0800] basehttp 7488 6000 "GET /static/bootstrap-3.3.7/css/highlights/github.css HTTP/1.1" 200 4016
+[INFO] [2018-08-03 17:16:36 +0800] basehttp 7488 6424 "GET /static/bootstrap-3.3.7/css/bootstrap.min.css HTTP/1.1" 200 121200
+[INFO] [2018-08-03 17:16:36 +0800] basehttp 7488 6812 "GET /static/bootstrap-3.3.7/js/bootstrap.min.js HTTP/1.1" 200 37045
+[INFO] [2018-08-03 17:16:36 +0800] basehttp 7488 2300 "GET /static/jquery-3.2.1/jquery-3.2.1.min.js HTTP/1.1" 200 86659
+[INFO] [2018-08-03 17:16:36 +0800] basehttp 7488 6316 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-03 17:16:55 +0800] basehttp 7488 6328 "POST /userauth/login/ HTTP/1.1" 302 0
+[INFO] [2018-08-03 17:16:55 +0800] basehttp 7488 7656 "GET /url/ HTTP/1.1" 200 12427
+[WARNING] [2018-08-03 17:16:56 +0800] base 7488 5836 Not Found: /favicon.ico
+[WARNING] [2018-08-03 17:16:56 +0800] basehttp 7488 5836 "GET /favicon.ico HTTP/1.1" 404 4775
+[INFO] [2018-08-03 17:17:07 +0800] basehttp 7488 3380 "GET /url/?page=2 HTTP/1.1" 200 12399
+[INFO] [2018-08-03 17:17:53 +0800] basehttp 7616 7784 "GET /url/ HTTP/1.1" 200 12427
+[INFO] [2018-08-03 17:18:02 +0800] basehttp 7616 7208 "GET /url/ HTTP/1.1" 302 0
+[INFO] [2018-08-03 17:18:02 +0800] basehttp 7616 4324 "GET /userauth/login/?next=/url/ HTTP/1.1" 200 6890
+[INFO] [2018-08-03 17:18:02 +0800] basehttp 7616 3688 "GET /static/bootstrap-3.3.7/css/ie10-viewport-bug-workaround.css HTTP/1.1" 200 433
+[INFO] [2018-08-03 17:18:02 +0800] basehttp 7616 3256 "GET /static/bootstrap-3.3.7/css/starter-template.css HTTP/1.1" 200 96
+[INFO] [2018-08-03 17:18:02 +0800] basehttp 7616 6036 "GET /static/bootstrap-3.3.7/css/blog.css HTTP/1.1" 200 5864
+[INFO] [2018-08-03 17:18:02 +0800] basehttp 7616 804 "GET /static/bootstrap-3.3.7/css/signin.css HTTP/1.1" 200 793
+[INFO] [2018-08-03 17:18:02 +0800] basehttp 7616 2312 "GET /static/bootstrap-3.3.7/css/sticky-footer-navbar.css HTTP/1.1" 200 678
+[INFO] [2018-08-03 17:18:02 +0800] basehttp 7616 2900 "GET /static/bootstrap-3.3.7/css/highlights/github.css HTTP/1.1" 200 4016
+[INFO] [2018-08-03 17:18:02 +0800] basehttp 7616 7868 "GET /static/bootstrap-3.3.7/css/bootstrap.min.css HTTP/1.1" 200 121200
+[INFO] [2018-08-03 17:18:02 +0800] basehttp 7616 4664 "GET /static/bootstrap-3.3.7/js/bootstrap.min.js HTTP/1.1" 200 37045
+[INFO] [2018-08-03 17:18:02 +0800] basehttp 7616 7912 "GET /static/jquery-3.2.1/jquery-3.2.1.min.js HTTP/1.1" 200 86659
+[INFO] [2018-08-03 17:18:03 +0800] basehttp 7616 1316 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[ERROR] [2018-08-03 17:22:51 +0800] exception 7328 6836 Internal Server Error: /demo/
+Traceback (most recent call last):
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\core\handlers\base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\core\handlers\base.py", line 215, in _get_response
+    response = response.render()
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\response.py", line 107, in render
+    self.content = self.rendered_content
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\response.py", line 82, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\response.py", line 64, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\loader.py", line 48, in select_template
+    return engine.get_template(template_name)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\backends\django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\loaders\base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\base.py", line 515, in parse
+    raise self.error(token, e)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\loader_tags.py", line 312, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\base.py", line 515, in parse
+    raise self.error(token, e)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\loader_tags.py", line 255, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\base.py", line 486, in parse
+    raise self.error(token, e)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\base.py", line 484, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\base.py", line 700, in __init__
+    "from '%s'" % (token[upto:], token))
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '['REMOTE_ADDR']' from 'request.META['REMOTE_ADDR']'
+[ERROR] [2018-08-03 17:22:51 +0800] basehttp 7328 6836 "GET /demo/ HTTP/1.1" 500 168256
+[ERROR] [2018-08-03 17:23:49 +0800] exception 7088 7024 Internal Server Error: /demo/
+Traceback (most recent call last):
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\contrib\auth\mixins.py", line 56, in dispatch
+    return super(LoginRequiredMixin, self).dispatch(request, *args, **kwargs)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\views\generic\base.py", line 155, in get
+    context = self.get_context_data(**kwargs)
+  File "D:\project-github\demo\myapp\views.py", line 46, in get_context_data
+    context_demoshow['remote_ip'] = request.META['REMOTE_ADDR']
+NameError: name 'request' is not defined
+[ERROR] [2018-08-03 17:23:49 +0800] basehttp 7088 7024 "GET /demo/ HTTP/1.1" 500 88456
+[INFO] [2018-08-03 17:23:52 +0800] basehttp 7088 1484 "GET /info/ HTTP/1.1" 200 6169
+[ERROR] [2018-08-03 17:24:22 +0800] exception 7088 7544 Internal Server Error: /demo/
+Traceback (most recent call last):
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\contrib\auth\mixins.py", line 56, in dispatch
+    return super(LoginRequiredMixin, self).dispatch(request, *args, **kwargs)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\views\generic\base.py", line 155, in get
+    context = self.get_context_data(**kwargs)
+  File "D:\project-github\demo\myapp\views.py", line 46, in get_context_data
+    context_demoshow['remote_ip'] = request.META['REMOTE_ADDR']
+NameError: name 'request' is not defined
+[ERROR] [2018-08-03 17:24:22 +0800] basehttp 7088 7544 "GET /demo/ HTTP/1.1" 500 88457
+[INFO] [2018-08-03 17:24:36 +0800] basehttp 7088 6776 "GET /info/ HTTP/1.1" 200 6169
+[INFO] [2018-08-03 17:31:28 +0800] basehttp 6076 2672 "GET /search/?q=100.130 HTTP/1.1" 200 6556
+[INFO] [2018-08-03 17:31:33 +0800] basehttp 6076 7444 "GET /search/?q=100.130 HTTP/1.1" 200 6556
+[INFO] [2018-08-03 17:31:38 +0800] basehttp 6076 8096 "GET /search/?q=100.140 HTTP/1.1" 200 6556
+[INFO] [2018-08-03 17:31:42 +0800] basehttp 6076 2144 "GET /search/?q=100.157 HTTP/1.1" 200 10108
+[INFO] [2018-08-03 17:33:30 +0800] basehttp 6076 3732 "GET /search/?q=100.157 HTTP/1.1" 200 10108
+[INFO] [2018-08-03 17:33:32 +0800] basehttp 6076 7284 "GET /search/?q=100.157 HTTP/1.1" 200 9199
+[INFO] [2018-08-03 17:33:32 +0800] basehttp 6076 4856 "GET /static/bootstrap-3.3.7/css/ie10-viewport-bug-workaround.css HTTP/1.1" 200 433
+[INFO] [2018-08-03 17:33:32 +0800] basehttp 6076 6316 "GET /static/bootstrap-3.3.7/css/starter-template.css HTTP/1.1" 200 96
+[INFO] [2018-08-03 17:33:32 +0800] basehttp 6076 6232 "GET /static/bootstrap-3.3.7/css/sticky-footer-navbar.css HTTP/1.1" 200 678
+[INFO] [2018-08-03 17:33:32 +0800] basehttp 6076 8172 "GET /static/bootstrap-3.3.7/css/signin.css HTTP/1.1" 200 793
+[INFO] [2018-08-03 17:33:32 +0800] basehttp 6076 7316 "GET /static/bootstrap-3.3.7/css/blog.css HTTP/1.1" 200 5864
+[INFO] [2018-08-03 17:33:32 +0800] basehttp 6076 6408 "GET /static/bootstrap-3.3.7/css/highlights/github.css HTTP/1.1" 200 4016
+[INFO] [2018-08-03 17:33:32 +0800] basehttp 6076 6980 "GET /static/bootstrap-3.3.7/css/bootstrap.min.css HTTP/1.1" 200 121200
+[INFO] [2018-08-03 17:33:32 +0800] basehttp 6076 7816 "GET /static/bootstrap-3.3.7/js/bootstrap.min.js HTTP/1.1" 200 37045
+[INFO] [2018-08-03 17:33:32 +0800] basehttp 6076 7680 "GET /static/jquery-3.2.1/jquery-3.2.1.min.js HTTP/1.1" 200 86659
+[INFO] [2018-08-03 17:33:32 +0800] basehttp 6076 3016 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-03 17:33:36 +0800] basehttp 6076 7744 "GET /userauth/logout/ HTTP/1.1" 200 4097
+[INFO] [2018-08-03 17:33:38 +0800] basehttp 6076 3084 "GET /userauth/logout/ HTTP/1.1" 200 4097
+[INFO] [2018-08-03 17:33:43 +0800] basehttp 6076 3688 "GET /search/?q=100.157 HTTP/1.1" 200 9199
+[INFO] [2018-08-03 17:34:03 +0800] basehttp 7588 3844 "GET /search/?q=100.157 HTTP/1.1" 302 0
+[INFO] [2018-08-03 17:34:03 +0800] basehttp 7588 7672 "GET /userauth/login/?next=/search/%3Fq%3D100.157 HTTP/1.1" 200 6903

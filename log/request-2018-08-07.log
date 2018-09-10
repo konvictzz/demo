@@ -1,0 +1,223 @@
+[INFO] [2018-08-07 11:23:12 +0800] [django.server] [basehttp.py] basehttp 4612 2148 "GET /url/ HTTP/1.1" 200 12427
+[INFO] [2018-08-07 11:24:41 +0800] [django.server] [basehttp.py] basehttp 4612 4356 "GET /url/ HTTP/1.1" 200 12475
+[INFO] [2018-08-07 11:24:41 +0800] [django.server] [basehttp.py] basehttp 4612 7888 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-07 11:24:44 +0800] [django.server] [basehttp.py] basehttp 4612 7920 "GET /admin/ HTTP/1.1" 200 8797
+[WARNING] [2018-08-07 11:24:44 +0800] [django.request] [base.py] base 4612 848 Not Found: /favicon.ico
+[WARNING] [2018-08-07 11:24:44 +0800] [django.server] [basehttp.py] basehttp 4612 848 "GET /favicon.ico HTTP/1.1" 404 4775
+[INFO] [2018-08-07 11:25:09 +0800] [django.server] [basehttp.py] basehttp 4612 7624 "GET /url/ HTTP/1.1" 200 12491
+[INFO] [2018-08-07 11:25:09 +0800] [django.server] [basehttp.py] basehttp 4612 8160 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-07 11:25:11 +0800] [django.server] [basehttp.py] basehttp 4612 3584 "GET /admin/ HTTP/1.1" 200 8797
+[INFO] [2018-08-07 13:28:03 +0800] [django.server] [basehttp.py] basehttp 4612 284 "GET /demo/ HTTP/1.1" 200 7135
+[INFO] [2018-08-07 13:30:56 +0800] [django.server] [basehttp.py] basehttp 1364 7348 "GET /demo/ HTTP/1.1" 200 7134
+[INFO] [2018-08-07 13:30:56 +0800] [django.server] [basehttp.py] basehttp 1364 7868 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[ERROR] [2018-08-07 13:31:05 +0800] [django.request] [exception.py] exception 1364 3664 Internal Server Error: /demo/
+Traceback (most recent call last):
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\core\handlers\base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\core\handlers\base.py", line 215, in _get_response
+    response = response.render()
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\response.py", line 107, in render
+    self.content = self.rendered_content
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\response.py", line 82, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\response.py", line 64, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\loader.py", line 48, in select_template
+    return engine.get_template(template_name)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\backends\django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\loaders\base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\base.py", line 515, in parse
+    raise self.error(token, e)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\loader_tags.py", line 312, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\base.py", line 515, in parse
+    raise self.error(token, e)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\loader_tags.py", line 255, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\base.py", line 486, in parse
+    raise self.error(token, e)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\base.py", line 484, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\base.py", line 700, in __init__
+    "from '%s'" % (token[upto:], token))
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '/2/2' from 'temp/2/2'
+[ERROR] [2018-08-07 13:31:05 +0800] [django.server] [basehttp.py] basehttp 1364 3664 "GET /demo/ HTTP/1.1" 500 169889
+[ERROR] [2018-08-07 13:34:28 +0800] [django.request] [exception.py] exception 1364 5980 Internal Server Error: /demo/
+Traceback (most recent call last):
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\core\handlers\base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\core\handlers\base.py", line 215, in _get_response
+    response = response.render()
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\response.py", line 107, in render
+    self.content = self.rendered_content
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\response.py", line 82, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\response.py", line 64, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\loader.py", line 48, in select_template
+    return engine.get_template(template_name)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\backends\django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\loaders\base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\base.py", line 515, in parse
+    raise self.error(token, e)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\loader_tags.py", line 312, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\base.py", line 515, in parse
+    raise self.error(token, e)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\loader_tags.py", line 255, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\base.py", line 486, in parse
+    raise self.error(token, e)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\base.py", line 484, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\base.py", line 700, in __init__
+    "from '%s'" % (token[upto:], token))
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: ' temp 1 2' from 'widthratio temp 1 2'
+[ERROR] [2018-08-07 13:34:28 +0800] [django.server] [basehttp.py] basehttp 1364 5980 "GET /demo/ HTTP/1.1" 500 169936
+[INFO] [2018-08-07 13:35:58 +0800] [django.server] [basehttp.py] basehttp 1364 5936 "GET /demo/ HTTP/1.1" 200 7133
+[INFO] [2018-08-07 13:35:58 +0800] [django.server] [basehttp.py] basehttp 1364 8116 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-07 13:36:34 +0800] [django.server] [basehttp.py] basehttp 1364 4576 "GET /hello HTTP/1.1" 200 8243
+[INFO] [2018-08-07 13:36:36 +0800] [django.server] [basehttp.py] basehttp 1364 1316 "GET /hello2 HTTP/1.1" 200 5550
+[INFO] [2018-08-07 13:36:43 +0800] [django.server] [basehttp.py] basehttp 1364 5420 "GET /url/ HTTP/1.1" 200 12491
+[INFO] [2018-08-07 13:36:45 +0800] [django.server] [basehttp.py] basehttp 1364 7492 "GET /demo/ HTTP/1.1" 200 7133
+[INFO] [2018-08-07 13:41:58 +0800] [django.server] [basehttp.py] basehttp 3176 8004 "GET /demo/ HTTP/1.1" 200 7133
+[INFO] [2018-08-07 13:41:58 +0800] [django.server] [basehttp.py] basehttp 3176 7592 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-07 13:41:59 +0800] [django.server] [basehttp.py] basehttp 3176 7896 "GET /demo/ HTTP/1.1" 200 7133
+[INFO] [2018-08-07 13:41:59 +0800] [django.server] [basehttp.py] basehttp 3176 4724 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-07 14:06:23 +0800] [django.server] [basehttp.py] basehttp 5656 3644 "GET /demo/ HTTP/1.1" 200 7133
+[INFO] [2018-08-07 14:06:24 +0800] [django.server] [basehttp.py] basehttp 5656 4860 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-07 14:19:23 +0800] [django.server] [basehttp.py] basehttp 7912 5320 "GET /demo/ HTTP/1.1" 200 7133
+[INFO] [2018-08-07 14:19:23 +0800] [django.server] [basehttp.py] basehttp 7912 284 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-07 14:19:26 +0800] [django.server] [basehttp.py] basehttp 7912 868 "GET /demo/ HTTP/1.1" 200 7133
+[INFO] [2018-08-07 14:19:26 +0800] [django.server] [basehttp.py] basehttp 7912 7892 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-07 14:22:41 +0800] [django.server] [basehttp.py] basehttp 7912 5476 "GET /demo/ HTTP/1.1" 200 7141
+[INFO] [2018-08-07 14:22:41 +0800] [django.server] [basehttp.py] basehttp 7912 7656 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-07 14:33:01 +0800] [django.server] [basehttp.py] basehttp 5236 7264 "GET /demo/ HTTP/1.1" 200 7174
+[INFO] [2018-08-07 14:33:01 +0800] [django.server] [basehttp.py] basehttp 5236 4784 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-07 14:33:36 +0800] [django.server] [basehttp.py] basehttp 5236 4752 "GET /demo/ HTTP/1.1" 200 7173
+[ERROR] [2018-08-07 14:34:59 +0800] [django.request] [exception.py] exception 3912 4832 Internal Server Error: /demo/
+Traceback (most recent call last):
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\contrib\auth\mixins.py", line 56, in dispatch
+    return super(LoginRequiredMixin, self).dispatch(request, *args, **kwargs)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\views\generic\base.py", line 155, in get
+    context = self.get_context_data(**kwargs)
+  File "D:\project-github\demo\myapp\views.py", line 63, in get_context_data
+    elasticsearch_http_data_dict[nodes][fs][total_in_bytes] = elasticsearch_http_data_dict[nodes][fs][total_in_bytes]/1024/1024/1024
+NameError: name 'nodes' is not defined
+[ERROR] [2018-08-07 14:34:59 +0800] [django.server] [basehttp.py] basehttp 3912 4832 "GET /demo/ HTTP/1.1" 500 101643
+[INFO] [2018-08-07 14:36:26 +0800] [django.server] [basehttp.py] basehttp 7300 1316 "GET /demo/ HTTP/1.1" 200 7179
+[INFO] [2018-08-07 14:36:26 +0800] [django.server] [basehttp.py] basehttp 7300 7264 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-07 15:26:06 +0800] [django.server] [basehttp.py] basehttp 8176 7964 "GET /demo/ HTTP/1.1" 200 7167
+[INFO] [2018-08-07 15:26:06 +0800] [django.server] [basehttp.py] basehttp 8176 7980 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-07 15:26:30 +0800] [django.server] [basehttp.py] basehttp 8176 5872 "GET /demo/ HTTP/1.1" 200 7167
+[INFO] [2018-08-07 15:26:31 +0800] [django.server] [basehttp.py] basehttp 8176 7556 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-07 15:28:26 +0800] [django.server] [basehttp.py] basehttp 6180 5232 "GET /demo/ HTTP/1.1" 200 7175
+[INFO] [2018-08-07 15:28:26 +0800] [django.server] [basehttp.py] basehttp 6180 5656 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-07 15:28:43 +0800] [django.server] [basehttp.py] basehttp 6180 7728 "GET /demo/ HTTP/1.1" 200 7177
+[INFO] [2018-08-07 15:28:44 +0800] [django.server] [basehttp.py] basehttp 6180 7336 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-07 15:37:38 +0800] [django.server] [basehttp.py] basehttp 6180 9048 "GET /demo/ HTTP/1.1" 200 7186
+[INFO] [2018-08-07 15:37:38 +0800] [django.server] [basehttp.py] basehttp 6180 9052 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-07 15:39:23 +0800] [django.server] [basehttp.py] basehttp 6180 8640 "GET /demo/ HTTP/1.1" 200 7244
+[INFO] [2018-08-07 15:39:24 +0800] [django.server] [basehttp.py] basehttp 6180 4148 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-07 15:39:44 +0800] [django.server] [basehttp.py] basehttp 6180 9044 "GET /demo/ HTTP/1.1" 200 7272
+[INFO] [2018-08-07 15:39:45 +0800] [django.server] [basehttp.py] basehttp 6180 6920 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-07 15:43:14 +0800] [django.server] [basehttp.py] basehttp 6180 8848 "GET /demo/ HTTP/1.1" 200 7354
+[INFO] [2018-08-07 15:43:14 +0800] [django.server] [basehttp.py] basehttp 6180 10236 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-07 15:43:42 +0800] [django.server] [basehttp.py] basehttp 6180 10200 "GET /demo/ HTTP/1.1" 200 7354
+[INFO] [2018-08-07 15:43:42 +0800] [django.server] [basehttp.py] basehttp 6180 9812 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-07 15:43:45 +0800] [django.server] [basehttp.py] basehttp 6180 9656 "GET /demo/ HTTP/1.1" 200 7353
+[INFO] [2018-08-07 15:43:45 +0800] [django.server] [basehttp.py] basehttp 6180 10136 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-07 15:48:31 +0800] [django.server] [basehttp.py] basehttp 6180 7352 "GET /demo/ HTTP/1.1" 200 7362
+[INFO] [2018-08-07 15:48:31 +0800] [django.server] [basehttp.py] basehttp 6180 6228 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-07 15:56:46 +0800] [django.server] [basehttp.py] basehttp 6180 8796 "GET /demo/ HTTP/1.1" 200 7446
+[INFO] [2018-08-07 15:56:46 +0800] [django.server] [basehttp.py] basehttp 6180 7700 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-07 15:57:43 +0800] [django.server] [basehttp.py] basehttp 6180 9292 "GET /demo/ HTTP/1.1" 200 7447
+[INFO] [2018-08-07 15:57:43 +0800] [django.server] [basehttp.py] basehttp 6180 6184 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-07 16:01:11 +0800] [django.server] [basehttp.py] basehttp 6180 9512 "GET /demo/ HTTP/1.1" 200 7471
+[INFO] [2018-08-07 16:01:12 +0800] [django.server] [basehttp.py] basehttp 6180 6924 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-07 16:01:44 +0800] [django.server] [basehttp.py] basehttp 6180 772 "GET /demo/ HTTP/1.1" 200 7471
+[INFO] [2018-08-07 16:01:45 +0800] [django.server] [basehttp.py] basehttp 6180 10040 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-07 16:02:00 +0800] [django.server] [basehttp.py] basehttp 6180 9596 "GET /demo/ HTTP/1.1" 200 7471
+[INFO] [2018-08-07 16:02:00 +0800] [django.server] [basehttp.py] basehttp 6180 1040 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-07 16:02:36 +0800] [django.server] [basehttp.py] basehttp 6180 10060 "GET /demo/ HTTP/1.1" 200 7472
+[INFO] [2018-08-07 16:02:36 +0800] [django.server] [basehttp.py] basehttp 6180 6768 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-07 16:03:35 +0800] [django.server] [basehttp.py] basehttp 6180 10128 "GET /demo/ HTTP/1.1" 200 7409
+[INFO] [2018-08-07 16:03:36 +0800] [django.server] [basehttp.py] basehttp 6180 5424 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-07 16:06:31 +0800] [django.server] [basehttp.py] basehttp 6180 8476 "GET /demo/ HTTP/1.1" 200 7408
+[INFO] [2018-08-07 16:06:31 +0800] [django.server] [basehttp.py] basehttp 6180 9480 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-07 16:10:52 +0800] [django.server] [basehttp.py] basehttp 6180 9960 "GET /demo/ HTTP/1.1" 200 7408
+[INFO] [2018-08-07 16:10:52 +0800] [django.server] [basehttp.py] basehttp 6180 9252 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-07 16:10:56 +0800] [django.server] [basehttp.py] basehttp 6180 8872 "GET /demo/ HTTP/1.1" 200 7408
+[INFO] [2018-08-07 16:10:56 +0800] [django.server] [basehttp.py] basehttp 6180 6656 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-07 16:11:03 +0800] [django.server] [basehttp.py] basehttp 6180 6064 "GET /demo/ HTTP/1.1" 200 7408
+[INFO] [2018-08-07 16:11:03 +0800] [django.server] [basehttp.py] basehttp 6180 9704 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-07 16:11:09 +0800] [django.server] [basehttp.py] basehttp 6180 10064 "GET /demo/ HTTP/1.1" 200 7408
+[INFO] [2018-08-07 16:11:09 +0800] [django.server] [basehttp.py] basehttp 6180 8832 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-07 16:11:14 +0800] [django.server] [basehttp.py] basehttp 6180 9588 "GET /demo/ HTTP/1.1" 200 7408
+[INFO] [2018-08-07 16:11:15 +0800] [django.server] [basehttp.py] basehttp 6180 9824 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-07 16:11:23 +0800] [django.server] [basehttp.py] basehttp 6180 8648 "GET /demo/ HTTP/1.1" 200 7408
+[INFO] [2018-08-07 16:11:23 +0800] [django.server] [basehttp.py] basehttp 6180 9500 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-07 16:12:01 +0800] [django.server] [basehttp.py] basehttp 6180 9580 "GET /demo/ HTTP/1.1" 200 7408
+[INFO] [2018-08-07 16:12:01 +0800] [django.server] [basehttp.py] basehttp 6180 3352 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-07 18:05:12 +0800] [django.server] [basehttp.py] basehttp 6180 8924 "GET /demo/ HTTP/1.1" 200 7408
+[INFO] [2018-08-07 18:05:12 +0800] [django.server] [basehttp.py] basehttp 6180 7856 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-07 18:27:06 +0800] [django.server] [basehttp.py] basehttp 6180 7208 "GET /demo/ HTTP/1.1" 200 7408
+[INFO] [2018-08-07 18:27:07 +0800] [django.server] [basehttp.py] basehttp 6180 8404 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-07 18:27:10 +0800] [django.server] [basehttp.py] basehttp 6180 8588 "GET /demo/ HTTP/1.1" 200 7408
+[INFO] [2018-08-07 18:27:10 +0800] [django.server] [basehttp.py] basehttp 6180 8412 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-07 18:27:12 +0800] [django.server] [basehttp.py] basehttp 6180 7960 "GET /demo/ HTTP/1.1" 200 7408
+[INFO] [2018-08-07 18:27:12 +0800] [django.server] [basehttp.py] basehttp 6180 9480 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-07 18:27:13 +0800] [django.server] [basehttp.py] basehttp 6180 9688 "GET /demo/ HTTP/1.1" 200 7408
+[INFO] [2018-08-07 18:27:13 +0800] [django.server] [basehttp.py] basehttp 6180 1448 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-07 18:27:14 +0800] [django.server] [basehttp.py] basehttp 6180 9792 "GET /demo/ HTTP/1.1" 200 7408
+[INFO] [2018-08-07 18:27:14 +0800] [django.server] [basehttp.py] basehttp 6180 7384 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-07 18:27:15 +0800] [django.server] [basehttp.py] basehttp 6180 3428 "GET /demo/ HTTP/1.1" 200 7408
+[INFO] [2018-08-07 18:27:16 +0800] [django.server] [basehttp.py] basehttp 6180 7504 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-07 18:28:25 +0800] [django.server] [basehttp.py] basehttp 6180 10196 "GET /demo/ HTTP/1.1" 200 7408
+[INFO] [2018-08-07 18:28:25 +0800] [django.server] [basehttp.py] basehttp 6180 9784 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430

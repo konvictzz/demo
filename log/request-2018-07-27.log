@@ -1,0 +1,79 @@
+[INFO] [2018-07-27 14:43:49 +0800] basehttp 8100 7036 "GET /url/ HTTP/1.1" 200 11736
+[INFO] [2018-07-27 14:43:58 +0800] basehttp 8100 6796 "GET / HTTP/1.1" 200 4786
+[INFO] [2018-07-27 14:44:00 +0800] basehttp 8100 6444 "GET /userauth/ HTTP/1.1" 200 4641
+[INFO] [2018-07-27 14:44:01 +0800] basehttp 8100 4788 "GET /url/ HTTP/1.1" 200 11736
+[INFO] [2018-07-27 14:44:03 +0800] basehttp 8100 2592 "GET /url/?page=2 HTTP/1.1" 200 11569
+[INFO] [2018-07-27 14:44:04 +0800] basehttp 8100 7284 "GET /url/?page=1 HTTP/1.1" 200 11736
+[INFO] [2018-07-27 14:49:47 +0800] basehttp 8100 2708 "GET /url/?page=1 HTTP/1.1" 200 11736
+[INFO] [2018-07-27 14:49:48 +0800] basehttp 8100 6740 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-27 15:45:28 +0800] basehttp 3560 3336 "GET / HTTP/1.1" 200 4786
+[INFO] [2018-07-27 15:45:29 +0800] basehttp 3560 7900 "GET /url/ HTTP/1.1" 200 11736
+[INFO] [2018-07-27 15:45:30 +0800] basehttp 3560 3896 "GET /url/4/ HTTP/1.1" 200 5954
+[INFO] [2018-07-27 15:45:33 +0800] basehttp 3560 5536 "GET /url/25/ HTTP/1.1" 200 6592
+[INFO] [2018-07-27 15:45:51 +0800] basehttp 3560 6700 "GET /url/26/ HTTP/1.1" 200 6592
+[INFO] [2018-07-27 15:49:33 +0800] basehttp 3560 3472 "GET /url/ HTTP/1.1" 200 11758
+[INFO] [2018-07-27 15:50:40 +0800] basehttp 3560 2612 "GET /url/ HTTP/1.1" 200 11795
+[INFO] [2018-07-27 15:55:30 +0800] basehttp 3560 8120 "GET /url/?page=2 HTTP/1.1" 200 11628
+[INFO] [2018-07-27 15:55:32 +0800] basehttp 3560 5748 "GET /url/?page=1 HTTP/1.1" 200 11795
+[INFO] [2018-07-27 15:57:40 +0800] basehttp 3560 8088 "GET /url/?page=1 HTTP/1.1" 200 12409
+[INFO] [2018-07-27 15:57:40 +0800] basehttp 3560 7004 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-27 15:58:31 +0800] basehttp 3560 6108 "GET /url/?page=1 HTTP/1.1" 200 11777
+[INFO] [2018-07-27 15:58:31 +0800] basehttp 3560 7956 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-27 15:58:35 +0800] basehttp 3560 3364 "GET /url/?page=2 HTTP/1.1" 200 11610
+[INFO] [2018-07-27 15:58:37 +0800] basehttp 3560 7052 "GET /url/?page=1 HTTP/1.1" 200 11777
+[INFO] [2018-07-27 16:00:57 +0800] basehttp 3560 7200 "GET /url/ HTTP/1.1" 200 11777
+[INFO] [2018-07-27 16:00:58 +0800] basehttp 3560 3688 "GET /url/ HTTP/1.1" 200 11777
+[ERROR] [2018-07-27 16:01:01 +0800] exception 3560 2440 Internal Server Error: /url/
+Traceback (most recent call last):
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\core\handlers\base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\core\handlers\base.py", line 215, in _get_response
+    response = response.render()
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\response.py", line 107, in render
+    self.content = self.rendered_content
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\response.py", line 84, in rendered_content
+    content = template.render(context, self._request)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\base.py", line 207, in render
+    return self._render(context)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\loader_tags.py", line 72, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\base.py", line 1040, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\base.py", line 708, in resolve
+    obj = self.var.resolve(context)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\base.py", line 849, in resolve
+    value = self._resolve_lookup(context)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\template\base.py", line 911, in _resolve_lookup
+    current = current()
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\core\paginator.py", line 158, in next_page_number
+    return self.paginator.validate_number(self.number + 1)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\core\paginator.py", line 50, in validate_number
+    raise EmptyPage(_('That page contains no results'))
+django.core.paginator.EmptyPage: That page contains no results
+[ERROR] [2018-07-27 16:01:01 +0800] basehttp 3560 2440 "GET /url/?page=2 HTTP/1.1" 500 191257
+[WARNING] [2018-07-27 16:01:02 +0800] base 3560 7752 Not Found: /favicon.ico
+[WARNING] [2018-07-27 16:01:02 +0800] basehttp 3560 7752 "GET /favicon.ico HTTP/1.1" 404 4604
+[INFO] [2018-07-27 16:05:21 +0800] basehttp 3560 6836 "GET /url/ HTTP/1.1" 200 11844
+[INFO] [2018-07-27 16:20:49 +0800] basehttp 5488 5544 "GET /url/ HTTP/1.1" 200 11844

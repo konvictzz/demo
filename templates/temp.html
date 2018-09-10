@@ -10,6 +10,50 @@
 	</div>
 	<p class="lead">{{ now }}</p>
 	<p class="lead">{{ section }} - {{ viewname }}</p>
+	<p class="lead">{{ elasticsearch_node_info_fs.total.total_in_bytes }}</p>
+	<h2 style="padding-bottom: 10px; border-bottom: 1px solid #eee;">Section title</h2>
+	<div class="table-responsive">
+		<table class="table table-striped">
+        	<thead>
+            	<tr>
+                	<th>Env</th>
+                	<th>IP</th>
+                	<th>Count</th>
+                	<th>CPU</th>
+                	<th>Disk</th>
+                	<th>JDK</th>
+                	<th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+            	<tr>
+            		<td>{{ elasticsearch_info.cluster_name }}</td>
+            		<td>10.181.57.57</td>
+            		<td>{{ elasticsearch_info.indices.count }}</td>
+            		<td style="color: #008B45;">{{ elasticsearch_node_info_cpu.cpu.percent }}%</td>
+            		<td>{{ elasticsearch_node_info_fs.total.available_in_bytes }}G / {{ elasticsearch_node_info_fs.total.total_in_bytes }}G</td>
+            		<td>{{ elasticsearch_info.nodes.jvm.versions.0.version }}</td>
+            		{% if elasticsearch_info.status == "green" %}
+            		<td style="background-color: #C1FFC1;">UP</td>
+            		{% elif elasticsearch_info.status == "yellow" %}
+            		<td style="background-color: #fef4a4;">Warn</td>
+            		{% elif elasticsearch_info.status == "red" %}
+            		<td style="background-color: #CD5C5C;">Error</td>
+            		{% endif %}
+            	</tr>
+            	</tr>
+            	<tr>
+            		<td>{{ 26.1678172817 | floatformat:2 }}</td>
+            		<td>{% widthratio 5 100 1 %}</td>
+            		<td>app0</td>
+            		<td>app1</td>
+            		<td>app2</td>
+            		<td>app3</td>
+            		<td style="background-color: #CD5C5C;">app4</td>
+            </tbody>
+        </table>
+    </div>
+
 	<!-- <form class="form-signin" style="max-width: 490px; margin-left: 0; padding: 0px;" action="." method="post">
 		<label class="sr-only" for="id_new_password1">New password:</label>
 		<input class="form-control" style="height: 40px;margin-bottom: 5px;border-radius: 6px;" type="password" name="new_password1" id="id_new_password1" required="required" placeholder="New Password" autofocus="autofocus">

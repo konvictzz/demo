@@ -1,0 +1,62 @@
+[INFO] [2018-08-14 14:45:22 +0800] [django.server] [basehttp.py] basehttp 6212 4628 "GET / HTTP/1.1" 200 5133
+[INFO] [2018-08-14 14:45:22 +0800] [django.server] [basehttp.py] basehttp 6212 380 "GET /static/bootstrap-3.3.7/css/blog.css HTTP/1.1" 304 0
+[INFO] [2018-08-14 14:45:24 +0800] [django.server] [basehttp.py] basehttp 6212 6300 "GET /hello HTTP/1.1" 200 8243
+[INFO] [2018-08-14 14:45:26 +0800] [django.server] [basehttp.py] basehttp 6212 6176 "GET /url/ HTTP/1.1" 200 12599
+[INFO] [2018-08-14 14:45:28 +0800] [django.server] [basehttp.py] basehttp 6212 5952 "GET /elasticsearchinfo/ HTTP/1.1" 200 7060
+[INFO] [2018-08-14 15:12:34 +0800] [django.server] [basehttp.py] basehttp 5020 4036 "GET /elasticsearchinfo/ HTTP/1.1" 200 6989
+[INFO] [2018-08-14 15:12:34 +0800] [django.server] [basehttp.py] basehttp 5020 4004 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-14 15:14:01 +0800] [django.server] [basehttp.py] basehttp 4100 4812 "GET /elasticsearchinfo/ HTTP/1.1" 200 6989
+[INFO] [2018-08-14 15:14:01 +0800] [django.server] [basehttp.py] basehttp 4100 6260 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-14 15:17:40 +0800] [django.server] [basehttp.py] basehttp 380 3796 "GET /elasticsearchinfo/ HTTP/1.1" 200 7084
+[INFO] [2018-08-14 15:17:40 +0800] [django.server] [basehttp.py] basehttp 380 2428 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-14 15:17:52 +0800] [django.server] [basehttp.py] basehttp 380 3436 "GET /elasticsearchinfo/ HTTP/1.1" 200 7178
+[INFO] [2018-08-14 15:17:52 +0800] [django.server] [basehttp.py] basehttp 380 1428 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[ERROR] [2018-08-14 15:32:57 +0800] [django.request] [exception.py] exception 4932 4196 Internal Server Error: /elasticsearchinfo/
+Traceback (most recent call last):
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\contrib\auth\mixins.py", line 56, in dispatch
+    return super(LoginRequiredMixin, self).dispatch(request, *args, **kwargs)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\views\generic\list.py", line 175, in get
+    context = self.get_context_data()
+  File "D:\project-github\demo\services\views.py", line 271, in get_context_data
+    logger.info(node_ip_dict)
+NameError: name 'node_ip_dict' is not defined
+[ERROR] [2018-08-14 15:32:58 +0800] [django.server] [basehttp.py] basehttp 4932 4196 "GET /elasticsearchinfo/ HTTP/1.1" 500 89878
+[WARNING] [2018-08-14 15:32:58 +0800] [django.request] [base.py] base 4932 5560 Not Found: /favicon.ico
+[WARNING] [2018-08-14 15:32:58 +0800] [django.server] [basehttp.py] basehttp 4932 5560 "GET /favicon.ico HTTP/1.1" 404 4968
+[ERROR] [2018-08-14 15:33:19 +0800] [django.request] [exception.py] exception 6336 6256 Internal Server Error: /elasticsearchinfo/
+Traceback (most recent call last):
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\contrib\auth\mixins.py", line 56, in dispatch
+    return super(LoginRequiredMixin, self).dispatch(request, *args, **kwargs)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\views\generic\list.py", line 175, in get
+    context = self.get_context_data()
+  File "D:\project-github\demo\services\views.py", line 271, in get_context_data
+    logger.info(node_ip_dict)
+NameError: name 'node_ip_dict' is not defined
+[ERROR] [2018-08-14 15:33:20 +0800] [django.server] [basehttp.py] basehttp 6336 6256 "GET /elasticsearchinfo/ HTTP/1.1" 500 89878
+[INFO] [2018-08-14 15:33:49 +0800] [django.server] [basehttp.py] basehttp 4724 2084 "GET /elasticsearchinfo/ HTTP/1.1" 200 7178
+[INFO] [2018-08-14 15:33:50 +0800] [django.server] [basehttp.py] basehttp 4724 3312 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-14 15:42:48 +0800] [django.server] [basehttp.py] basehttp 7104 3280 "GET /elasticsearchinfo/ HTTP/1.1" 200 7179
+[INFO] [2018-08-14 15:42:48 +0800] [django.server] [basehttp.py] basehttp 7104 1972 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-14 15:49:56 +0800] [django.server] [basehttp.py] basehttp 7104 5000 "GET /elasticsearchinfo/ HTTP/1.1" 200 7179
+[INFO] [2018-08-14 15:49:56 +0800] [django.server] [basehttp.py] basehttp 7104 4380 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-08-14 15:55:16 +0800] [django.server] [basehttp.py] basehttp 5736 4316 "GET /elasticsearchinfo/ HTTP/1.1" 200 7179

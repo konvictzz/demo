@@ -5,8 +5,11 @@ from django.shortcuts import HttpResponse
 from myapp import models
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
-from django.views.generic import TemplateView
+from django.views.generic.base import TemplateView
 from django.utils import timezone
+import urllib.request
+import json
+from elasticsearch import Elasticsearch
 
 # login required
 # If the user isn’t logged in, redirect to 'settings.LOGIN_URL'
@@ -41,6 +44,48 @@ class DemoShowView(LoginRequiredMixin, TemplateView):
 		context_demoshow['section'] = 'demoshow'
 		context_demoshow['now'] = timezone.now()
 		context_demoshow['viewname'] = __name__
+		context_demoshow['temp'] = 16
+
+		logger.info("catch api info")
+		'''
+		elasticsearch_url = "http://10.181.57.57:9200/_cat/health"
+		elasticsearch_catch_data = urllib.request.urlopen(elasticsearch_url)
+		elasticsearch_http_data_origin = elasticsearch_catch_data.read()
+		elasticsearch_http_data = elasticsearch_http_data_origin.decode("utf-8")
+		elasticsearch_http_data_list = elasticsearch_http_data.split(" ")
+		context_demoshow['elasticsearch_status'] = elasticsearch_http_data_list[3]
+		'''
+		elasticsearch_cluster_health_url = "http://10.181.57.57:9200/_cluster/health"
+		elasticsearch_cluster_stats_url = "http://10.181.57.57:9200/_cluster/stats"
+		elasticsearch_catch_data = urllib.request.urlopen(elasticsearch_cluster_stats_url)
+		elasticsearch_http_data_origin = elasticsearch_catch_data.read()
+		elasticsearch_http_data = elasticsearch_http_data_origin.decode("utf-8")
+		elasticsearch_http_data_dict = json.loads(elasticsearch_http_data)
+		elasticsearch_http_data_dict["nodes"]["fs"]["total_in_bytes"] = round(elasticsearch_http_data_dict["nodes"]["fs"]["total_in_bytes"]/1024/1024/1024, 2)
+		elasticsearch_http_data_dict["nodes"]["fs"]["available_in_bytes"] = round(elasticsearch_http_data_dict["nodes"]["fs"]["available_in_bytes"]/1024/1024/1024, 2)
+		logger.info(elasticsearch_http_data_dict)
+
+		elasticsearch_host = "10.181.57.57"
+		elasticsearch_port = "9200"
+
+		ela_host = Elasticsearch([{'host': elasticsearch_host, 'port': elasticsearch_port}])
+		ela_nodes_full_info = ela_host.nodes.stats(node_id=elasticsearch_host)
+		ela_nodes_uid = "".join(list(ela_nodes_full_info["nodes"].keys()))
+		
+		ela_nodes_fs = ela_nodes_full_info["nodes"][ela_nodes_uid]["fs"]
+		ela_nodes_fs["total"]["total_in_bytes"] = round(ela_nodes_fs["total"]["total_in_bytes"]/1024/1024/1024, 2)
+		ela_nodes_fs["total"]["available_in_bytes"] = round(ela_nodes_fs["total"]["available_in_bytes"]/1024/1024/1024, 2)
+		context_demoshow['elasticsearch_node_info_fs'] = {}	
+		context_demoshow['elasticsearch_node_info_fs'].update(ela_nodes_fs)
+		
+		ela_nodes_cpu = ela_nodes_full_info["nodes"][ela_nodes_uid]["process"]
+		context_demoshow['elasticsearch_node_info_cpu'] = {}
+		context_demoshow['elasticsearch_node_info_cpu'].update(ela_nodes_cpu)
+
+		context_demoshow['elasticsearch_info'] = {}
+		context_demoshow['elasticsearch_info'].update(elasticsearch_http_data_dict)
+		#elasticsearch_http_data_dict["status"]
+		logger.info("catch successfully")
 		logger.info("load context successfully")
 		return context_demoshow
 
@@ -114,6 +159,7 @@ def test(request):
 def homepage(request):
 	context_homepage = {}
 	context_homepage['welcome'] = "welcome"
+	context_homepage['section'] = "homepage"
 	return render(request, 'homepage.html', context_homepage)
 
 def access_error(request):

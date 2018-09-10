@@ -35,35 +35,42 @@
 				<table class="table table-striped">
         			<thead>
         		    	<tr>
-        		        	<th>Env</th>
-        		        	<th>APP</th>
-        		        	<th>URL</th>
-        		        	<th>Remark</th>
-        		        	<th>Status</th>
+                            <th>IP</th>
+                            <th>CPU</th>
+                            <th>Disk</th>
+                            <th>Query_Para</th>
+                            <th>Fetch_Para</th>
+                            <th>heap_used_percent</th>
+                            <th>JDK</th>
+                            <th>Status</th>
         		        </tr>
         		    </thead>
         		    <tbody>
-        		    	{% for url in url_list %}
-        		    	<tr class="url-{{ url.pk }}">
-        		    		<td>{{ url.servertype }}</td>
-        		    		<td><a href="{{ url.get_absolute_url }}">{{ url.app_name }}</a></td>
-        		    		<td><a href="{{ url.url }}" target="_blank">{{ url.url }}</a></td>
-        		    		<td>{{ url.description }}</td>
-        		    		<td>TEMP</td>
+                        {% for ela in nodeinfo %}
+        		    	<tr>
+        		    		<td>{{ ela.IP_Address }}</td>
+        		    		<td style="color: #008B45;">{{ ela.elasticsearch_node_info_cpu.cpu.percent }}%</td>
+                            <td>{{ ela.elasticsearch_node_info_fs.total.available_in_bytes }}G / {{ ela.elasticsearch_node_info_fs.total.total_in_bytes }}G</td>
+                            <td>{{ ela.elasticsearch_node_info_indices.search.query_latency }} ms ({{ ela.elasticsearch_node_info_indices.search.query_time_in_millis }} / {{ ela.elasticsearch_node_info_indices.search.query_total }})</td>
+                            <td>{{ ela.elasticsearch_node_info_indices.search.fetch_latency }} ms ({{ ela.elasticsearch_node_info_indices.search.fetch_time_in_millis }} / {{ ela.elasticsearch_node_info_indices.search.fetch_total }})</td>
+                            <td style="color: #483D8B;">{{ ela.elasticsearch_node_info_jvm.mem.heap_used_percent }}%</td>
+                            <td>{{ ela.elasticsearch_node_info_jvm.others.version }}</td>
+                            {% if ela.elasticsearch_cluster_health.status == "green" %}
+                            <td style="background-color: #C1FFC1;">UP</td>
+                            {% elif ela.elasticsearch_cluster_health.status == "yellow" %}
+                            <td style="background-color: #fef4a4;">Warn</td>
+                            {% elif ela.elasticsearch_cluster_health.status == "red" %}
+                            <td style="background-color: #CD5C5C;">Error</td>
+                            {% endif %}
         		    	</tr>
-        		    	{% endfor %}
+                        {% endfor %}
         		    </tbody>
         		</table>
     		</div>
     		{% if error_msg %}
     		<p>{{ error_msg }}</p>
     		{% endif %}
-    		<!-- <div>{{ is_paginated }}</div>
-    		<div>{{ paginator.page_range }}</div>
-    		<div>{{ page_obj.has_previous }}</div>
-    		<div>{{ page_obj.has_next }}</div> 
-    		<div>{{ has_next_page }}</div> 
-    		<div>{{ has_previous_page }}</div>-->
+            <p class="lead">{{ nodeinfo }}</p>
     		{% if is_paginated == True %}
     		<ul class="pager">
     			{% if has_previous_page == True %}
@@ -119,9 +126,9 @@
 				<li>暂无分类!</li>
 				{% endfor %}
 			</ul>
-			<ul style="margin-top: 20px;">
-				<li><a href="{% url 'services:elasticsearchinfo' %}">elasticsearchinfo</a></li>
-			</ul>
+            <ul style="margin-top: 20px;">
+                <li><a href="{% url 'services:elasticsearchinfo' %}">elasticsearchinfo</a></li>
+            </ul>
 		</div>
 	</aside>
 </div>

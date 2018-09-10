@@ -6,6 +6,9 @@ first upload at 20170928_1712
 + django 1.11.3
 + Markdown 2.6.9
 + Pygments 2.2.0
++ elasticsearch 5.3.0
++ celery 4.2.1
++ eventlet 0.24.1
 
 ## settings
 > path: `./demo/settings.py`  
@@ -34,6 +37,12 @@ DATABASES = {
 	> bash: cd path;python manage.py runserver 0.0.0.0:8000
 
 ## version
++ 1.3.11  
+新增elasticsearch相关信息记录
++ 1.3.10  
+新增URL和相关信息记录
++ 1.3.9  
+增加用户字段
 + 1.3.8  
 完善`日志记录`部分
 + 1.3.7  

@@ -172,7 +172,7 @@ LOGGING = {
     'disable_existing_loggers': False,
     'formatters': {
         'verbose': {
-            'format': '[%(levelname)s] [%(asctime)s] %(module)s %(process)d %(thread)d %(message)s',
+            'format': '[%(levelname)s] [%(asctime)s] [%(name)s] [%(filename)s] %(module)s %(process)d %(thread)d %(message)s',
             'datefmt': '%Y-%m-%d %H:%M:%S %z'
         },
         'simple': {
@@ -190,7 +190,7 @@ LOGGING = {
     },
     'handlers': {
         'request_file': {
-            'level': 'DEBUG',
+            'level': 'INFO',
             'class': 'logging.FileHandler',
             #'filename': '/path/to/django/debug.log',
             'filename': 'log/request-' + time.strftime('%Y-%m-%d',time.localtime(time.time())) + '.log',
@@ -221,6 +221,11 @@ LOGGING = {
         #    'propagate': True,
         #},
         'myapp.views': {
+            'handlers': ['custom_file','console'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+        'services.views': {
             'handlers': ['custom_file','console'],
             'level': 'DEBUG',
             'propagate': True,

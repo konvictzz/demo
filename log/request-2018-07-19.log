@@ -1,0 +1,333 @@
+[INFO] [2018-07-19 09:54:35 +0800] basehttp 7068 6448 "GET / HTTP/1.1" 200 4786
+[INFO] [2018-07-19 09:54:41 +0800] basehttp 7068 4596 "GET /userauth/ HTTP/1.1" 200 4641
+[INFO] [2018-07-19 09:54:50 +0800] basehttp 7068 6884 "GET /admin/ HTTP/1.1" 200 8703
+[WARNING] [2018-07-19 09:54:51 +0800] base 7068 6568 Not Found: /favicon.ico
+[WARNING] [2018-07-19 09:54:51 +0800] basehttp 7068 6568 "GET /favicon.ico HTTP/1.1" 404 4411
+[INFO] [2018-07-19 10:05:18 +0800] basehttp 7068 6252 "GET /userauth/ HTTP/1.1" 200 4641
+[INFO] [2018-07-19 10:05:23 +0800] basehttp 7068 5080 "GET /admin/services/server_type/ HTTP/1.1" 200 4489
+[INFO] [2018-07-19 10:05:23 +0800] basehttp 7068 4720 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-07-19 10:33:47 +0800] basehttp 7068 3324 "GET /admin/services/ HTTP/1.1" 200 2690
+[INFO] [2018-07-19 10:33:55 +0800] basehttp 7068 5664 "GET /admin/services/server_urls/ HTTP/1.1" 200 6290
+[INFO] [2018-07-19 10:33:55 +0800] basehttp 7068 7132 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-07-19 10:53:44 +0800] basehttp 7068 2588 "GET /admin/services/server_urls/3/change/ HTTP/1.1" 200 7651
+[INFO] [2018-07-19 10:53:44 +0800] basehttp 7068 7024 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-07-19 10:58:36 +0800] basehttp 3984 4464 "GET /admin/ HTTP/1.1" 200 8703
+[INFO] [2018-07-19 10:58:40 +0800] basehttp 3984 1712 "GET /admin/services/server_urls/ HTTP/1.1" 200 6290
+[INFO] [2018-07-19 10:58:40 +0800] basehttp 3984 5268 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-07-19 10:58:56 +0800] basehttp 3984 3136 "GET /admin/services/server_urls/4/change/ HTTP/1.1" 200 7685
+[INFO] [2018-07-19 10:58:56 +0800] basehttp 3984 1556 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-07-19 11:01:41 +0800] basehttp 6956 4728 "GET /admin/services/server_urls/4/change/ HTTP/1.1" 200 7685
+[INFO] [2018-07-19 11:01:41 +0800] basehttp 6956 6528 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-07-19 11:01:50 +0800] basehttp 6956 6812 "GET /admin/services/server_urls/ HTTP/1.1" 200 6290
+[INFO] [2018-07-19 11:01:55 +0800] basehttp 6956 6712 "GET /admin/services/server_urls/add/ HTTP/1.1" 200 7232
+[INFO] [2018-07-19 11:01:55 +0800] basehttp 6956 5884 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-07-19 11:01:58 +0800] basehttp 6956 4388 "GET /admin/services/server_urls/ HTTP/1.1" 200 6290
+[INFO] [2018-07-19 11:02:28 +0800] basehttp 6956 312 "GET /admin/services/server_urls/add/ HTTP/1.1" 200 7232
+[INFO] [2018-07-19 11:02:28 +0800] basehttp 6956 4696 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-07-19 11:02:55 +0800] basehttp 6956 6292 "POST /admin/services/server_urls/add/ HTTP/1.1" 302 0
+[INFO] [2018-07-19 11:02:55 +0800] basehttp 6956 4596 "GET /admin/services/server_urls/ HTTP/1.1" 200 6840
+[INFO] [2018-07-19 11:02:56 +0800] basehttp 6956 6820 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-07-19 11:04:12 +0800] basehttp 6956 3276 "GET /admin/services/server_urls/5/change/ HTTP/1.1" 200 7609
+[INFO] [2018-07-19 11:04:12 +0800] basehttp 6956 7084 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-07-19 11:04:20 +0800] basehttp 6956 4596 "GET /admin/services/server_urls/ HTTP/1.1" 200 6659
+[INFO] [2018-07-19 11:04:44 +0800] basehttp 7140 5664 "GET /admin/services/server_urls/ HTTP/1.1" 200 6659
+[INFO] [2018-07-19 11:04:45 +0800] basehttp 7140 6892 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-07-19 11:08:15 +0800] basehttp 6892 2316 "GET /admin/services/server_urls/ HTTP/1.1" 200 6659
+[INFO] [2018-07-19 11:08:15 +0800] basehttp 6892 5080 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-07-19 11:08:18 +0800] basehttp 6892 6648 "GET /admin/services/server_urls/5/change/ HTTP/1.1" 200 7609
+[INFO] [2018-07-19 11:08:18 +0800] basehttp 6892 6884 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-07-19 11:08:20 +0800] basehttp 6892 2588 "GET /admin/services/server_urls/ HTTP/1.1" 200 6659
+[INFO] [2018-07-19 11:10:46 +0800] basehttp 6892 5220 "GET /admin/services/ HTTP/1.1" 200 2690
+[INFO] [2018-07-19 11:10:54 +0800] basehttp 6892 5808 "GET /admin/services/ HTTP/1.1" 200 2690
+[INFO] [2018-07-19 11:19:30 +0800] basehttp 6048 5816 "GET /admin/services/server_type/ HTTP/1.1" 200 4489
+[INFO] [2018-07-19 11:19:30 +0800] basehttp 6048 2588 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-07-19 11:20:10 +0800] basehttp 6048 6104 "GET /admin/services/ HTTP/1.1" 200 2690
+[INFO] [2018-07-19 11:20:11 +0800] basehttp 6048 5208 "GET /admin/services/server_urls/ HTTP/1.1" 200 6659
+[INFO] [2018-07-19 11:20:11 +0800] basehttp 6048 5596 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-07-19 11:20:15 +0800] basehttp 6048 5704 "GET /url/ HTTP/1.1" 200 7468
+[INFO] [2018-07-19 11:20:41 +0800] basehttp 6048 544 "GET /admin/services/server_urls/3/change/ HTTP/1.1" 200 7651
+[INFO] [2018-07-19 11:20:41 +0800] basehttp 6048 6700 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-07-19 11:20:52 +0800] basehttp 6048 6140 "GET /admin/services/server_urls/3/change/ HTTP/1.1" 200 7651
+[INFO] [2018-07-19 11:22:50 +0800] basehttp 6048 6592 "POST /admin/services/server_urls/3/change/ HTTP/1.1" 302 0
+[INFO] [2018-07-19 11:22:50 +0800] basehttp 6048 6548 "GET /admin/services/server_urls/ HTTP/1.1" 200 6854
+[INFO] [2018-07-19 11:22:50 +0800] basehttp 6048 5592 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-07-19 11:22:58 +0800] basehttp 6048 5052 "GET /admin/services/server_urls/3/change/ HTTP/1.1" 200 7660
+[INFO] [2018-07-19 11:22:58 +0800] basehttp 6048 3624 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-07-19 11:24:39 +0800] basehttp 6048 6240 "POST /admin/services/server_urls/3/change/ HTTP/1.1" 302 0
+[INFO] [2018-07-19 11:24:39 +0800] basehttp 6048 7144 "GET /admin/services/server_urls/ HTTP/1.1" 200 6854
+[INFO] [2018-07-19 11:24:39 +0800] basehttp 6048 6292 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-07-19 11:24:41 +0800] basehttp 6048 6168 "GET /admin/services/server_urls/3/change/ HTTP/1.1" 200 8015
+[INFO] [2018-07-19 11:24:41 +0800] basehttp 6048 6148 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-07-19 11:41:15 +0800] basehttp 6048 6412 "POST /admin/services/server_urls/3/change/ HTTP/1.1" 302 0
+[INFO] [2018-07-19 11:41:15 +0800] basehttp 6048 6240 "GET /admin/services/server_urls/ HTTP/1.1" 200 6854
+[INFO] [2018-07-19 11:41:15 +0800] basehttp 6048 6936 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-07-19 11:41:22 +0800] basehttp 6048 6408 "GET /admin/services/server_urls/3/change/ HTTP/1.1" 200 8204
+[INFO] [2018-07-19 11:41:22 +0800] basehttp 6048 6788 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-07-19 11:41:31 +0800] basehttp 6048 6884 "GET /admin/services/server_urls/ HTTP/1.1" 200 6668
+[INFO] [2018-07-19 13:43:37 +0800] basehttp 6048 6660 "GET /admin/services/server_urls/3/change/ HTTP/1.1" 200 8204
+[INFO] [2018-07-19 13:43:37 +0800] basehttp 6048 5900 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-07-19 13:56:37 +0800] basehttp 6048 6388 "POST /admin/services/server_urls/3/change/ HTTP/1.1" 302 0
+[INFO] [2018-07-19 13:56:37 +0800] basehttp 6048 6824 "GET /admin/services/server_urls/ HTTP/1.1" 200 6854
+[INFO] [2018-07-19 13:56:37 +0800] basehttp 6048 5040 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-07-19 14:00:27 +0800] basehttp 6048 1912 "GET /blogindex/ HTTP/1.1" 200 11721
+[INFO] [2018-07-19 14:15:32 +0800] basehttp 6048 7068 "GET /blogindex/ HTTP/1.1" 200 11721
+[INFO] [2018-07-19 14:15:52 +0800] basehttp 6048 6760 "GET /post/2/ HTTP/1.1" 200 10513
+[INFO] [2018-07-19 14:24:09 +0800] basehttp 6048 4692 "GET /url/ HTTP/1.1" 200 7477
+[INFO] [2018-07-19 14:25:12 +0800] basehttp 6048 4812 "GET /url/ HTTP/1.1" 200 7547
+[INFO] [2018-07-19 14:35:24 +0800] basehttp 6048 2152 "GET /blogindex/ HTTP/1.1" 200 11721
+[INFO] [2018-07-19 14:35:33 +0800] basehttp 6048 6244 "GET /url/ HTTP/1.1" 200 7547
+[INFO] [2018-07-19 14:43:12 +0800] basehttp 6864 3996 "GET /demo/ HTTP/1.1" 200 6660
+[INFO] [2018-07-19 14:44:02 +0800] basehttp 6864 6376 "GET /blogindex/ HTTP/1.1" 200 11721
+[INFO] [2018-07-19 14:44:03 +0800] basehttp 6864 3024 "GET /post/3/ HTTP/1.1" 200 10670
+[INFO] [2018-07-19 14:44:06 +0800] basehttp 6864 7112 "GET /post/2/ HTTP/1.1" 200 10513
+[INFO] [2018-07-19 14:49:33 +0800] basehttp 6864 5644 "GET /category/2/ HTTP/1.1" 200 10164
+[INFO] [2018-07-19 14:49:35 +0800] basehttp 6864 6136 "GET /post/3/ HTTP/1.1" 200 10670
+[INFO] [2018-07-19 14:49:37 +0800] basehttp 6864 6948 "GET /post/2/ HTTP/1.1" 200 10513
+[INFO] [2018-07-19 14:53:35 +0800] basehttp 304 6424 "GET /blogindex/ HTTP/1.1" 200 11721
+[ERROR] [2018-07-19 14:53:37 +0800] exception 304 7056 Internal Server Error: /post/2/
+Traceback (most recent call last):
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\project-github\demo\myapp\views.py", line 142, in detail
+    context_detail['post'].content =  markdown.markdown(context_detail['post'].content,
+KeyError: 'post'
+[ERROR] [2018-07-19 14:53:37 +0800] basehttp 304 7056 "GET /post/2/ HTTP/1.1" 500 70727
+[INFO] [2018-07-19 14:53:50 +0800] basehttp 7040 4156 "GET /post/2/ HTTP/1.1" 200 10513
+[INFO] [2018-07-19 15:22:22 +0800] basehttp 7640 7844 "GET /url/ HTTP/1.1" 200 7657
+[INFO] [2018-07-19 15:22:46 +0800] basehttp 7640 5860 "GET /url/ HTTP/1.1" 200 7657
+[INFO] [2018-07-19 15:22:46 +0800] basehttp 7640 5256 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[ERROR] [2018-07-19 15:22:47 +0800] exception 7640 6796 Internal Server Error: /url/1/
+Traceback (most recent call last):
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\contrib\auth\decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\project-github\demo\services\views.py", line 30, in url_detail
+    context_url_detail['url'].content =  markdown.markdown(context_url_detail['url'].content,
+NameError: name 'markdown' is not defined
+[ERROR] [2018-07-19 15:22:47 +0800] basehttp 7640 6796 "GET /url/1/ HTTP/1.1" 500 75350
+[ERROR] [2018-07-19 15:23:37 +0800] exception 1912 8112 Internal Server Error: /url/1/
+Traceback (most recent call last):
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\contrib\auth\decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\project-github\demo\services\views.py", line 31, in url_detail
+    context_url_detail['url'].content =  markdown.markdown(context_url_detail['url'].content,
+AttributeError: 'Server_URLs' object has no attribute 'content'
+[ERROR] [2018-07-19 15:23:37 +0800] basehttp 1912 8112 "GET /url/1/ HTTP/1.1" 500 75480
+[INFO] [2018-07-19 15:26:43 +0800] basehttp 6460 7260 "GET /url/1/ HTTP/1.1" 200 5628
+[INFO] [2018-07-19 15:27:43 +0800] basehttp 6460 6152 "GET /url/1/ HTTP/1.1" 200 5628
+[INFO] [2018-07-19 15:27:43 +0800] basehttp 6460 1224 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-19 15:27:44 +0800] basehttp 6460 6728 "GET /url/1/ HTTP/1.1" 200 5628
+[INFO] [2018-07-19 15:27:44 +0800] basehttp 6460 7364 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-19 15:30:07 +0800] basehttp 6460 7828 "GET /url/ HTTP/1.1" 200 7657
+[INFO] [2018-07-19 15:30:10 +0800] basehttp 6460 2208 "GET /url/3/ HTTP/1.1" 200 6890
+[INFO] [2018-07-19 15:33:00 +0800] basehttp 6460 7920 "GET /blogindex/ HTTP/1.1" 200 11721
+[INFO] [2018-07-19 15:33:01 +0800] basehttp 6460 7492 "GET /post/2/ HTTP/1.1" 200 10513
+[INFO] [2018-07-19 15:33:06 +0800] basehttp 6460 5576 "GET /admin/ HTTP/1.1" 200 8660
+[INFO] [2018-07-19 15:33:08 +0800] basehttp 6460 6812 "GET /admin/myapp/article_blog/ HTTP/1.1" 200 6047
+[INFO] [2018-07-19 15:33:08 +0800] basehttp 6460 7248 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-07-19 15:33:09 +0800] basehttp 6460 7352 "GET /admin/myapp/article_blog/2/change/ HTTP/1.1" 200 10397
+[INFO] [2018-07-19 15:33:09 +0800] basehttp 6460 7736 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-07-19 15:33:17 +0800] basehttp 6460 5080 "GET /admin/myapp/article_blog/ HTTP/1.1" 200 6047
+[INFO] [2018-07-19 15:33:19 +0800] basehttp 6460 7816 "GET /admin/ HTTP/1.1" 200 8660
+[INFO] [2018-07-19 15:33:24 +0800] basehttp 6460 6944 "GET /admin/services/server_urls/ HTTP/1.1" 200 6668
+[INFO] [2018-07-19 15:33:24 +0800] basehttp 6460 3996 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-07-19 15:33:27 +0800] basehttp 6460 8068 "GET /admin/services/server_urls/3/change/ HTTP/1.1" 200 8990
+[INFO] [2018-07-19 15:33:27 +0800] basehttp 6460 7728 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-07-19 15:45:16 +0800] basehttp 6460 2208 "GET /url/ HTTP/1.1" 200 7657
+[INFO] [2018-07-19 15:45:17 +0800] basehttp 6460 6672 "GET /url/3/ HTTP/1.1" 200 6890
+[INFO] [2018-07-19 15:46:09 +0800] basehttp 6460 7452 "GET /admin/services/server_urls/ HTTP/1.1" 200 6668
+[INFO] [2018-07-19 15:46:09 +0800] basehttp 6460 7856 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-07-19 15:46:11 +0800] basehttp 6460 6152 "GET /admin/services/server_urls/5/change/ HTTP/1.1" 200 7680
+[INFO] [2018-07-19 15:46:11 +0800] basehttp 6460 3440 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-07-19 15:46:23 +0800] basehttp 6460 6928 "POST /admin/services/server_urls/5/change/ HTTP/1.1" 302 0
+[INFO] [2018-07-19 15:46:23 +0800] basehttp 6460 7916 "GET /admin/services/server_urls/ HTTP/1.1" 200 6851
+[INFO] [2018-07-19 15:46:23 +0800] basehttp 6460 7520 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-07-19 15:46:26 +0800] basehttp 6460 5700 "GET /url/ HTTP/1.1" 200 7657
+[INFO] [2018-07-19 15:46:30 +0800] basehttp 6460 7280 "GET /url/5/ HTTP/1.1" 200 5656
+[INFO] [2018-07-19 15:46:40 +0800] basehttp 6460 304 "GET /admin/ HTTP/1.1" 200 8660
+[INFO] [2018-07-19 15:46:46 +0800] basehttp 6460 5808 "GET /admin/myapp/article_blog/ HTTP/1.1" 200 6047
+[INFO] [2018-07-19 15:46:46 +0800] basehttp 6460 284 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-07-19 15:46:55 +0800] basehttp 6460 3680 "GET /admin/myapp/article_blog/1/change/ HTTP/1.1" 200 10158
+[INFO] [2018-07-19 15:46:55 +0800] basehttp 6460 4580 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-07-19 15:46:59 +0800] basehttp 6460 7220 "GET /admin/myapp/article_blog/ HTTP/1.1" 200 6047
+[INFO] [2018-07-19 15:47:00 +0800] basehttp 6460 7396 "GET /admin/myapp/article_blog/2/change/ HTTP/1.1" 200 10397
+[INFO] [2018-07-19 15:47:00 +0800] basehttp 6460 8028 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-07-19 15:51:26 +0800] basehttp 6460 6140 "GET /admin/ HTTP/1.1" 200 8660
+[INFO] [2018-07-19 15:51:28 +0800] basehttp 6460 7892 "GET /admin/services/server_urls/ HTTP/1.1" 200 6668
+[INFO] [2018-07-19 15:51:28 +0800] basehttp 6460 7824 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-07-19 15:51:30 +0800] basehttp 6460 7636 "GET /admin/services/server_urls/3/change/ HTTP/1.1" 200 8990
+[INFO] [2018-07-19 15:51:31 +0800] basehttp 6460 280 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-07-19 15:52:04 +0800] basehttp 6460 8064 "POST /admin/services/server_urls/3/change/ HTTP/1.1" 302 0
+[INFO] [2018-07-19 15:52:04 +0800] basehttp 6460 7476 "GET /admin/services/server_urls/ HTTP/1.1" 200 6854
+[INFO] [2018-07-19 15:52:04 +0800] basehttp 6460 8004 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-07-19 15:52:07 +0800] basehttp 6460 3380 "GET /url/ HTTP/1.1" 200 7657
+[INFO] [2018-07-19 15:52:09 +0800] basehttp 6460 7736 "GET /url/3/ HTTP/1.1" 200 6944
+[INFO] [2018-07-19 15:52:16 +0800] basehttp 6460 7492 "GET /admin/services/server_urls/3/change/ HTTP/1.1" 200 9028
+[INFO] [2018-07-19 15:52:16 +0800] basehttp 6460 7252 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-07-19 15:53:06 +0800] basehttp 6460 7700 "POST /admin/services/server_urls/3/change/ HTTP/1.1" 302 0
+[INFO] [2018-07-19 15:53:06 +0800] basehttp 6460 5576 "GET /admin/services/server_urls/ HTTP/1.1" 200 6854
+[INFO] [2018-07-19 15:53:06 +0800] basehttp 6460 7952 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-07-19 15:53:09 +0800] basehttp 6460 7292 "GET /url/3/ HTTP/1.1" 200 6951
+[INFO] [2018-07-19 15:53:09 +0800] basehttp 6460 6536 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-19 15:53:55 +0800] basehttp 6460 7320 "GET /admin/services/server_urls/3/change/ HTTP/1.1" 200 9035
+[INFO] [2018-07-19 15:53:55 +0800] basehttp 6460 7760 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-07-19 15:56:17 +0800] basehttp 6460 4692 "POST /admin/services/server_urls/3/change/ HTTP/1.1" 302 0
+[INFO] [2018-07-19 15:56:17 +0800] basehttp 6460 8176 "GET /admin/services/server_urls/ HTTP/1.1" 200 6854
+[INFO] [2018-07-19 15:56:17 +0800] basehttp 6460 2208 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-07-19 15:56:20 +0800] basehttp 6460 7228 "GET /url/3/ HTTP/1.1" 200 6949
+[INFO] [2018-07-19 15:56:21 +0800] basehttp 6460 8172 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-19 15:56:23 +0800] basehttp 6460 7464 "GET /url/3/ HTTP/1.1" 200 6949
+[INFO] [2018-07-19 15:56:23 +0800] basehttp 6460 7240 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-19 15:57:26 +0800] basehttp 6728 6628 "GET /url/3/ HTTP/1.1" 200 7026
+[INFO] [2018-07-19 15:57:26 +0800] basehttp 6728 7120 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-19 15:57:43 +0800] basehttp 6728 6872 "GET /admin/services/server_urls/3/change/ HTTP/1.1" 200 9033
+[INFO] [2018-07-19 15:57:43 +0800] basehttp 6728 6472 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-07-19 15:58:07 +0800] basehttp 6728 7664 "POST /admin/services/server_urls/3/change/ HTTP/1.1" 302 0
+[INFO] [2018-07-19 15:58:07 +0800] basehttp 6728 7288 "GET /admin/services/server_urls/ HTTP/1.1" 200 6854
+[INFO] [2018-07-19 15:58:07 +0800] basehttp 6728 7472 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-07-19 15:58:12 +0800] basehttp 6728 7340 "GET /url/3/ HTTP/1.1" 200 6994
+[INFO] [2018-07-19 15:58:12 +0800] basehttp 6728 4652 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-19 15:58:24 +0800] basehttp 6728 7912 "GET /admin/services/server_urls/3/change/ HTTP/1.1" 200 9030
+[INFO] [2018-07-19 15:58:24 +0800] basehttp 6728 6548 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-07-19 15:58:55 +0800] basehttp 6728 1672 "POST /admin/services/server_urls/3/change/ HTTP/1.1" 302 0
+[INFO] [2018-07-19 15:58:55 +0800] basehttp 6728 7528 "GET /admin/services/server_urls/ HTTP/1.1" 200 6854
+[INFO] [2018-07-19 15:58:55 +0800] basehttp 6728 4712 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-07-19 15:58:57 +0800] basehttp 6728 7152 "GET /url/3/ HTTP/1.1" 200 7092
+[INFO] [2018-07-19 15:58:57 +0800] basehttp 6728 4404 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-19 15:59:06 +0800] basehttp 6728 8180 "GET /admin/services/server_urls/3/change/ HTTP/1.1" 200 9058
+[INFO] [2018-07-19 15:59:06 +0800] basehttp 6728 6140 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-07-19 16:00:45 +0800] basehttp 6728 7668 "POST /admin/services/server_urls/3/change/ HTTP/1.1" 302 0
+[INFO] [2018-07-19 16:00:45 +0800] basehttp 6728 6604 "GET /admin/services/server_urls/ HTTP/1.1" 200 6854
+[INFO] [2018-07-19 16:00:45 +0800] basehttp 6728 7440 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-07-19 16:00:47 +0800] basehttp 6728 5076 "GET /url/3/ HTTP/1.1" 200 7139
+[INFO] [2018-07-19 16:00:47 +0800] basehttp 6728 3324 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-19 16:01:17 +0800] basehttp 6728 6252 "GET /url/environment/2/ HTTP/1.1" 200 6384
+[INFO] [2018-07-19 16:01:19 +0800] basehttp 6728 7224 "GET /url/environment/1/ HTTP/1.1" 200 7306
+[INFO] [2018-07-19 16:01:22 +0800] basehttp 6728 7348 "GET /url/ HTTP/1.1" 200 7657
+[INFO] [2018-07-19 16:03:48 +0800] basehttp 6728 7728 "GET /url/3/ HTTP/1.1" 200 7139
+[INFO] [2018-07-19 16:03:52 +0800] basehttp 6728 6388 "GET /admin/services/server_urls/3/change/ HTTP/1.1" 200 9082
+[INFO] [2018-07-19 16:03:52 +0800] basehttp 6728 4584 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-07-19 16:04:25 +0800] basehttp 6728 6248 "POST /admin/services/server_urls/3/change/ HTTP/1.1" 302 0
+[INFO] [2018-07-19 16:04:25 +0800] basehttp 6728 7428 "GET /admin/services/server_urls/ HTTP/1.1" 200 6854
+[INFO] [2018-07-19 16:04:25 +0800] basehttp 6728 7980 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-07-19 16:04:32 +0800] basehttp 6728 8176 "GET /url/3/ HTTP/1.1" 200 7204
+[INFO] [2018-07-19 16:04:32 +0800] basehttp 6728 2208 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-19 16:04:43 +0800] basehttp 6728 7464 "GET /admin/services/server_urls/3/change/ HTTP/1.1" 200 9100
+[INFO] [2018-07-19 16:04:43 +0800] basehttp 6728 7240 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-07-19 16:04:55 +0800] basehttp 6728 8120 "POST /admin/services/server_urls/3/change/ HTTP/1.1" 302 0
+[INFO] [2018-07-19 16:04:55 +0800] basehttp 6728 7772 "GET /admin/services/server_urls/ HTTP/1.1" 200 6854
+[INFO] [2018-07-19 16:04:55 +0800] basehttp 6728 6600 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-07-19 16:04:58 +0800] basehttp 6728 7888 "GET /url/3/ HTTP/1.1" 200 7586
+[INFO] [2018-07-19 16:04:58 +0800] basehttp 6728 7548 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-19 16:11:19 +0800] basehttp 6728 2724 "GET /admin/services/server_urls/3/change/ HTTP/1.1" 200 9467
+[INFO] [2018-07-19 16:11:19 +0800] basehttp 6728 7504 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-07-19 16:11:27 +0800] basehttp 6728 7712 "POST /admin/services/server_urls/3/change/ HTTP/1.1" 302 0
+[INFO] [2018-07-19 16:11:27 +0800] basehttp 6728 7460 "GET /admin/services/server_urls/ HTTP/1.1" 200 6854
+[INFO] [2018-07-19 16:11:27 +0800] basehttp 6728 7204 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-07-19 16:11:30 +0800] basehttp 6728 8060 "GET /url/3/ HTTP/1.1" 200 7204
+[INFO] [2018-07-19 16:11:30 +0800] basehttp 6728 4692 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-19 16:13:11 +0800] basehttp 6728 6784 "GET /url/3/ HTTP/1.1" 200 7333
+[INFO] [2018-07-19 16:13:11 +0800] basehttp 6728 4736 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-19 16:13:15 +0800] basehttp 6728 8004 "GET /url/ HTTP/1.1" 200 7657
+[INFO] [2018-07-19 16:14:36 +0800] basehttp 6728 2692 "GET /url/ HTTP/1.1" 200 7703
+[INFO] [2018-07-19 16:14:39 +0800] basehttp 6728 7416 "GET /url/environment/1/ HTTP/1.1" 200 7352
+[INFO] [2018-07-19 16:14:41 +0800] basehttp 6728 7848 "GET /url/ HTTP/1.1" 200 7703
+[INFO] [2018-07-19 16:14:44 +0800] basehttp 6728 5916 "GET /url/environment/2/ HTTP/1.1" 200 6430
+[INFO] [2018-07-19 16:14:45 +0800] basehttp 6728 4696 "GET /url/ HTTP/1.1" 200 7703
+[INFO] [2018-07-19 16:14:58 +0800] basehttp 6728 7772 "GET /url/3/ HTTP/1.1" 200 7391
+[INFO] [2018-07-19 16:15:00 +0800] basehttp 6728 8072 "GET /url/ HTTP/1.1" 200 7703
+[INFO] [2018-07-19 16:46:30 +0800] basehttp 6728 8144 "GET /url/3/ HTTP/1.1" 200 7391
+[INFO] [2018-07-19 16:58:07 +0800] basehttp 6728 6752 "GET /url/ HTTP/1.1" 200 7542
+[INFO] [2018-07-19 16:58:08 +0800] basehttp 6728 7696 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-19 17:00:00 +0800] basehttp 6728 7848 "GET /blogindex/ HTTP/1.1" 200 11721
+[INFO] [2018-07-19 17:00:02 +0800] basehttp 6728 7344 "GET /url/ HTTP/1.1" 200 7542
+[INFO] [2018-07-19 17:00:52 +0800] basehttp 6728 4676 "GET /blogindex/ HTTP/1.1" 200 11721
+[INFO] [2018-07-19 17:01:12 +0800] basehttp 6728 2876 "GET /blogindex/ HTTP/1.1" 200 11721
+[INFO] [2018-07-19 17:01:13 +0800] basehttp 6728 6720 "GET /url/ HTTP/1.1" 200 7542
+[INFO] [2018-07-19 17:11:30 +0800] basehttp 6728 4352 "GET /demo/ HTTP/1.1" 200 6660
+[INFO] [2018-07-19 17:11:33 +0800] basehttp 6728 6576 "GET /userauth/logout/ HTTP/1.1" 200 3814
+[INFO] [2018-07-19 17:11:38 +0800] basehttp 6728 3024 "GET /demo HTTP/1.1" 301 0
+[INFO] [2018-07-19 17:11:38 +0800] basehttp 6728 6828 "GET /demo/ HTTP/1.1" 302 0
+[INFO] [2018-07-19 17:11:38 +0800] basehttp 6728 4368 "GET /userauth/login/?next=/demo/ HTTP/1.1" 200 6608
+[INFO] [2018-07-19 17:11:40 +0800] basehttp 6728 1756 "POST /userauth/login/ HTTP/1.1" 302 0
+[INFO] [2018-07-19 17:11:40 +0800] basehttp 6728 3200 "GET /demo/ HTTP/1.1" 200 6660
+[INFO] [2018-07-19 17:29:09 +0800] basehttp 5904 6068 "GET / HTTP/1.1" 200 4786
+[ERROR] [2018-07-19 17:29:10 +0800] exception 5904 1240 Internal Server Error: /url/
+Traceback (most recent call last):
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\contrib\auth\mixins.py", line 56, in dispatch
+    return super(LoginRequiredMixin, self).dispatch(request, *args, **kwargs)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\views\generic\base.py", line 155, in get
+    context = self.get_context_data(**kwargs)
+  File "D:\project-github\demo\services\views.py", line 15, in get_context_data
+    context_url = super(DemoShowView, self).get_context_data(**kwargs)
+NameError: name 'DemoShowView' is not defined
+[ERROR] [2018-07-19 17:29:10 +0800] basehttp 5904 1240 "GET /url/ HTTP/1.1" 500 87416
+[ERROR] [2018-07-19 17:29:54 +0800] exception 7204 3008 Internal Server Error: /url/
+Traceback (most recent call last):
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\contrib\auth\mixins.py", line 56, in dispatch
+    return super(LoginRequiredMixin, self).dispatch(request, *args, **kwargs)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\views\generic\base.py", line 156, in get
+    return self.render_to_response(context)
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\views\generic\base.py", line 130, in render_to_response
+    template=self.get_template_names(),
+  File "C:\Users\hunter.yang\AppData\Local\Programs\Python\Python35\lib\site-packages\django-1.11.3-py3.5.egg\django\views\generic\base.py", line 143, in get_template_names
+    "TemplateResponseMixin requires either a definition of "
+django.core.exceptions.ImproperlyConfigured: TemplateResponseMixin requires either a definition of 'template_name' or an implementation of 'get_template_names()'
+[ERROR] [2018-07-19 17:29:54 +0800] basehttp 7204 3008 "GET /url/ HTTP/1.1" 500 92809
+[INFO] [2018-07-19 17:30:15 +0800] basehttp 6448 6520 "GET /url/ HTTP/1.1" 200 7542
+[INFO] [2018-07-19 17:30:15 +0800] basehttp 6448 7784 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
+[INFO] [2018-07-19 17:30:17 +0800] basehttp 6448 6388 "GET /url/1/ HTTP/1.1" 200 5815
+[INFO] [2018-07-19 17:30:19 +0800] basehttp 6448 6548 "GET /url/ HTTP/1.1" 200 7542
+[INFO] [2018-07-19 17:30:20 +0800] basehttp 6448 7720 "GET /url/3/ HTTP/1.1" 200 7391
+[INFO] [2018-07-19 17:30:23 +0800] basehttp 6448 7208 "GET /url/ HTTP/1.1" 200 7542
+[INFO] [2018-07-19 17:30:28 +0800] basehttp 6448 7468 "GET /userauth/logout/ HTTP/1.1" 200 3814
+[INFO] [2018-07-19 17:30:33 +0800] basehttp 6448 7600 "GET /url/ HTTP/1.1" 302 0
+[INFO] [2018-07-19 17:30:33 +0800] basehttp 6448 276 "GET /userauth/login/?next=/url/ HTTP/1.1" 200 6607
+[INFO] [2018-07-19 17:30:41 +0800] basehttp 6448 292 "GET /url/1 HTTP/1.1" 301 0
+[INFO] [2018-07-19 17:30:41 +0800] basehttp 6448 7920 "GET /url/1/ HTTP/1.1" 302 0
+[INFO] [2018-07-19 17:30:41 +0800] basehttp 6448 7324 "GET /userauth/login/?next=/url/1/ HTTP/1.1" 200 6609
+[INFO] [2018-07-19 17:30:42 +0800] basehttp 6448 6556 "POST /userauth/login/ HTTP/1.1" 302 0
+[INFO] [2018-07-19 17:30:42 +0800] basehttp 6448 7948 "GET /url/1/ HTTP/1.1" 200 5815
+[INFO] [2018-07-19 17:30:44 +0800] basehttp 6448 7724 "GET /url/ HTTP/1.1" 200 7542
+[INFO] [2018-07-19 17:52:36 +0800] basehttp 6448 7800 "GET /admin/services/server_urls/5/change/ HTTP/1.1" 200 7702
+[INFO] [2018-07-19 17:52:36 +0800] basehttp 6448 6228 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-07-19 17:54:32 +0800] basehttp 6448 3564 "POST /admin/services/server_urls/5/change/ HTTP/1.1" 302 0
+[INFO] [2018-07-19 17:54:32 +0800] basehttp 6448 4408 "GET /admin/services/server_urls/ HTTP/1.1" 200 6872
+[INFO] [2018-07-19 17:54:32 +0800] basehttp 6448 6048 "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[INFO] [2018-07-19 17:54:35 +0800] basehttp 6448 8132 "GET /url/ HTTP/1.1" 200 7569
+[INFO] [2018-07-19 17:54:35 +0800] basehttp 6448 7696 "GET /static/icon/favicon.ico HTTP/1.1" 200 5430
