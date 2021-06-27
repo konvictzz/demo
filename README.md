@@ -22,6 +22,32 @@ DATABASES = {
     }
 }
 ```
+```
+[root@localhost ~]# vim /usr/lib/systemd/system/mariadb.service
+[Unit]
+
+Description=MariaDB Server
+
+After=network.target
+
+
+
+[Install]
+
+WantedBy=multi-user.target
+
+
+
+[Service]
+
+Type=forking
+
+PermissionsStartOnly=true
+
+ExecStart=/etc/init.d/mysqld start
+
+ExecStop=/etc/init.d/mysqld stop
+```
 
 ## sync db
 > cd path  
